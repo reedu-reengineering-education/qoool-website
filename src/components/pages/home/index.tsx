@@ -1,7 +1,7 @@
 "use client";
 
 import { BackgroundGradient } from "@/components/animated/background-gradient";
-import { WavyBackground } from "@/components/animated/wavy-background";
+import { GoogleGeminiEffect } from "@/components/animated/gamini-effect";
 import BentoCard from "@/components/bento/bento-card";
 import Markdown from "@/components/markdown";
 import { Card, CardContent } from "@/components/ui/card";
@@ -12,10 +12,11 @@ import {
 	CarouselNext,
 	CarouselPrevious,
 } from "@/components/ui/carousel";
-import H1 from "@/components/ui/typography/H1";
 import H2 from "@/components/ui/typography/H2";
+import { useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import React from "react";
 import { i18n } from "./i18n";
 
 export default function Home() {
@@ -23,11 +24,39 @@ export default function Home() {
 
 	const lng = pathname.split("/")[1] as keyof typeof i18n;
 
+	const ref = React.useRef(null);
+	const { scrollYProgress } = useScroll({
+		target: ref,
+		offset: ["start start", "end start"],
+	});
+
+	const pathLengthFirst = useTransform(scrollYProgress, [0, 0.8], [0.2, 1.2]);
+	const pathLengthSecond = useTransform(scrollYProgress, [0, 0.8], [0.15, 1.2]);
+	const pathLengthThird = useTransform(scrollYProgress, [0, 0.8], [0.1, 1.2]);
+	const pathLengthFourth = useTransform(scrollYProgress, [0, 0.8], [0.05, 1.2]);
+	const pathLengthFifth = useTransform(scrollYProgress, [0, 0.8], [0, 1.2]);
+
 	return (
 		<div className="flex flex-col items-center w-full gap-12">
-			<WavyBackground className="w-full h-[50vh] md:h-[70vh] flex items-center justify-center p-8 md:p-16">
+			{/* <WavyBackground className="w-full h-[50vh] md:h-[70vh] flex items-center justify-center p-8 md:p-16">
 				<H1 className="font-semibold lg:text-8xl">{i18n[lng].title}</H1>
-			</WavyBackground>
+			</WavyBackground> */}
+			<div
+				className="h-[200vh] bg-background w-screen relative pt-40 overflow-clip"
+				ref={ref}
+			>
+				<GoogleGeminiEffect
+					pathLengths={[
+						pathLengthFirst,
+						pathLengthSecond,
+						pathLengthThird,
+						pathLengthFourth,
+						pathLengthFifth,
+					]}
+					title="QOOOL-Sensing"
+					description={i18n[lng].title}
+				/>
+			</div>
 			<div className="max-w-6xl mx-auto w-full">
 				<div className="grid md:auto-rows-[18rem] grid-cols-2 md:grid-cols-3 gap-8 max-w-7xl mx-auto auto-rows-[15rem]">
 					<BackgroundGradient

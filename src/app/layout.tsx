@@ -1,5 +1,4 @@
 import Footer from "@/components/layout/footer";
-import Navbar from "@/components/layout/navbar";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
@@ -42,10 +41,7 @@ export default function RootLayout({
 					font.className,
 				)}
 			>
-				<main className="container mx-auto flex-1 pb-12 block">
-					<Navbar />
-					{children}
-				</main>
+				<main className="container mx-auto flex-1 pb-12 block">{children}</main>
 				<Footer />
 			</body>
 		</html>
