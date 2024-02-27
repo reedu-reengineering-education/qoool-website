@@ -1,6 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import "context-filter-polyfill";
 import React, { useEffect, useRef } from "react";
 import { createNoise3D } from "simplex-noise";
 

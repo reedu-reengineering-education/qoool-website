@@ -1259,6 +1259,11 @@ commander@^4.0.0:
   resolved "https://registry.npmjs.org/commander/-/commander-4.1.1.tgz"
   integrity sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==
 
+context-filter-polyfill@^0.3.13:
+  version "0.3.13"
+  resolved "https://registry.yarnpkg.com/context-filter-polyfill/-/context-filter-polyfill-0.3.13.tgz#1fe887657c5ff5607090103701d033f312201937"
+  integrity sha512-oUD7u6JI2M9vZlY9J/4Buu5t7Y1GX8HcGSkQEvDQlGP3t/X5mfBurGp28bAbGAoHX8hBDErTM5cWu19J4s7GuA==
+
 cross-spawn@^7.0.0:
   version "7.0.3"
   resolved "https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.3.tgz"
