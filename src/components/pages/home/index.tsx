@@ -59,7 +59,7 @@ export default function Home() {
         />
       </div>
       <div className="max-w-6xl mx-auto w-full">
-        <div className="grid md:auto-rows-[18rem] grid-cols-2 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid auto-rows-[18rem] grid-cols-2 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
           <BackgroundGradient
             containerClassName="col-span-2 row-span-3 md:row-span-2"
             className="rounded-[22px] w-full h-full p-4 sm:p-10 bg-background overflow-hidden"
