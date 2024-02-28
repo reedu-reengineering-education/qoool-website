@@ -1,16 +1,16 @@
-import Navbar from "@/components/layout/navbar";
+import Navbar from "@/components/layout/navbar"
 
 export default function SubLayout({
-	children,
+  children,
 }: Readonly<{
-	children: React.ReactNode;
+  children: React.ReactNode
 }>) {
-	return (
-		<>
-			<div>
-				<Navbar sticky />
-				{children}
-			</div>
-		</>
-	);
+  return (
+    <>
+      <div>
+        <Navbar sticky />
+        {children}
+      </div>
+    </>
+  )
 }

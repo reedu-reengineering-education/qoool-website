@@ -1,17 +1,17 @@
-import { TracingBeam } from "@/components/animated/tracing-beam";
-import Navbar from "@/components/layout/navbar";
+import { TracingBeam } from "@/components/animated/tracing-beam"
+import Navbar from "@/components/layout/navbar"
 
 export default function SubLayout({
-	children,
+  children,
 }: Readonly<{
-	children: React.ReactNode;
+  children: React.ReactNode
 }>) {
-	return (
-		<>
-			<Navbar />
-			<div className="max-w-2xl mx-auto">
-				<TracingBeam>{children}</TracingBeam>
-			</div>
-		</>
-	);
+  return (
+    <>
+      <Navbar />
+      <div className="max-w-2xl mx-auto">
+        <TracingBeam>{children}</TracingBeam>
+      </div>
+    </>
+  )
 }

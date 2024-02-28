@@ -2,12 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
-
 }
-
 
 @layer base {
   :root {
@@ -34,7 +33,6 @@ html, body {
     --radius: 1rem;
   }
 }
-
 
 @layer base {
   * {
