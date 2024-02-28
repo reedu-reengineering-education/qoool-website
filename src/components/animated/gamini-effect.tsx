@@ -2,6 +2,9 @@
 import { cn } from "@/lib/utils";
 import { MotionValue, motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
+import { useRef } from "react";
+import H1 from "../ui/typography/H1";
+import H3 from "../ui/typography/H3";
 
 const transition = {
 	duration: 0,
@@ -13,23 +16,17 @@ export const GoogleGeminiEffect = ({
 	title,
 	description,
 	className,
+	parentRef,
 }: {
 	pathLengths: MotionValue[];
 	title?: string;
 	description?: string;
 	className?: string;
+	parentRef: React.RefObject<HTMLDivElement>;
 }) => {
+	const contentRef = useRef<HTMLDivElement>(null);
 	return (
-		<div className={cn("sticky top-80", className)}>
-			<p className="text-lg md:text-7xl font-semibold pb-4 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-300">
-				{title || "Build with Aceternity UI"}
-			</p>
-			<p className="text-xs md:text-xl font-normal text-center text-neutral-400 mt-4 max-w-lg mx-auto">
-				{description ||
-					`Scroll this component and see the bottom SVG come to life wow this
-        works!`}
-			</p>
-			<ArrowDown className="w-8 h-8 mx-auto animate-bounce mt-8" />
+		<div className={cn("sticky top-40 md:top-80", className)} ref={contentRef}>
 			{/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
 			<svg
 				width="1440"
@@ -153,6 +150,30 @@ export const GoogleGeminiEffect = ({
 					</filter>
 				</defs>
 			</svg>
+			<H1 className="pb-4 text-center pt-0 bg-clip-text text-transparent bg-gradient-to-b from-foreground to-muted-foreground">
+				{title || "Build with Aceternity UI"}
+			</H1>
+			<H3 className="text-center text-muted-foreground mt-4 max-w-lg mx-auto">
+				{description ||
+					`Scroll this component and see the bottom SVG come to life wow this
+        works!`}
+			</H3>
+			<ArrowDown
+				className="h-6 md:w-8 md:h-8 mx-auto animate-bounce mt-8 cursor-pointer"
+				onClick={() => {
+					if (!parentRef.current || !contentRef.current) return;
+
+					window.scrollTo({
+						top:
+							parentRef.current.offsetHeight -
+							contentRef.current?.offsetHeight -
+							88 - // 88 is the height of the navbar
+							10, // 10 is padding
+						left: 0,
+						behavior: "smooth",
+					});
+				}}
+			/>
 		</div>
 	);
 };

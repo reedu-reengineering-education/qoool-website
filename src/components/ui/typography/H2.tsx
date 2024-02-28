@@ -7,7 +7,7 @@ export default function H2(props: Props) {
 		<h2
 			{...props}
 			className={cn(
-				"scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0 py-6",
+				"scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0 py-4 md:py-6",
 				props.className,
 			)}
 		>

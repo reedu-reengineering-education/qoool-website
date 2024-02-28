@@ -55,10 +55,11 @@ export default function Home() {
 					]}
 					title="QOOOL-Sensing"
 					description={i18n[lng].title}
+					parentRef={ref}
 				/>
 			</div>
 			<div className="max-w-6xl mx-auto w-full">
-				<div className="grid md:auto-rows-[18rem] grid-cols-2 md:grid-cols-3 gap-8 max-w-7xl mx-auto auto-rows-[15rem]">
+				<div className="grid md:auto-rows-[18rem] grid-cols-2 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
 					<BackgroundGradient
 						containerClassName="col-span-2 row-span-3 md:row-span-2"
 						className="rounded-[22px] w-full h-full p-4 sm:p-10 bg-background overflow-hidden"
@@ -68,7 +69,7 @@ export default function Home() {
 								<div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-background [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
 							</div>
 						</div>
-						<div className="absolute top-0 left-0 w-full h-full p-8 bg-background/60">
+						<div className="absolute top-0 left-0 w-full h-full p-4 md:p-6 bg-background/60">
 							<Markdown>{i18n[lng].mission}</Markdown>
 						</div>
 					</BackgroundGradient>
