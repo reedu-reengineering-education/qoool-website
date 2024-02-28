@@ -10,7 +10,6 @@ This repository contains the codebase for the project website, developed using N
 - **Tailwind CSS**: A utility-first CSS framework for building modern designs.
 - **MDX**: Markdown for the component era. Write JSX in your markdown files.
 
-
 ## Getting Started
 
 First, run the development server:

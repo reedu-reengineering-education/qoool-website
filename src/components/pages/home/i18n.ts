@@ -1,12 +1,12 @@
 export const i18n = {
-	de: {
-		title: "Quantensensorik für die Digitale Bildung",
-		about: "Über uns",
-		vision: "Vision",
-		"world-of-quantum": "Die Welt der Quanten",
-		activities: "Aktivitäten",
-		news: "Neuigkeiten",
-		mission: `
+  de: {
+    title: "Quantensensorik für die Digitale Bildung",
+    about: "Über uns",
+    vision: "Vision",
+    "world-of-quantum": "Die Welt der Quanten",
+    activities: "Aktivitäten",
+    news: "Neuigkeiten",
+    mission: `
 ## Unsere Mission
 ### Wir wollen Quantensensorik machen
 
@@ -27,57 +27,57 @@ Mit Sensor-Kits und interaktiven Lehr- und Lernmaterialien wird
 die Welt der Quanten im Unterricht, Studium oder für eine breite
 Öffentlichkeit erlebbar.
 `,
-		collections: {
-			activities: [
-				{
-					title: "Outreach Initiativen",
-					description:
-						"Wir organisieren gemeinsam mit Partnern Workshops, Veranstaltungen und Schulungen, um ein breites Publikum über Quantentechnologien zu informieren und zu inspirieren",
-					image: "activity-outreach.png",
-				},
-				{
-					title: "Outreach Initiativen",
-					description:
-						"Wir organisieren gemeinsam mit Partnern Workshops, Veranstaltungen und Schulungen, um ein breites Publikum über Quantentechnologien zu informieren und zu inspirieren",
-					image: "activity-outreach.png",
-				},
-				{
-					title: "Outreach Initiativen",
-					description:
-						"Wir organisieren gemeinsam mit Partnern Workshops, Veranstaltungen und Schulungen, um ein breites Publikum über Quantentechnologien zu informieren und zu inspirieren",
-					image: "activity-outreach.png",
-				},
-			],
-			news: [
-				{
-					title: "Abschließendes Projekttreffen",
-					description:
-						"Am 15. und 16. September 2021 fand das abschließende Projekttreffen von QOOOL statt. Die Partner trafen sich in Berlin, um die Ergebnisse des Projekts zu präsentieren und die nächsten Schritte zu planen.",
-					image: "news-project-meeting.png",
-				},
-				{
-					title: "Abschließendes Projekttreffen",
-					description:
-						"Am 15. und 16. September 2021 fand das abschließende Projekttreffen von QOOOL statt. Die Partner trafen sich in Berlin, um die Ergebnisse des Projekts zu präsentieren und die nächsten Schritte zu planen.",
-					image: "news-project-meeting.png",
-				},
-				{
-					title: "Abschließendes Projekttreffen",
-					description:
-						"Am 15. und 16. September 2021 fand das abschließende Projekttreffen von QOOOL statt. Die Partner trafen sich in Berlin, um die Ergebnisse des Projekts zu präsentieren und die nächsten Schritte zu planen.",
-					image: "news-project-meeting.png",
-				},
-			],
-		},
-	},
-	en: {
-		title: "Quantum Sensing for Digital Education",
-		vision: "Vision",
-		"world-of-quantum": "The World of Quantum",
-		about: "About Us",
-		activities: "Activities",
-		news: "News",
-		mission: `
+    collections: {
+      activities: [
+        {
+          title: "Outreach Initiativen",
+          description:
+            "Wir organisieren gemeinsam mit Partnern Workshops, Veranstaltungen und Schulungen, um ein breites Publikum über Quantentechnologien zu informieren und zu inspirieren",
+          image: "activity-outreach.png",
+        },
+        {
+          title: "Outreach Initiativen",
+          description:
+            "Wir organisieren gemeinsam mit Partnern Workshops, Veranstaltungen und Schulungen, um ein breites Publikum über Quantentechnologien zu informieren und zu inspirieren",
+          image: "activity-outreach.png",
+        },
+        {
+          title: "Outreach Initiativen",
+          description:
+            "Wir organisieren gemeinsam mit Partnern Workshops, Veranstaltungen und Schulungen, um ein breites Publikum über Quantentechnologien zu informieren und zu inspirieren",
+          image: "activity-outreach.png",
+        },
+      ],
+      news: [
+        {
+          title: "Abschließendes Projekttreffen",
+          description:
+            "Am 15. und 16. September 2021 fand das abschließende Projekttreffen von QOOOL statt. Die Partner trafen sich in Berlin, um die Ergebnisse des Projekts zu präsentieren und die nächsten Schritte zu planen.",
+          image: "news-project-meeting.png",
+        },
+        {
+          title: "Abschließendes Projekttreffen",
+          description:
+            "Am 15. und 16. September 2021 fand das abschließende Projekttreffen von QOOOL statt. Die Partner trafen sich in Berlin, um die Ergebnisse des Projekts zu präsentieren und die nächsten Schritte zu planen.",
+          image: "news-project-meeting.png",
+        },
+        {
+          title: "Abschließendes Projekttreffen",
+          description:
+            "Am 15. und 16. September 2021 fand das abschließende Projekttreffen von QOOOL statt. Die Partner trafen sich in Berlin, um die Ergebnisse des Projekts zu präsentieren und die nächsten Schritte zu planen.",
+          image: "news-project-meeting.png",
+        },
+      ],
+    },
+  },
+  en: {
+    title: "Quantum Sensing for Digital Education",
+    vision: "Vision",
+    "world-of-quantum": "The World of Quantum",
+    about: "About Us",
+    activities: "Activities",
+    news: "News",
+    mission: `
 ## Our Mission
 ### We want to make quantum sensing
 
@@ -87,47 +87,47 @@ We at QOOOL believe in the transformative power of quantum technology and are co
 
 With sensor kits and interactive teaching and learning materials, the world of quantum becomes tangible in teaching, studies, or for a broad public.
 `,
-		collections: {
-			activities: [
-				{
-					title: "Outreach Initiatives",
-					description:
-						"We organize workshops, events, and training sessions with partners to inform and inspire a broad audience about quantum technologies",
-					image: "activity-outreach.png",
-				},
-				{
-					title: "Outreach Initiatives",
-					description:
-						"We organize workshops, events, and training sessions with partners to inform and inspire a broad audience about quantum technologies",
-					image: "activity-outreach.png",
-				},
-				{
-					title: "Outreach Initiatives",
-					description:
-						"We organize workshops, events, and training sessions with partners to inform and inspire a broad audience about quantum technologies",
-					image: "activity-outreach.png",
-				},
-			],
-			news: [
-				{
-					title: "Final Project Meeting",
-					description:
-						"On September 15 and 16, 2021, the final project meeting of QOOOL took place. The partners met in Berlin to present the project's results and plan the next steps.",
-					image: "news-project-meeting.png",
-				},
-				{
-					title: "Final Project Meeting",
-					description:
-						"On September 15 and 16, 2021, the final project meeting of QOOOL took place. The partners met in Berlin to present the project's results and plan the next steps.",
-					image: "news-project-meeting.png",
-				},
-				{
-					title: "Final Project Meeting",
-					description:
-						"On September 15 and 16, 2021, the final project meeting of QOOOL took place. The partners met in Berlin to present the project's results and plan the next steps.",
-					image: "news-project-meeting.png",
-				},
-			],
-		},
-	},
-};
+    collections: {
+      activities: [
+        {
+          title: "Outreach Initiatives",
+          description:
+            "We organize workshops, events, and training sessions with partners to inform and inspire a broad audience about quantum technologies",
+          image: "activity-outreach.png",
+        },
+        {
+          title: "Outreach Initiatives",
+          description:
+            "We organize workshops, events, and training sessions with partners to inform and inspire a broad audience about quantum technologies",
+          image: "activity-outreach.png",
+        },
+        {
+          title: "Outreach Initiatives",
+          description:
+            "We organize workshops, events, and training sessions with partners to inform and inspire a broad audience about quantum technologies",
+          image: "activity-outreach.png",
+        },
+      ],
+      news: [
+        {
+          title: "Final Project Meeting",
+          description:
+            "On September 15 and 16, 2021, the final project meeting of QOOOL took place. The partners met in Berlin to present the project's results and plan the next steps.",
+          image: "news-project-meeting.png",
+        },
+        {
+          title: "Final Project Meeting",
+          description:
+            "On September 15 and 16, 2021, the final project meeting of QOOOL took place. The partners met in Berlin to present the project's results and plan the next steps.",
+          image: "news-project-meeting.png",
+        },
+        {
+          title: "Final Project Meeting",
+          description:
+            "On September 15 and 16, 2021, the final project meeting of QOOOL took place. The partners met in Berlin to present the project's results and plan the next steps.",
+          image: "news-project-meeting.png",
+        },
+      ],
+    },
+  },
+}
