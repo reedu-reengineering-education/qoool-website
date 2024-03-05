@@ -28,6 +28,7 @@ export default function Home() {
       <WavyBackground
         className="w-full h-[50vh] md:h-[70vh] flex items-center justify-center p-8 md:p-16"
         backgroundFill="#09090b"
+        colors={["#96b239", "#d5232a", "#96b239"]}
       >
         <H1 className="font-semibold lg:text-8xl">{i18n[lng].title}</H1>
       </WavyBackground>
