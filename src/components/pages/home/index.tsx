@@ -1,7 +1,7 @@
 "use client"
 
 import { BackgroundGradient } from "@/components/animated/background-gradient"
-import { GoogleGeminiEffect } from "@/components/animated/gamini-effect"
+import { WavyBackground } from "@/components/animated/wavy-background"
 import BentoCard from "@/components/bento/bento-card"
 import Markdown from "@/components/markdown"
 import { Card, CardContent } from "@/components/ui/card"
@@ -12,11 +12,10 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+import H1 from "@/components/ui/typography/H1"
 import H2 from "@/components/ui/typography/H2"
-import { useScroll, useTransform } from "framer-motion"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
-import React from "react"
 import { i18n } from "./i18n"
 
 export default function Home() {
@@ -24,40 +23,14 @@ export default function Home() {
 
   const lng = pathname.split("/")[1] as keyof typeof i18n
 
-  const ref = React.useRef(null)
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start start", "end start"],
-  })
-
-  const pathLengthFirst = useTransform(scrollYProgress, [0, 0.8], [0.2, 1.2])
-  const pathLengthSecond = useTransform(scrollYProgress, [0, 0.8], [0.15, 1.2])
-  const pathLengthThird = useTransform(scrollYProgress, [0, 0.8], [0.1, 1.2])
-  const pathLengthFourth = useTransform(scrollYProgress, [0, 0.8], [0.05, 1.2])
-  const pathLengthFifth = useTransform(scrollYProgress, [0, 0.8], [0, 1.2])
-
   return (
     <div className="flex flex-col items-center w-full gap-12">
-      {/* <WavyBackground className="w-full h-[50vh] md:h-[70vh] flex items-center justify-center p-8 md:p-16">
-				<H1 className="font-semibold lg:text-8xl">{i18n[lng].title}</H1>
-			</WavyBackground> */}
-      <div
-        className="h-[200vh] bg-background w-screen relative pt-40 overflow-clip"
-        ref={ref}
+      <WavyBackground
+        className="w-full h-[50vh] md:h-[70vh] flex items-center justify-center p-8 md:p-16"
+        backgroundFill="#09090b"
       >
-        <GoogleGeminiEffect
-          pathLengths={[
-            pathLengthFirst,
-            pathLengthSecond,
-            pathLengthThird,
-            pathLengthFourth,
-            pathLengthFifth,
-          ]}
-          title="QOOOL-Sensing"
-          description={i18n[lng].title}
-          parentRef={ref}
-        />
-      </div>
+        <H1 className="font-semibold lg:text-8xl">{i18n[lng].title}</H1>
+      </WavyBackground>
       <div className="max-w-6xl mx-auto w-full">
         <div className="grid auto-rows-[18rem] grid-cols-2 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
           <BackgroundGradient
@@ -89,7 +62,7 @@ export default function Home() {
               </h2>
             </div>
           </BentoCard>
-          <BentoCard size="large" href={"/about"}>
+          <BentoCard size="large" href={"/about"} animatedBackground="meteors">
             <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center p-4">
               <h2 className="text-2xl font-bold">{i18n[lng].about}</h2>
             </div>

@@ -16,8 +16,8 @@ export default function Navbar({ sticky }: { sticky?: boolean }) {
   return (
     <nav
       className={cn(
-        "container mx-auto flex w-full items-center justify-between flex-wrap py-6",
-        sticky ? " fixed bg-background  z-30  inset-x-0 " : ""
+        "container mx-auto flex w-full items-center justify-between flex-wrap py-6 z-30 relative",
+        sticky ? " fixed bg-background inset-x-0 " : ""
       )}
     >
       {!pathname.endsWith(`/${lng}`) ? (
