@@ -7,6 +7,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { BackgroundBeams } from "../animated/beams"
 import { GlowingStarsBackgroundCard } from "../animated/glowing-stars"
+import { Meteors } from "../animated/meteors"
 import { Card } from "../ui/card"
 
 interface BentoCardProps {
@@ -20,6 +21,7 @@ interface BentoCardProps {
     | "glowing-stars"
     | "grid"
     | "background-gradient"
+    | "meteors"
   prependLngToHref?: boolean
   className?: string
 }
@@ -63,6 +65,9 @@ export default function BentoCard({
       )}
       {animatedBackground === "glowing-stars" && (
         <GlowingStarsBackgroundCard className="group-hover:scale-105 transition-all" />
+      )}
+      {animatedBackground === "meteors" && (
+        <Meteors className="group-hover:scale-105 transition-all" />
       )}
       {animatedBackground === "grid" && (
         <div className="absolute top-0 left-0 w-full h-full group-hover:scale-105 transition-all">

@@ -7,10 +7,8 @@ export default function SubLayout({
 }>) {
   return (
     <>
-      <div>
-        <Navbar sticky />
-        {children}
-      </div>
+      <Navbar />
+      <div>{children}</div>
     </>
   )
 }

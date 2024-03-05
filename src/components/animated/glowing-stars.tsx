@@ -89,7 +89,7 @@ const Star = ({ isGlowing, delay }: { isGlowing: boolean; delay: number }) => {
       }}
       animate={{
         scale: isGlowing ? [1, 1.2, 2.5, 2.2, 1.5] : 1,
-        background: isGlowing ? "#e879f9" : "#ccc",
+        background: isGlowing ? "#d5232a" : "#ccc",
       }}
       transition={{
         duration: 2,
@@ -97,7 +97,7 @@ const Star = ({ isGlowing, delay }: { isGlowing: boolean; delay: number }) => {
         delay: delay,
       }}
       className={cn(
-        "bg-fuchsia-400 h-[1.5px] w-[1.5px] rounded-full relative z-20"
+        "bg-[#d5232a] h-[1.5px] w-[1.5px] rounded-full relative z-20"
       )}
     />
   )
@@ -120,7 +120,11 @@ const Glow = ({ delay }: { delay: number }) => {
       exit={{
         opacity: 0,
       }}
-      className="absolute  left-1/2 -translate-x-1/2 z-10 h-[4px] w-[4px] rounded-full bg-fuchsia-400 blur-[1px] shadow-2xl shadow-fuchsia-300"
+      className="absolute  left-1/2 -translate-x-1/2 z-10 h-[4px] w-[4px] rounded-full bg-[#d5232a] blur-[1px] shadow-2xl shadow-[#96b239]"
     />
   )
+}
+
+{
+  /* colors={["#96b239", "#d5232a", "#96b239"]} */
 }
