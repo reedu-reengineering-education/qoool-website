@@ -1,6 +1,5 @@
 "use client"
 
-import { BackgroundGradient } from "@/components/animated/background-gradient"
 import { WavyBackground } from "@/components/animated/wavy-background"
 import BentoCard from "@/components/bento/bento-card"
 import Markdown from "@/components/markdown"
@@ -13,7 +12,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import H1 from "@/components/ui/typography/H1"
-import H2 from "@/components/ui/typography/H2"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { i18n } from "./i18n"
@@ -34,10 +32,7 @@ export default function Home() {
       </WavyBackground>
       <div className="max-w-6xl mx-auto w-full">
         <div className="grid auto-rows-[18rem] grid-cols-2 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          <BackgroundGradient
-            containerClassName="col-span-2 row-span-3 md:row-span-2"
-            className="rounded-[22px] w-full h-full p-4 sm:p-10 bg-background overflow-hidden"
-          >
+          <BentoCard className="col-span-2 row-span-3 md:row-span-2">
             <div className="absolute top-0 left-0 w-full h-full group-hover:scale-105 transition-all">
               <div className="h-full w-full bg-transparent  bg-grid-white/[0.2] relative flex items-center justify-center">
                 <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-background [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
@@ -46,16 +41,25 @@ export default function Home() {
             <div className="absolute top-0 left-0 w-full h-full p-4 md:p-6 bg-background/60">
               <Markdown>{i18n[lng].mission}</Markdown>
             </div>
-          </BackgroundGradient>
-          <BentoCard href={"/vision"} animatedBackground="glowing-stars">
+          </BentoCard>
+          {/* <BackgroundGradient
+            className="rounded-[22px] w-full h-full p-4 sm:p-10 bg-background overflow-hidden"
+            > */}
+          <BentoCard
+            href={"/vision"}
+            animatedBackground="glowing-stars"
+            withGradientOutline
+          >
             <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center p-4">
               <h2 className="text-2xl font-bold">{i18n[lng].vision}</h2>
             </div>
+            {/* </BackgroundGradient> */}
           </BentoCard>
           <BentoCard
             href={"/world-of-quantum"}
             animatedBackground="beams"
             className="md:row-span-2"
+            withGradientOutline
           >
             <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center p-4">
               <h2 className="text-2xl font-bold">
@@ -63,26 +67,31 @@ export default function Home() {
               </h2>
             </div>
           </BentoCard>
-          <BentoCard size="large" href={"/about"} animatedBackground="meteors">
+          <BentoCard
+            size="large"
+            href={"/about"}
+            animatedBackground="meteors"
+            withGradientOutline
+          >
             <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center p-4">
               <h2 className="text-2xl font-bold">{i18n[lng].about}</h2>
             </div>
           </BentoCard>
         </div>
       </div>
-      <section className="mt-16 px-8 w-full">
-        <H2 className="border-none ">{i18n[lng].activities}</H2>
+      <Card className="mt-16 p-16 w-full lg:flex lg:gap-8 lg:items-end">
+        <H1 className="border-none font-medium">{i18n[lng].activities}</H1>
         <Carousel
           opts={{
             align: "start",
           }}
-          className="w-full"
+          className="flex-1 md:mx-10"
         >
           <CarouselContent>
             {i18n[lng].collections.activities.map((activity, index) => (
               <CarouselItem
                 key={activity.title}
-                className="md:basis-1/2 lg:basis-1/3"
+                className="md:basis-1/2 lg:basis-full xl:basis-1/2 2xl:basis-1/3"
               >
                 <div className="p-1">
                   <Card className="overflow-hidden">
@@ -94,11 +103,13 @@ export default function Home() {
                         className="object-top object-cover"
                       />
                     </div>
-                    <CardContent className="grid  gap-2 p-6">
-                      <span className="text-3xl font-semibold">
+                    <CardContent className="grid gap-2 p-6">
+                      <span className="text-3xl font-semibold overflow-ellipsis overflow-hidden">
                         {activity.title}
                       </span>
-                      <span>{activity.description}</span>
+                      <span className="overflow-ellipsis overflow-hidden">
+                        {activity.description}
+                      </span>
                     </CardContent>
                   </Card>
                 </div>
@@ -108,20 +119,20 @@ export default function Home() {
           <CarouselPrevious />
           <CarouselNext />
         </Carousel>
-      </section>
-      <section className="mt-16 px-8 w-full">
-        <H2 className="border-none ">{i18n[lng].news}</H2>
+      </Card>
+      <Card className="mt-16 p-16 w-full lg:flex lg:gap-8 lg:items-end">
+        <H1 className="border-none font-medium">{i18n[lng].news}</H1>
         <Carousel
           opts={{
             align: "start",
           }}
-          className="w-full"
+          className="flex-1 md:mx-10"
         >
           <CarouselContent>
             {i18n[lng].collections.news.map((news, index) => (
               <CarouselItem
                 key={news.title}
-                className="md:basis-1/2 lg:basis-1/3"
+                className="md:basis-1/2 lg:basis-full xl:basis-1/2 2xl:basis-1/3"
               >
                 <div className="p-1">
                   <Card className="overflow-hidden">
@@ -133,11 +144,13 @@ export default function Home() {
                         className="object-top object-cover"
                       />
                     </div>
-                    <CardContent className="grid  gap-2 p-6">
-                      <span className="text-3xl font-semibold">
+                    <CardContent className="grid gap-2 p-6">
+                      <span className="text-3xl font-semibold overflow-ellipsis overflow-hidden">
                         {news.title}
                       </span>
-                      <span>{news.description}</span>
+                      <span className="overflow-ellipsis overflow-hidden">
+                        {news.description}
+                      </span>
                     </CardContent>
                   </Card>
                 </div>
@@ -147,7 +160,7 @@ export default function Home() {
           <CarouselPrevious />
           <CarouselNext />
         </Carousel>
-      </section>
+      </Card>
     </div>
   )
 }

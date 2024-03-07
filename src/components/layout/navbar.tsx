@@ -17,7 +17,7 @@ export default function Navbar({ sticky }: { sticky?: boolean }) {
   return (
     <nav
       className={cn(
-        "container mx-auto flex w-full items-center justify-between flex-wrap py-6 z-30 relative",
+        "mx-auto flex w-full items-center justify-between flex-wrap py-6 z-30 relative",
         sticky ? " fixed bg-background inset-x-0 " : ""
       )}
     >
@@ -29,7 +29,7 @@ export default function Navbar({ sticky }: { sticky?: boolean }) {
           </Button>
         </Link>
       ) : (
-        <Image src={QooolLogo} width={150} height={100} alt="Logo" />
+        <Image src={QooolLogo} width={160} height={100} alt="Logo" />
       )}
 
       <LanguageSwitcher currentLng={lng} />

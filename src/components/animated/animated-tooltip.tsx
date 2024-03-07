@@ -17,6 +17,7 @@ export const AnimatedTooltip = ({
     name: string
     designation: string
     image: string
+    about: string
   }[]
 }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
@@ -74,6 +75,9 @@ export const AnimatedTooltip = ({
                   {item.name}
                 </div>
                 <div className="text-white text-xs">{item.designation}</div>
+                <div className="text-white text-xs max-w-sm whitespace-pre-wrap">
+                  {item.about}
+                </div>
               </motion.div>
             )}
           </AnimatePresence>
