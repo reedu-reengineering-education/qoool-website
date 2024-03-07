@@ -6,6 +6,7 @@ import {
   useSpring,
   useTransform,
 } from "framer-motion"
+import { Smile } from "lucide-react"
 import Image from "next/image"
 import { useState } from "react"
 
@@ -17,6 +18,7 @@ export const AnimatedTooltip = ({
     name: string
     designation: string
     image: string
+    about: string
   }[]
 }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
@@ -77,14 +79,24 @@ export const AnimatedTooltip = ({
               </motion.div>
             )}
           </AnimatePresence>
-          <Image
-            onMouseMove={handleMouseMove}
-            height={100}
-            width={100}
-            src={item.image}
-            alt={item.name}
-            className="object-cover bg-muted-foreground !m-0 !p-0 object-top rounded-full h-14 w-14 border-2 group-hover:scale-105 group-hover:z-30 border-white  relative transition duration-500"
-          />
+          {item.image && (
+            <Image
+              onMouseMove={handleMouseMove}
+              height={100}
+              width={100}
+              src={item.image}
+              alt={item.name}
+              className="object-cover bg-muted-foreground !m-0 !p-0 object-top rounded-full h-14 w-14 border-2 group-hover:scale-105 group-hover:z-30 border-white  relative transition duration-500"
+            />
+          )}
+          {!item.image && (
+            <div
+              onMouseMove={handleMouseMove}
+              className="bg-muted rounded-full h-14 w-14 border-2 group-hover:scale-105 group-hover:z-30 border-white relative transition duration-500 flex items-center justify-center"
+            >
+              <Smile />
+            </div>
+          )}
         </div>
       ))}
     </>

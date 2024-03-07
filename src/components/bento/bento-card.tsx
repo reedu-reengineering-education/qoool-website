@@ -5,6 +5,7 @@ import { Url } from "next/dist/shared/lib/router/router"
 import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { BackgroundGradient } from "../animated/background-gradient"
 import { BackgroundBeams } from "../animated/beams"
 import { GlowingStarsBackgroundCard } from "../animated/glowing-stars"
 import { Meteors } from "../animated/meteors"
@@ -24,6 +25,7 @@ interface BentoCardProps {
     | "meteors"
   prependLngToHref?: boolean
   className?: string
+  withGradientOutline?: boolean
 }
 
 export default function BentoCard({
@@ -35,22 +37,46 @@ export default function BentoCard({
   animatedBackground,
   prependLngToHref = true,
   className,
+  withGradientOutline,
 }: BentoCardProps) {
   const pathname = usePathname()
 
   const lng = pathname.split("/")[1]
 
+  const Wrapper = ({ children }: { children: React.ReactNode }) => {
+    if (withGradientOutline) {
+      return (
+        <BackgroundGradient
+          className="rounded-[22px] w-full h-full from-background/90 to-background bg-gradient-to-br overflow-hidden"
+          containerClassName={cn(
+            "h-full",
+            size === "large" ? "col-span-2" : "col-span-1",
+            className
+          )}
+        >
+          {children}
+        </BackgroundGradient>
+      )
+    }
+
+    return (
+      <Card
+        className={cn(
+          size === "large" ? "col-span-2" : "col-span-1",
+          variant === "dark"
+            ? "from-muted to-background/90"
+            : "from-foreground to-muted-foreground",
+          "bg-gradient-to-br w-full break-inside-avoid relative rounded-md overflow-hidden group",
+          className
+        )}
+      >
+        {children}
+      </Card>
+    )
+  }
+
   const JustTheCard = (
-    <Card
-      className={cn(
-        size === "large" ? "col-span-2" : "col-span-1",
-        variant === "dark"
-          ? "from-muted to-background/90"
-          : "from-foreground to-muted-foreground",
-        "bg-gradient-to-br w-full break-inside-avoid relative rounded-md overflow-hidden group cursor-pointer",
-        className
-      )}
-    >
+    <Wrapper>
       {image && (
         <Image
           src={image}
@@ -78,15 +104,20 @@ export default function BentoCard({
       )}
 
       <div className="absolute top-0 left-0 w-full h-full p-4">{children}</div>
-    </Card>
+    </Wrapper>
   )
 
   if (href) {
     return (
       <Link
-        href={prependLngToHref ? `${lng}/${href}` : href}
+        href={prependLngToHref ? `${lng}${href}` : href}
         passHref
-        legacyBehavior
+        className={cn(
+          "h-full",
+          size === "large" ? "col-span-2" : "col-span-1",
+          className
+        )}
+        // legacyBehavior
       >
         {JustTheCard}
       </Link>
