@@ -1,16 +1,22 @@
 import { AnimatedTooltip } from "@/components/animated/animated-tooltip"
+import { Spotlight } from "@/components/animated/spotlight"
 import { MdxImage as Image } from "@/components/mdx/mdx-image"
-import { reeduPeople } from "@/components/pages/about/people"
+import { ifmPeople, reeduPeople } from "@/components/pages/about/people"
 import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { ArrowRightIcon } from "lucide-react"
 import Link from "next/link"
+import ifmLogo from "./ifm_hs.png"
 import reeduLogo from "./reedu-logo.svg"
 
-# About
+# Über uns
 
-Our multidisciplinary team of quantum technology, outreach and innovation experts is committed and passionate about pushing the boundaries of quantum technology and exploring its applications.
+Unser multidisziplinäres Team aus Experten für Quantentechnologien, Outreach und Innovation ist engagiert und leidenschaftlich daran interessiert, die Grenzen der Quantentechnologie zu erweitern und ihre Anwendungsbereiche zu erforschen.
 
-## Our Partners
+## Unsere Partner
+
+<Card>
+  <CardContent>
 
 <Image src={reeduLogo} width={200} />
 
@@ -33,49 +39,39 @@ especially for learners and teachers.
   <AnimatedTooltip items={reeduPeople} />
 </div>
 
-<div className="my-10">
-  <Link href="https://reedu.de">
-    {/* prettier-ignore */}
-    <Button>zur re:edu Website<ArrowRightIcon className="w-5 ml-2" /></Button>
-  </Link>
-</div>
----
+    <CardFooter className="px-0">
+      <Link href="https://reedu.de">
+        {/* prettier-ignore */}
+        <Button>zur Website<ArrowRightIcon className="w-5 ml-2" /></Button>
+      </Link>
+    </CardFooter>
 
-<Image src={reeduLogo} width={200} />
+  </CardContent>
 
-### Partner 2
+</Card>
 
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam quisquam facere rerum distinctio maxime dicta alias numquam ratione, dolores, optio voluptate aperiam minus in praesentium modi sint ipsum voluptas magni.
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam quisquam facere rerum distinctio maxime dicta alias numquam ratione, dolores, optio voluptate aperiam minus in praesentium modi sint ipsum voluptas magni.
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam quisquam facere rerum distinctio maxime dicta alias numquam ratione, dolores, optio voluptate aperiam minus in praesentium modi sint ipsum voluptas magni.
+<div className="h-20" />
 
-<div className="flex flex-row items-center justify-start my-10 w-full">
-  <AnimatedTooltip items={reeduPeople} />
-</div>
+<Card>
+  <CardContent>
 
-<div className="my-10">
-  <Link href="https://reedu.de">
-    {/* prettier-ignore */}
-    <Button>zur re:edu Website<ArrowRightIcon className="w-5 ml-2" /></Button>
-  </Link>
-</div>
----
+<Image src={ifmLogo} width={200} />
 
-<Image src={reeduLogo} width={200} />
+### Institut für Mikroaufbautechnik
 
-### Partner 3
-
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam quisquam facere rerum distinctio maxime dicta alias numquam ratione, dolores, optio voluptate aperiam minus in praesentium modi sint ipsum voluptas magni.
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam quisquam facere rerum distinctio maxime dicta alias numquam ratione, dolores, optio voluptate aperiam minus in praesentium modi sint ipsum voluptas magni.
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam quisquam facere rerum distinctio maxime dicta alias numquam ratione, dolores, optio voluptate aperiam minus in praesentium modi sint ipsum voluptas magni.
+The Institute of Micro Packaging Technology at the Hahn-Schickard-Gesellschaft für angewandte Forschung e.V. in Stuttgart has been working in the field of microintegration of complex, three-dimensional systems with a high degree of miniaturisation for more than 20 years. Its core competences lie in technologies for spatial circuit carriers and microstructures as well as in assembly and connection technology, which is used in particular for the seamless integration of sensors in demanding environmental conditions. Hahn-Schickard is working on fundamental issues relating to the encapsulation of miniaturised quantum sensor assemblies and the simulation-based thermal management of NV-based magnetic field sensors in two research projects as part of the BMBF's QSens future cluster. In the QOOOL Sensing project, Hahn-Schickard will develop and build the quantum sensor module at the heart of the QOOOL kit, thus contributing its expertise in the field of sensor technology.
 
 <div className="flex flex-row items-center justify-start my-10 w-full">
-  <AnimatedTooltip items={reeduPeople} />
+  <AnimatedTooltip items={ifmPeople} />
 </div>
 
-<div className="my-10">
-  <Link href="https://reedu.de">
-    {/* prettier-ignore */}
-    <Button>zur re:edu Website<ArrowRightIcon className="w-5 ml-2" /></Button>
-  </Link>
-</div>
+    <CardFooter className="px-0">
+      <Link href="https://www.innbw.de/de/innbw/hahn-schickard-stuttgart-institut-f%C3%BCr-mikroaufbautechnik/">
+        {/* prettier-ignore */}
+        <Button>zur Website<ArrowRightIcon className="w-5 ml-2" /></Button>
+      </Link>
+    </CardFooter>
+
+  </CardContent>
+
+</Card>
