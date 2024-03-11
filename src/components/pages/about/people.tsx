@@ -32,13 +32,16 @@ export const reeduPeople = [
 
 export const ifmPeople = [
   {
-    id: 1,
+    id: 6,
     name: "André Bülau",
     designation: "Dipl.Ing. Elektrotechnik",
+    image: require("@/assets/images/partners/ifm/andre.JPG").default.src,
   },
   {
-    id: 2,
+    id: 7,
     name: "Daniela Walter",
     designation: "Medizintechnik",
+    image: require("@/assets/images/partners/ifm/Daniela_Walter.jpg").default
+      .src,
   },
 ]
