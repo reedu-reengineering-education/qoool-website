@@ -1,10 +1,12 @@
+import bmbf from "@/assets/images/bmbf.jpeg"
+import Image from "next/image"
 import Link from "next/link"
 import { SparklesCore } from "../animated/sparkels"
 import H3 from "../ui/typography/H3"
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-background py-12 md:py-24">
+    <footer className="w-full bg-background pt-12 md:pt-24">
       <div className="h-40 relative md:w-3/4 mx-auto">
         {/* Gradients */}
         <div className="absolute md:inset-x-1/4 top-0 bg-gradient-to-r from-transparent via-[#96b239] to-transparent h-[2px] w-full md:w-1/2 blur-sm" />
@@ -32,6 +34,13 @@ export default function Footer() {
           >
             <H3 className="font-semibold border-none">Powered by re:edu</H3>
           </Link>
+        </div>
+      </div>
+      <div className="flex justify-between bg-white text-black p-4">
+        <Image src={bmbf} alt="BMBF Logo" width={150} height={150} />
+        <div className="flex flex-col justify-around">
+          <Link href="/impressum">Impressum</Link>
+          <Link href="/datenschutz">Datenschutz</Link>
         </div>
       </div>
     </footer>

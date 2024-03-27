@@ -1,9 +1,16 @@
 import ifmLogo from "@/assets/images/partners/ifm/ifm_hs.png"
+import iisLogo from "@/assets/images/partners/iis/IIS_Logo_blue-mit-Box.png"
+import lelaLogo from "@/assets/images/partners/lela/LeLa_Logo.png"
+import mexlabLogo from "@/assets/images/partners/mexlab/MExLab ExperiMINTe.png"
 import reeduLogo from "@/assets/images/partners/reedu/reedu-logo.svg"
 import { AnimatedTooltip } from "@/components/animated/animated-tooltip"
 import { Spotlight } from "@/components/animated/spotlight"
 import { MdxImage as Image } from "@/components/mdx/mdx-image"
-import { ifmPeople, reeduPeople } from "@/components/pages/about/people"
+import {
+  ifmPeople,
+  iisPeople,
+  reeduPeople,
+} from "@/components/pages/about/people"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { ArrowRightIcon } from "lucide-react"
@@ -71,6 +78,49 @@ Das Institut für Mikroaufbautechnik der Hahn-Schickard-Gesellschaft für angewa
         <Button>zur Website<ArrowRightIcon className="w-5 ml-2" /></Button>
       </Link>
     </CardFooter>
+
+  </CardContent>
+
+</Card>
+
+<div className="h-20" />
+
+<Card>
+  <CardContent className="pt-6">
+
+<Image src={iisLogo} width={200} className="rounded" />
+
+### Institut für Intelligente Sensorik und Theoretische Elektrotechnik
+
+Das Institut für Intelligente Sensorik und Theoretische Elektrotechnik (IIS) beschäftigt sich mit der Erforschung und praktischen Implementierung neuer Sensorkonzepte. Neben der Verbesserung klassischer Sensoren liegt ein Fokus am IIS auf der Erforschung neuer, miniaturisierter Anrege- und Auslesekonzepte für verschiedene Quantensensoren. Nach langjähriger Erfahrung im Bereich der Miniaturisierung der klassischen Kern- und Elektronenspinresonanz, arbeitet das Institut seit einigen Jahren an CMOS-integrierten Mikrowellenanregekonzepten (CMOS = Complementary Metal-Oxide-Semiconductor als Technik für die Konstruktion elektronischer Schaltungen in integrierten Schaltkreisen) sowie (CMOS-integrierten) ultrarauscharmen Stromausleseschaltungen für Festkörperquantensensoren wie z.B. NV-Zentren und Siliziumfehlstellen in SiC (= Siliziumcarbid, eine chemische Verbindung aus Silizium und Kohlenstoff). Im Bereich der Aus- und Weiterbildung ist das IIS verantwortlich für die Ausbildung in den Fächern Elektrodynamik sowie der Sensor- und Messtechnik in den Studiengängen der Elektrotechnik. Zudem betreut das IIS das Praktikum „Build your own MRI“, im Rahmen dessen Studierende ihr eigenes MRT-Gerät entwerfen.
+
+<div className="flex flex-row items-center justify-start my-10 w-full">
+  <AnimatedTooltip items={iisPeople} />
+</div>
+
+    <CardFooter className="px-0">
+      <Link href="https://www.iis.uni-stuttgart.de/de/">
+        {/* prettier-ignore */}
+        <Button>zur Website<ArrowRightIcon className="w-5 ml-2" /></Button>
+      </Link>
+    </CardFooter>
+
+  </CardContent>
+
+</Card>
+
+<div className="h-20" />
+
+<Card>
+  <CardContent>
+
+    ### Associated Partners
+
+    #### LeLa
+    <Image src={lelaLogo} width={200} className="p-4 bg-white rounded" />
+
+    #### MExLab ExperiMINTe
+    <Image src={mexlabLogo} width={200} className="p-4 bg-white rounded"/>
 
   </CardContent>
 

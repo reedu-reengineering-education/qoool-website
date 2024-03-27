@@ -45,3 +45,26 @@ export const ifmPeople = [
       .src,
   },
 ]
+
+export const iisPeople = [
+  {
+    id: 8,
+    name: "Prof. Dr. Jens Anders",
+    designation: "Institutsleiter",
+    image: require("@/assets/images/partners/iis/Bild_Jens_Anders.jpg").default
+      .src,
+  },
+  {
+    id: 9,
+    name: "Dr. Michal Kern",
+    designation: "PhD Physical Chemistry",
+    image: require("@/assets/images/partners/iis/Bild_Michal_Kern.png").default
+      .src,
+  },
+  {
+    id: 10,
+    name: "Yichao Peng",
+    designation: "MSc. Elektrotechnik & Informationstechnik",
+    image: require("@/assets/images/partners/iis/Yichao Peng.jpg").default.src,
+  },
+]
