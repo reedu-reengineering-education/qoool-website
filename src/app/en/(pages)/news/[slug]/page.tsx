@@ -3,8 +3,8 @@ import { allNews } from "contentlayer/generated"
 import { format, parseISO } from "date-fns"
 import { useMDXComponent } from "next-contentlayer/hooks"
 
-export const generateStaticParams = async () =>
-  allNews.map((news) => ({ slug: news._raw.flattenedPath }))
+// export const generateStaticParams = async () =>
+//   allNews.map((news) => ({ slug: news._raw.flattenedPath }))
 
 export const generateMetadata = ({ params }: { params: { slug: string } }) => {
   const post = allNews.find(

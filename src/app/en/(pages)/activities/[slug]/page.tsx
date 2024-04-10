@@ -3,8 +3,8 @@ import { allActivities } from "contentlayer/generated"
 import { format, parseISO } from "date-fns"
 import { useMDXComponent } from "next-contentlayer/hooks"
 
-export const generateStaticParams = async () =>
-  allActivities.map((activity) => ({ slug: activity._raw.flattenedPath }))
+// export const generateStaticParams = async () =>
+//   allActivities.map((activity) => ({ slug: activity._raw.flattenedPath }))
 
 export const generateMetadata = ({ params }: { params: { slug: string } }) => {
   const post = allActivities.find(
