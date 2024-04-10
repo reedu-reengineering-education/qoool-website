@@ -35,6 +35,8 @@ export default function PostsCarousel<T>({
 
   const lng = pathname.split("/")[1] as keyof typeof i18n
 
+  if (posts.length === 0) return null
+
   return (
     <Card className="mt-16 p-16 w-full lg:flex lg:gap-8 lg:items-end">
       <Link href={`/${lng}/${href}`}>
