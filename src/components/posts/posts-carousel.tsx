@@ -38,7 +38,7 @@ export default function PostsCarousel<T>({
   if (posts.length === 0) return null
 
   return (
-    <Card className="mt-16 p-16 w-full lg:flex lg:gap-8 lg:items-end">
+    <Card className="mt-16 p-16 w-full lg:flex lg:gap-8">
       <Link href={`/${lng}/${href}`}>
         <H1 className="border-none font-medium">{title}</H1>
       </Link>
