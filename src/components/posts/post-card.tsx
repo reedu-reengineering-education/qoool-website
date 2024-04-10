@@ -10,9 +10,6 @@ export default function PostCard<T>(
     date: string
     title: string
     url: string
-    body: {
-      html: string
-    }
   }
 ) {
   const pathname = usePathname()
@@ -34,10 +31,6 @@ export default function PostCard<T>(
       >
         {format(parseISO(post.date), "LLLL d, yyyy")}
       </time>
-      <div
-        className="text-sm [&>*]:mb-3 [&>*:last-child]:mb-0"
-        dangerouslySetInnerHTML={{ __html: post.body.html }}
-      />
     </div>
   )
 }

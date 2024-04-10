@@ -34,7 +34,7 @@ export const ifmPeople = [
   {
     id: 6,
     name: "André Bülau",
-    designation: "Dipl.Ing. Elektrotechnik",
+    designation: "Dr. Elektrotechnik",
     image: require("@/assets/images/partners/ifm/andre.JPG").default.src,
   },
   {

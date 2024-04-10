@@ -4,6 +4,7 @@ import { defineDocumentType, makeSource } from "contentlayer/source-files"
 export const News = defineDocumentType(() => ({
   name: "News",
   filePathPattern: "news/**/*.mdx",
+  contentType: "mdx",
   fields: {
     title: { type: "string", required: true },
     date: { type: "date", required: true },
@@ -20,6 +21,7 @@ export const News = defineDocumentType(() => ({
 export const Activity = defineDocumentType(() => ({
   name: "Activity",
   filePathPattern: "activities/**/*.mdx",
+  contentType: "mdx",
   fields: {
     title: { type: "string", required: true },
     date: { type: "date", required: true },

@@ -72,12 +72,12 @@ export default function Home() {
           </BentoCard>
         </div>
       </div>
+      <PostsCarousel posts={allNews} href="news" title={i18n[lng].news} />
       <PostsCarousel
         posts={allActivities}
         href="activities"
         title={i18n[lng].activities}
       />
-      <PostsCarousel posts={allNews} href="news" title={i18n[lng].news} />
     </div>
   )
 }
