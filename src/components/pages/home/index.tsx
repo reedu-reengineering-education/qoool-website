@@ -3,16 +3,9 @@
 import { WavyBackground } from "@/components/animated/wavy-background"
 import BentoCard from "@/components/bento/bento-card"
 import Markdown from "@/components/markdown"
-import { Card, CardContent } from "@/components/ui/card"
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
+import PostsCarousel from "@/components/posts/posts-carousel"
 import H1 from "@/components/ui/typography/H1"
-import Image from "next/image"
+import { allActivities, allNews } from "contentlayer/generated"
 import { usePathname } from "next/navigation"
 import { i18n } from "./i18n"
 
@@ -79,88 +72,12 @@ export default function Home() {
           </BentoCard>
         </div>
       </div>
-      <Card className="mt-16 p-16 w-full lg:flex lg:gap-8 lg:items-end">
-        <H1 className="border-none font-medium">{i18n[lng].activities}</H1>
-        <Carousel
-          opts={{
-            align: "start",
-          }}
-          className="flex-1 md:mx-10"
-        >
-          <CarouselContent>
-            {i18n[lng].collections.activities.map((activity, index) => (
-              <CarouselItem
-                key={activity.title}
-                className="md:basis-1/2 lg:basis-full xl:basis-1/2 2xl:basis-1/3"
-              >
-                <div className="p-1">
-                  <Card className="overflow-hidden">
-                    <div className="w-full h-48 bg-background relative">
-                      <Image
-                        src={require(`./${activity.image}`).default.src}
-                        alt={activity.title}
-                        fill
-                        className="object-top object-cover"
-                      />
-                    </div>
-                    <CardContent className="grid gap-2 p-6">
-                      <span className="text-3xl font-semibold overflow-ellipsis overflow-hidden">
-                        {activity.title}
-                      </span>
-                      <span className="overflow-ellipsis overflow-hidden">
-                        {activity.description}
-                      </span>
-                    </CardContent>
-                  </Card>
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
-      </Card>
-      <Card className="mt-16 p-16 w-full lg:flex lg:gap-8 lg:items-end">
-        <H1 className="border-none font-medium">{i18n[lng].news}</H1>
-        <Carousel
-          opts={{
-            align: "start",
-          }}
-          className="flex-1 md:mx-10"
-        >
-          <CarouselContent>
-            {i18n[lng].collections.news.map((news, index) => (
-              <CarouselItem
-                key={news.title}
-                className="md:basis-1/2 lg:basis-full xl:basis-1/2 2xl:basis-1/3"
-              >
-                <div className="p-1">
-                  <Card className="overflow-hidden">
-                    <div className="w-full h-48 bg-background relative">
-                      <Image
-                        src={require(`./${news.image}`).default.src}
-                        alt={news.title}
-                        fill
-                        className="object-top object-cover"
-                      />
-                    </div>
-                    <CardContent className="grid gap-2 p-6">
-                      <span className="text-3xl font-semibold overflow-ellipsis overflow-hidden">
-                        {news.title}
-                      </span>
-                      <span className="overflow-ellipsis overflow-hidden">
-                        {news.description}
-                      </span>
-                    </CardContent>
-                  </Card>
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
-      </Card>
+      <PostsCarousel
+        posts={allActivities}
+        href="activities"
+        title={i18n[lng].activities}
+      />
+      <PostsCarousel posts={allNews} href="news" title={i18n[lng].news} />
     </div>
   )
 }
