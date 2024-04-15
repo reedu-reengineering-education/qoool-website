@@ -1,4 +1,5 @@
 import NextMdx from "@next/mdx"
+import { withContentlayer } from "next-contentlayer"
 
 const withMDX = NextMdx({
   extension: /\.mdx?$/,
@@ -17,8 +18,14 @@ const nextConfig = {
         protocol: "https",
         hostname: "reedu.de",
       },
+      {
+        protocol: "https",
+        hostname: "cloud.reedu.de",
+      },
     ],
   },
+  reactStrictMode: true,
+  swcMinify: true,
 }
 
-export default withMDX(nextConfig)
+export default withMDX(withContentlayer(nextConfig))
