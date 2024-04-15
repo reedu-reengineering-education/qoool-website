@@ -54,11 +54,11 @@ export default function PostsCarousel<T>({
             .map((post, index) => (
               <CarouselItem
                 key={post.title}
-                className="md:basis-1/2 lg:basis-full xl:basis-1/2 2xl:basis-1/3"
+                className="md:basis-1/2 lg:basis-full xl:basis-1/2 2xl:basis-1/3 h-full"
               >
                 <Link className="p-1" href={`/${lng}${post.url}`}>
                   <Card className="overflow-hidden">
-                    <div className="w-full h-48 bg-background relative">
+                    <div className="w-full h-48 bg-white relative">
                       <Image
                         src={post.image.split("./").at(-1)!}
                         alt={post.title}
