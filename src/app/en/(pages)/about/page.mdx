@@ -2,6 +2,7 @@ import ifmLogo from "@/assets/images/partners/ifm/ifm_hs.png"
 import iisLogo from "@/assets/images/partners/iis/IIS_Logo_blue-mit-Box.png"
 import lelaLogo from "@/assets/images/partners/lela/LeLa_Logo.png"
 import mexlabLogo from "@/assets/images/partners/mexlab/MExLab ExperiMINTe.png"
+import qsensLogo from "@/assets/images/partners/qsens/qsens.png"
 import reeduLogo from "@/assets/images/partners/reedu/reedu-logo.svg"
 import { AnimatedTooltip } from "@/components/animated/animated-tooltip"
 import { Spotlight } from "@/components/animated/spotlight"
@@ -16,9 +17,9 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { ArrowRightIcon } from "lucide-react"
 import Link from "next/link"
 
-# Über uns
+# About us
 
-Unser multidisziplinäres Team aus Experten für Quantentechnologien, Outreach und Innovation ist engagiert und leidenschaftlich daran interessiert, die Grenzen der Quantentechnologie zu erweitern und ihre Anwendungsbereiche zu erforschen.
+Our multidisciplinary team of experts in quantum technologies, outreach and innovation is dedicated and passionate about pushing the boundaries of quantum technology and exploring its applications.
 
 ## Unsere Partner
 
@@ -109,18 +110,69 @@ The Institute for Intelligent Sensors and Theoretical Electrical Engineering (II
 
 </Card>
 
+<div className="h-32" />
+
+## Assoziierte Partner
+
+<Card>
+  <CardContent className="pt-6">
+
+<Image src={lelaLogo} width={200} className="rounded bg-white" />
+
+### Lernort Labor
+
+LernortLabor - Bundesverband der Schülerlabore e.V. (LeLa) sees itself as an umbrella organisation for school laboratories in German-speaking Europe. As the interface between school laboratories and politics, business and science, LeLa promotes the expansion of the network as a firm pillar of the education system. The most important goal is to strengthen the network of school laboratories and to disseminate and further develop the special teaching and learning culture of school laboratories: independent, exploratory, research-based learning. From careers guidance to science communication, the more than 500 school labs registered with LeLa cover a wide range of topics, reaching more than 1,300,000 children and young people every year.
+
+    <CardFooter className="px-0">
+      <Link href="https://www.lernortlabor.de/">
+        {/* prettier-ignore */}
+        <Button>Website<ArrowRightIcon className="w-5 ml-2" /></Button>
+      </Link>
+    </CardFooter>
+
+  </CardContent>
+
+</Card>
+
 <div className="h-20" />
 
 <Card>
-  <CardContent>
+  <CardContent className="pt-6">
 
-    ### Associated Partners
+<Image src={mexlabLogo} width={200} className="rounded bg-white" />
 
-    #### LeLa
-    <Image src={lelaLogo} width={200} className="p-4 bg-white rounded" />
+### MExLab ExperiMINTe
 
-    #### MExLab ExperiMINTe
-    <Image src={mexlabLogo} width={200} className="p-4 bg-white rounded"/>
+The MExLab ExperiMINTe student laboratory at the University of Münster is establishing itself as a central extracurricular learning location that inspires children and young people for the STEM subjects. In the QOOOL Sensing project, the MExLab ExperiMINTe focuses on inspiring these target groups for the world of quantum sensors by providing and piloting innovative teaching materials. In collaboration with project participants, the student laboratory develops concepts and materials that are used in workshops and blended learning programs. These offers promote a deep understanding of the application and functionality of modern technologies. In addition, the MExLab ExperiMINTe serves as a central point of contact in science education and uses digital platforms to disseminate OER materials and make the project results accessible to a wider audience.
+
+    <CardFooter className="px-0">
+      <Link href="https://www.uni-muenster.de/MExLab/">
+        {/* prettier-ignore */}
+        <Button>Website<ArrowRightIcon className="w-5 ml-2" /></Button>
+      </Link>
+    </CardFooter>
+
+  </CardContent>
+
+</Card>
+
+<div className="h-20" />
+
+<Card>
+  <CardContent className="pt-6">
+
+<Image src={qsensLogo} width={200} className="rounded bg-white" />
+
+### QSens
+
+QSens is dedicated to the development of quantum sensors, a novel technology in the field of metrology and sensor technology that has a sensitivity on the edge of what is theoretically possible. This new type of sensor can be used, for example, in medical technology, autonomous navigation and renewable energies. Quantum sensor technology is still in its infancy. Promising prototypes have been tested in the first successful feasibility studies, and this is precisely where QSens comes in: Based on the results of basic research, the Future Cluster finalist is working on the field in an interdisciplinary manner with partners from the natural sciences, engineering and industry.
+
+    <CardFooter className="px-0">
+      <Link href="https://www.q-sens.org">
+        {/* prettier-ignore */}
+        <Button>Website<ArrowRightIcon className="w-5 ml-2" /></Button>
+      </Link>
+    </CardFooter>
 
   </CardContent>
 
