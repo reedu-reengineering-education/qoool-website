@@ -72,7 +72,11 @@ export default function Home() {
           </BentoCard>
         </div>
       </div>
-      <PostsCarousel posts={allNews} href="news" title={i18n[lng].news} />
+      <PostsCarousel
+        posts={allNews.filter((e) => e.language === lng)}
+        href="news"
+        title={i18n[lng].news}
+      />
       <PostsCarousel
         posts={allActivities}
         href="activities"

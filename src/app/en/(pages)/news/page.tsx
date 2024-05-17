@@ -3,9 +3,9 @@ import { allNews } from "contentlayer/generated"
 import { compareDesc } from "date-fns"
 
 export default function Page() {
-  const news = allNews.sort((a, b) =>
-    compareDesc(new Date(a.date), new Date(b.date))
-  )
+  const news = allNews
+    .filter((e) => e.language === "en")
+    .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
 
   return (
     <>

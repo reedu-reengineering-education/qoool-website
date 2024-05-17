@@ -7,17 +7,17 @@ import { useMDXComponent } from "next-contentlayer/hooks"
 //   allNews.map((news) => ({ slug: news._raw.flattenedPath }))
 
 export const generateMetadata = ({ params }: { params: { slug: string } }) => {
-  const post = allNews.find(
-    (news) => news._raw.flattenedPath === `news/${params.slug}`
-  )
+  const post = allNews
+    .filter((e) => e.language === "de")
+    .find((news) => news._raw.flattenedPath === `news/${params.slug}`)
   if (!post) throw new Error(`Post not found for slug: ${params.slug}`)
   return { title: post.title }
 }
 
 const PostLayout = ({ params }: { params: { slug: string } }) => {
-  const post = allNews.find(
-    (news) => news._raw.flattenedPath === `news/${params.slug}`
-  )
+  const post = allNews
+    .filter((e) => e.language === "de")
+    .find((news) => news._raw.flattenedPath === `news/${params.slug}`)
   if (!post) throw new Error(`Post not found for slug: ${params.slug}`)
 
   const MDXContent = useMDXComponent(post.body.code)

@@ -87,4 +87,25 @@ export const iisPeople = [
     about:
       "Yichao Peng erhielt seinen MSc Titel von der Universität Stuttgart in Elektrotechnik und Informationstechnik im Jahr 2023. Er hat sich schon in seiner Masterarbeit mit der Entwicklung von integrierten Quantensensorsystemen beschäftigt und wird im Rahmen seiner Promotion das QOOOL-Kit mitentwickeln.",
   },
+    {
+    id: 11,
+    name: "Ronny Nawrodt",
+    designation: "Professor für Physik und ihre Didaktik",
+    about:
+      "Ronny Nawrodt ist Professor für Physik und ihre Didaktik an der Universität Stuttgart. Er beschäftigt sich im Rahmen seiner Arbeit an der Uni Stuttgart mit der Entwicklung neuer Lehrmaterialien und –konzepte. In der Lehre liegt der Fokus neben den üblichen fachdidaktischen Veranstaltungen bei fachlichen Vertiefungen in Elektronik und Messtechnik. Vor Antritt der Stelle beschäftigte er sich mit der Messung kleinster Signale im Rahmen der Gravitationswellendetektion und arbeitet dort an der Reduktion von Rauschprozessen in mechano-optischen Systemen und deren Beschreibung.",
+  },
+    {
+    id: 12,
+    name: "Philipp Scheiger",
+    designation: "Postdoc",
+    about:
+      "Philipp Scheiger promovierte im Jahr 2023 in der physikalischen Hochschuldidaktik zum Thema aktivierende Lehre in der theoretischen Physik an der Universität Stuttgart und der Friedrich-Schiller-Universität Jena. Seinen Masterabschluss machte er im Fach Physik zum Thema nano NMR an einzelnen NVs. Weitere Forschungsschwerpunkte liegen neben der Hochschuldidaktik in allen physikalischen Fachrichtungen bei der Entwicklung von Analogieexperimenten in der Quantenmechanik und der Entwicklung von Fachwissenstest in der Studieneingangsphase.",
+  },
+    {
+    id: 13,
+    name: "Simon Koppenhöfer",
+    designation: "Doktorand",
+    about:
+      "Simon Koppenhöfer ist seit Ende 2023 PhD Student in der Arbeitsgruppe von Ronny Nawrodt. Durch sein Fachstudium in der Physik mit Arbeiten im Laserlabor und im Computerphysikinstitut kennt er sich gut mit den technischen Elementen für einen erfolgreichen NV-Aufbau aus. Sein Interesse an Lehre auf der anderen Seite zeichnete sich seit dem ersten Semester durch ununterbrochene Arbeit mit Schüler:innen und Studierenden ab und mündete nun in der Arbeit an didaktischen Konzepten für den NV-Aufbau und an deren Umsetzung.",
+  },
 ]
