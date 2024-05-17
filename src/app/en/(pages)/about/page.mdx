@@ -4,6 +4,7 @@ import lelaLogo from "@/assets/images/partners/lela/LeLa_Logo.png"
 import mexlabLogo from "@/assets/images/partners/mexlab/MExLab ExperiMINTe.png"
 import qsensLogo from "@/assets/images/partners/qsens/qsens.png"
 import reeduLogo from "@/assets/images/partners/reedu/reedu-logo.svg"
+import piLogo from "@/assets/images/partners/pi/unistuttgart_logo_deutsch.png"
 import { AnimatedTooltip } from "@/components/animated/animated-tooltip"
 import { Spotlight } from "@/components/animated/spotlight"
 import { MdxImage as Image } from "@/components/mdx/mdx-image"
@@ -11,6 +12,7 @@ import {
   ifmPeople,
   iisPeople,
   reeduPeople,
+  piPeople
 } from "@/components/pages/about/people"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
@@ -21,7 +23,7 @@ import Link from "next/link"
 
 Our multidisciplinary team of experts in quantum technologies, outreach and innovation is dedicated and passionate about pushing the boundaries of quantum technology and exploring its applications.
 
-## Unsere Partner
+## Our partners
 
 <Card>
   <CardContent>
@@ -49,7 +51,7 @@ especially for learners and teachers.
 
     <CardFooter className="px-0">
       <Link href="https://reedu.de">
-        {/* prettier-ignore */}
+        { /* prettier-ignore */}
         <Button>Website<ArrowRightIcon className="w-5 ml-2" /></Button>
       </Link>
     </CardFooter>
@@ -75,7 +77,7 @@ The Institute of Micro Packaging Technology at the Hahn-Schickard-Gesellschaft f
 
     <CardFooter className="px-0">
       <Link href="https://www.innbw.de/de/innbw/hahn-schickard-stuttgart-institut-f%C3%BCr-mikroaufbautechnik/">
-        {/* prettier-ignore */}
+        { /* prettier-ignore */}
         <Button>Website<ArrowRightIcon className="w-5 ml-2" /></Button>
       </Link>
     </CardFooter>
@@ -101,7 +103,7 @@ The Institute for Intelligent Sensors and Theoretical Electrical Engineering (II
 
     <CardFooter className="px-0">
       <Link href="https://www.iis.uni-stuttgart.de/de/">
-        {/* prettier-ignore */}
+        { /* prettier-ignore */}
         <Button>Website<ArrowRightIcon className="w-5 ml-2" /></Button>
       </Link>
     </CardFooter>
@@ -112,7 +114,33 @@ The Institute for Intelligent Sensors and Theoretical Electrical Engineering (II
 
 <div className="h-32" />
 
-## Assoziierte Partner
+<Card>
+  <CardContent>
+
+<Image src={piLogo} width={200} />
+
+### 5th Institute of Physics of the University of Stuttgart
+
+The "Physics Didactics Research" department at the 5th Institute of Physics at the University of Stuttgart represents a link between the subject science and the school. Current research focuses on the development of new teaching concepts for modern physics, the accompanying transition from school to university in the context of teacher training programmes, the development, construction and testing of new demonstration experiments for teacher training purposes as well as for direct use in schools and student laboratories, and the preparation of digital offerings for teachers. In teaching, the focus is on the didactic training of prospective physics teachers with a particular focus on physics experiments. The QOOOL project fits perfectly into this context. The department can contribute its experience in setting up modern experiments and didactic concepts for school and university use and subject them to initial practical tests and further development in the "Game of Forces" school laboratory.
+
+<div className="flex flex-row items-center justify-start my-10 w-full">
+  <AnimatedTooltip items={piPeople} />
+</div>
+
+    <CardFooter className="px-0">
+      <Link href="https://www.pi5.uni-stuttgart.de/">
+        { /* prettier-ignore */}
+        <Button>Website<ArrowRightIcon className="w-5 ml-2" /></Button>
+      </Link>
+    </CardFooter>
+
+  </CardContent>
+
+</Card>
+
+<div className="h-20" />
+
+## Associated partners
 
 <Card>
   <CardContent className="pt-6">
@@ -125,7 +153,7 @@ LernortLabor - Bundesverband der Schülerlabore e.V. (LeLa) sees itself as an um
 
     <CardFooter className="px-0">
       <Link href="https://www.lernortlabor.de/">
-        {/* prettier-ignore */}
+        { /* prettier-ignore */}
         <Button>Website<ArrowRightIcon className="w-5 ml-2" /></Button>
       </Link>
     </CardFooter>
@@ -147,7 +175,7 @@ The MExLab ExperiMINTe student laboratory at the University of Münster is estab
 
     <CardFooter className="px-0">
       <Link href="https://www.uni-muenster.de/MExLab/">
-        {/* prettier-ignore */}
+        { /* prettier-ignore */}
         <Button>Website<ArrowRightIcon className="w-5 ml-2" /></Button>
       </Link>
     </CardFooter>
@@ -169,7 +197,7 @@ QSens is dedicated to the development of quantum sensors, a novel technology in 
 
     <CardFooter className="px-0">
       <Link href="https://www.q-sens.org">
-        {/* prettier-ignore */}
+        { /* prettier-ignore */}
         <Button>Website<ArrowRightIcon className="w-5 ml-2" /></Button>
       </Link>
     </CardFooter>
