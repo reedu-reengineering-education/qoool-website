@@ -32,7 +32,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       </code>
     ),
     img: (props) => (
-      <div className="w-full aspect-video relative">
+      <div className="w-full aspect-video relative my-2">
         <MdxImage
           {...(props as ImageProps)}
           fill
