@@ -9,6 +9,7 @@ export const News = defineDocumentType(() => ({
     title: { type: "string", required: true },
     date: { type: "date", required: true },
     image: { type: "string", required: true },
+    language: { type: "string", required: true },
   },
   computedFields: {
     url: {
