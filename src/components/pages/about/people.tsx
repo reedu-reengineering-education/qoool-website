@@ -36,13 +36,21 @@ export const reeduPeople = [
     designation: "Software Developer",
     image: "https://reedu.de/assets/img/team/umut_new.jpg",
     about:
-      "Umut ist Co-Founter und Software Developer bei re:edu und kümmert sich im QOOOL-Projekt um die Entwicklung der Webseite und des Simulators.",
+      "Umut ist Co-Founder und Software Developer bei re:edu und kümmert sich im QOOOL-Projekt um die Entwicklung der Webseite und des Simulators.",
+  },
+    {
+    id: 6,
+    name: "Dr. Thomas Bartoschek",
+    designation: "Software Developer",
+    image: "https://reedu.de/assets/img/team/barto_new.jpg",
+    about:
+      "Thomas ist Geschäftsführer von re:edu und unterstützt Sergey bei der Koordination des QOOOL-Projektes im Hinblick auf die Kommunikation zum Projektträger, Rechtliches, und Lizenzen .",
   },
 ]
 
 export const ifmPeople = [
   {
-    id: 6,
+    id: 7,
     name: "André Bülau",
     designation: "Dr. Elektrotechnik",
     image: require("@/assets/images/partners/ifm/andre.JPG").default.src,
@@ -50,7 +58,7 @@ export const ifmPeople = [
       "André Bülau hat seinen Abschluss in Elektrotechnik 2007 von der Universität Magdeburg, Deutschland, mit dem Fokus auf Informationstechnologie und Mikrosystemtechnik erhalten. Im Jahr 2024 hat er seine Doktorprüfung erfolgreich abgelegt. Seit 2007 arbeitet er bei Hahn-Schickard am Institut für Mikroaufbautechnik in Stuttgart in der Gruppe Sensoren und Aktoren und ist dort Gruppenleiter. Im Projekt fungiert er als Konsortialführung und Projektleitung und befasst sich mit der Entwicklung des QOOOL Kits.",
   },
   {
-    id: 7,
+    id: 8,
     name: "Daniela Walter",
     designation: "Medizintechnik",
     image: require("@/assets/images/partners/ifm/Daniela_Walter.jpg").default
@@ -62,7 +70,7 @@ export const ifmPeople = [
 
 export const iisPeople = [
   {
-    id: 8,
+    id: 9,
     name: "Prof. Dr. Jens Anders",
     designation: "Institutsleiter",
     image: require("@/assets/images/partners/iis/Bild_Jens_Anders.jpg").default
@@ -71,7 +79,7 @@ export const iisPeople = [
       "Jens Anders erhielt den MSc Abschluss von der University of Michigan, Ann Arbor sowie den Dipl.-Ing. von der Leibniz Universität Hannover jeweils in Elektrotechnik in den Jahren 2005 bzw. 2007. Im Jahr 2011 erhielt er den Doktorgrad von der École Polytechnique Fédérale de Lausanne (EPFL). Von 2013 bis 2017 war er Juniorprofessor für Biomedizinische Integrierte Sensoren am Institut für Mikroelektronik der Universität Ulm. Seit 2017 ist er Inhaber des Lehrstuhls für „Elektrotechnik Bionischer Systeme“ und Direktor des Instituts für Intelligente Sensorik an der Universität Stuttgart. Seit 2022 ist er zudem auch Direktor am Institut für Mikroelektronik Stuttgart (IMS CHIPS). Er konzeptioniert und leitet alle Aufgaben des IIS in Rahmen des QOOOL-Sensing Projekts.",
   },
   {
-    id: 9,
+    id: 10,
     name: "Dr. Michal Kern",
     designation: "PhD Physical Chemistry",
     image: require("@/assets/images/partners/iis/Bild_Michal_Kern.png").default
@@ -80,7 +88,7 @@ export const iisPeople = [
       "Michal Kern erhielt den MSc Abschluss von der Brno University of Technology, Czechien, im Bereich Physikalische Ingenieurwesen und Nanotechnologien. Im Jahr 2021 erhielt er den Doktorgrad von der Universität Stuttgart in Physikalische Chemie. Derzeit ist er Akademischer Rat und Gruppenleiter der ‚Magnetische Resonanz und Spintronik‘ Gruppe am IIS. Er hilft bei der Konzeptionierung der benötigten Mikrowellentechnik, sowie bei der Umsetzung des Konzeptes im Labor.",
   },
   {
-    id: 10,
+    id: 11,
     name: "Yichao Peng",
     designation: "MSc. Elektrotechnik & Informationstechnik",
     image: require("@/assets/images/partners/iis/Yichao Peng.jpg").default.src,
@@ -91,7 +99,7 @@ export const iisPeople = [
 
 export const piPeople = [
   {
-    id: 11,
+    id: 12,
     name: "Ronny Nawrodt",
     designation: "Professor für Physik und ihre Didaktik",
     image: "https://cloud.reedu.de/s/SwAcctYBbRt8Mk9/download",
@@ -99,7 +107,7 @@ export const piPeople = [
       "Ronny Nawrodt ist Professor für Physik und ihre Didaktik an der Universität Stuttgart. Er beschäftigt sich im Rahmen seiner Arbeit an der Uni Stuttgart mit der Entwicklung neuer Lehrmaterialien und –konzepte. In der Lehre liegt der Fokus neben den üblichen fachdidaktischen Veranstaltungen bei fachlichen Vertiefungen in Elektronik und Messtechnik. Vor Antritt der Stelle beschäftigte er sich mit der Messung kleinster Signale im Rahmen der Gravitationswellendetektion und arbeitet dort an der Reduktion von Rauschprozessen in mechano-optischen Systemen und deren Beschreibung.",
   },
   {
-    id: 12,
+    id: 13,
     name: "Philipp Scheiger",
     designation: "Postdoc",
     image: "https://cloud.reedu.de/s/z2aCgrSbsGNM2f3/download",
@@ -108,7 +116,7 @@ export const piPeople = [
       "Philipp Scheiger promovierte im Jahr 2023 in der physikalischen Hochschuldidaktik zum Thema aktivierende Lehre in der theoretischen Physik an der Universität Stuttgart und der Friedrich-Schiller-Universität Jena. Seinen Masterabschluss machte er im Fach Physik zum Thema nano NMR an einzelnen NVs. Weitere Forschungsschwerpunkte liegen neben der Hochschuldidaktik in allen physikalischen Fachrichtungen bei der Entwicklung von Analogieexperimenten in der Quantenmechanik und der Entwicklung von Fachwissenstest in der Studieneingangsphase.",
   },
   {
-    id: 13,
+    id: 14,
     name: "Simon Koppenhöfer",
     designation: "Doktorand",
     image: "https://cloud.reedu.de/s/biXyPk82P7GQZRs/download",
