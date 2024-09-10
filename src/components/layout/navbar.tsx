@@ -2,7 +2,7 @@
 
 import QooolLogo from "@/assets/images/qoool_logo_trans_background.png"
 import { cn } from "@/lib/utils"
-import { ArrowLeftIcon } from "lucide-react"
+import { ArrowLeftIcon, Instagram } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
@@ -32,7 +32,14 @@ export default function Navbar({ sticky }: { sticky?: boolean }) {
         <Image src={QooolLogo} width={160} height={100} alt="Logo" />
       )}
 
-      <LanguageSwitcher currentLng={lng} />
+      <div className="flex items-center gap-2">
+        <Link href={`https://www.instagram.com/qoool_sensing/`} target="_blank">
+          <Button size="icon" variant="outline">
+            <Instagram className="h-6" />
+          </Button>
+        </Link>
+        <LanguageSwitcher currentLng={lng} />
+      </div>
     </nav>
   )
 }
