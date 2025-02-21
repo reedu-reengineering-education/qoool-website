@@ -42,49 +42,48 @@ export default function PostsCarousel<T>({
       <Link href={`/${lng}/${href}`}>
         <H1 className="border-none font-medium">{title}</H1>
       </Link>
-      <Carousel
-        opts={{
-          align: "start",
-        }}
-        className="flex-1 md:mx-10"
-      >
-        <CarouselContent>
-          {posts
-            .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
-            .map((post, index) => (
-              <CarouselItem
-                key={post.title}
-                className="md:basis-1/2 lg:basis-full xl:basis-1/2 2xl:basis-1/3 h-full"
-              >
-                <Link className="p-1" href={`/${lng}${post.url}`}>
-                  <Card className="overflow-hidden">
-                    <div className="w-full h-48 bg-white relative">
-                      <Image
-                        src={post.image.split("./").at(-1)!}
-                        alt={post.title}
-                        fill
-                        className="object-top object-cover"
-                      />
-                    </div>
-                    <CardContent className="grid gap-2 p-6">
-                      <span className="text-3xl font-semibold overflow-ellipsis overflow-hidden">
-                        {post.title}
-                      </span>
-                      <time
-                        dateTime={post.date}
-                        className="mb-1 text-xs text-muted-foreground"
-                      >
-                        {format(parseISO(post.date), "LLLL d, yyyy")}
-                      </time>
-                    </CardContent>
-                  </Card>
-                </Link>
-              </CarouselItem>
-            ))}
-        </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
-      </Carousel>
+      <div className="flex-1 px-12 overflow-hidden">
+        <Carousel opts={{
+          align: "start"
+        }}>
+          <CarouselContent>
+            {posts
+              .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
+              .map((post, index) => (
+                <CarouselItem
+                  key={post.title}
+                  className="md:basis-1/2 lg:basis-full xl:basis-1/2 2xl:basis-1/3 h-full"
+                >
+                  <Link className="p-1" href={`/${lng}${post.url}`}>
+                    <Card className="overflow-hidden">
+                      <div className="w-full h-48 bg-white relative">
+                        <Image
+                          src={post.image.split("./").at(-1)!}
+                          alt={post.title}
+                          fill
+                          className="object-top object-cover"
+                        />
+                      </div>
+                      <CardContent className="grid gap-2 p-6">
+                        <span className="text-3xl font-semibold overflow-ellipsis overflow-hidden">
+                          {post.title}
+                        </span>
+                        <time
+                          dateTime={post.date}
+                          className="mb-1 text-xs text-muted-foreground"
+                        >
+                          {format(parseISO(post.date), "LLLL d, yyyy")}
+                        </time>
+                      </CardContent>
+                    </Card>
+                  </Link>
+                </CarouselItem>
+              ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
+      </div>
     </Card>
   )
 }
