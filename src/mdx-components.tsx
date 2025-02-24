@@ -6,14 +6,23 @@ import H2 from "./components/ui/typography/H2"
 import H3 from "./components/ui/typography/H3"
 import H4 from "./components/ui/typography/H4"
 import P from "./components/ui/typography/P"
+import slugify from 'slugify'
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     // Allows customizing built-in components, e.g. to add styling.
-    h1: ({ children }) => <H1>{children}</H1>,
-    h2: ({ children }) => <H2>{children}</H2>,
-    h3: ({ children }) => <H3>{children}</H3>,
-    h4: ({ children }) => <H4>{children}</H4>,
+    h1: ({ children }) => <H1 id={slugify(String(children), {
+      lower: true
+    })}>{children}</H1>,
+    h2: ({ children }) => <H2 id={slugify(String(children), {
+      lower: true
+    })}>{children}</H2>,
+    h3: ({ children }) => <H3 id={slugify(String(children), {
+      lower: true
+    })}>{children}</H3>,
+    h4: ({ children }) => <H4 id={slugify(String(children), {
+      lower: true
+    })}>{children}</H4>,
     p: ({ children }) => <P>{children}</P>,
     blockquote: ({ children }) => (
       <blockquote className="mt-6 border-l-2 pl-6 italic">
