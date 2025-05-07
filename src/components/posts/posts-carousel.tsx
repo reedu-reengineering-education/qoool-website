@@ -43,9 +43,11 @@ export default function PostsCarousel<T>({
         <H1 className="border-none font-medium">{title}</H1>
       </Link>
       <div className="flex-1 px-12 overflow-hidden">
-        <Carousel opts={{
-          align: "start"
-        }}>
+        <Carousel
+          opts={{
+            align: "start",
+          }}
+        >
           <CarouselContent>
             {posts
               .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
