@@ -2,6 +2,7 @@ export const i18n = {
   de: {
     title: "Quantensensorik für die Digitale Bildung",
     about: "Über uns",
+    contact: "Kontakt",
     vision: "Vision",
     "world-of-quantum": "Die Welt der Quanten",
     activities: "Aktivitäten",
@@ -75,6 +76,7 @@ die Welt der Quanten im Unterricht, Studium oder für eine breite
     vision: "Vision",
     "world-of-quantum": "The World of Quantum",
     about: "About Us",
+    contact: "Contact",
     activities: "Activities",
     news: "News",
     mission: `
