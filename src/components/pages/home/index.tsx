@@ -61,13 +61,23 @@ export default function Home() {
             </div>
           </BentoCard>
           <BentoCard
-            size="large"
+            size="normal"
             href={"/about"}
             animatedBackground="meteors"
             withGradientOutline
           >
             <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center p-4">
               <h2 className="text-2xl font-bold">{i18n[lng].about}</h2>
+            </div>
+          </BentoCard>
+          <BentoCard
+            size="normal"
+            href={"/contact"}
+            animatedBackground="grid"
+            withGradientOutline
+          >
+            <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center p-4">
+              <h2 className="text-2xl font-bold">{i18n[lng].contact}</h2>
             </div>
           </BentoCard>
         </div>

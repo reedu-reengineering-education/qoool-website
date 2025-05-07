@@ -38,7 +38,7 @@ export const reeduPeople = [
     about:
       "Umut ist Co-Founder und Software Developer bei re:edu und kümmert sich im QOOOL-Projekt um die Entwicklung der Webseite und des Simulators.",
   },
-    {
+  {
     id: 6,
     name: "Dr. Thomas Bartoschek",
     designation: "Software Developer",
