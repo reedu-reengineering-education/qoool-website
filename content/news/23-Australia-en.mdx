@@ -5,6 +5,13 @@ image: https://cloud.reedu.de/s/aaNpbz3CcgGCLbR/download
 language: en
 ---
 
+import { Button } from "@/components/ui/button"
+import { ArrowRightIcon } from "lucide-react"
+
+
 Our QOOOL Sensing project has presented itself with ‘The Lämp’ on the authentic YouTube channel eevblog. Take a look and see the diamond shine:
 
-![To the YouTube-Video](https://www.youtube.com/watch?v=CktljgyKILE&t=662s)
+<Button className="mt-4 items-center">
+  <a href="https://www.youtube.com/watch?v=CktljgyKILE&t=662s" target="_blank" rel="noopener noreferrer" className="pb-0">Watch on YouTube</a>
+  <ArrowRightIcon className="ml-2 h-4 w-4" />
+</Button>
