@@ -61,13 +61,13 @@ export default function Home() {
             </div>
           </BentoCard>
           <BentoCard
-            href={"/learn-modules-quiz"}
+            href={"/quantum-interactive"}
             className="md:row-span-1"
             withGradientOutline
           >
             <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center p-4">
               <h2 className="text-2xl font-bold">
-                {i18n[lng]["learn-modules-quiz"]}
+                {i18n[lng]["quantum-interactive"]}
               </h2>
             </div>
           </BentoCard>
