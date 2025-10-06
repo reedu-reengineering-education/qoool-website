@@ -5,6 +5,7 @@ export const i18n = {
     contact: "Kontakt",
     vision: "Vision",
     "world-of-quantum": "Die Welt der Quanten",
+    "quantum-interactive": "Quanten interaktiv",
     activities: "Aktivitäten",
     news: "Neuigkeiten",
     mission: `
@@ -75,6 +76,7 @@ die Welt der Quanten im Unterricht, Studium oder für eine breite
     title: "Quantum Sensing for Digital Education",
     vision: "Vision",
     "world-of-quantum": "The World of Quantum",
+    "quantum-interactive": "Interactive Quantum",
     about: "About Us",
     contact: "Contact",
     activities: "Activities",

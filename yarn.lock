@@ -26,6 +26,11 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
+"@babel/runtime@^7.28.4":
+  version "7.28.4"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.28.4.tgz#a70226016fabe25c5783b2f22d3e1c9bc5ca3326"
+  integrity sha512-Q/N6JNWvIvPnLDvjlE1OUBLPQHH6l3CltCEsHIujp45zQUSSh8K+gHnaEX45yAT1nyngnINhvWtzN+Nb9D8RAQ==
+
 "@contentlayer/cli@0.3.4":
   version "0.3.4"
   resolved "https://registry.yarnpkg.com/@contentlayer/cli/-/cli-0.3.4.tgz#a3b322aa30cd2c5db09c69b530928e80aebddae4"
@@ -383,6 +388,22 @@
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-2.0.2.tgz#d9fae00a2d5cb40f92cfe64b47ad749fbc38f917"
   integrity sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==
+
+"@iframe-resizer/core@5.5.7":
+  version "5.5.7"
+  resolved "https://registry.yarnpkg.com/@iframe-resizer/core/-/core-5.5.7.tgz#642227582f0dc35891bccf8188617abf70b09c70"
+  integrity sha512-jxKF0uGS8RfJSkDoRJ697JbmuykGvEhl9nOLnBXdkaARcsFgTT1/Uvz3mxNHw3AqDgNCxCySuI5jYpYM7M4Xbw==
+  dependencies:
+    auto-console-group "1.2.11"
+
+"@iframe-resizer/react@^5.5.7":
+  version "5.5.7"
+  resolved "https://registry.yarnpkg.com/@iframe-resizer/react/-/react-5.5.7.tgz#79fc6e471a18e6c7ddd54aaa946574a13fca2d29"
+  integrity sha512-UpIKa5QGyUUrLoPq4PetTlj4t9lCuDEmN5j89Vgdxr56IBG0jK5TgQKS0U43zN8aL6hr605eLo+8bGgFvtYVUg==
+  dependencies:
+    "@babel/runtime" "^7.28.4"
+    "@iframe-resizer/core" "5.5.7"
+    auto-console-group "1.2.11"
 
 "@img/sharp-darwin-arm64@0.33.2":
   version "0.33.2"
@@ -1859,6 +1880,11 @@ asynciterator.prototype@^1.0.0:
   integrity sha512-wwHYEIS0Q80f5mosx3L/dfG5t5rjEa9Ft51GTaNt862EnpyGHpgz2RkZvLPp1oF5TnAiTohkEKVEu8pQPJI7Vg==
   dependencies:
     has-symbols "^1.0.3"
+
+auto-console-group@1.2.11:
+  version "1.2.11"
+  resolved "https://registry.yarnpkg.com/auto-console-group/-/auto-console-group-1.2.11.tgz#a2e7a97db3ad5a5d60ac3cb49dd934127f0860f2"
+  integrity sha512-/RFCswabfQZR4CDYser0V+AC+6+Q1ro2+RrP0AinOXDYnWsm3w14uc2MVdEaaSCDfpiTtETfahE9N7z9Yb1JiA==
 
 autoprefixer@^10.0.1:
   version "10.4.17"
