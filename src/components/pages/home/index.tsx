@@ -51,12 +51,24 @@ export default function Home() {
           <BentoCard
             href={"/world-of-quantum"}
             animatedBackground="beams"
-            className="md:row-span-2"
+            className="md:row-span-1"
             withGradientOutline
           >
             <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center p-4">
               <h2 className="text-2xl font-bold">
                 {i18n[lng]["world-of-quantum"]}
+              </h2>
+            </div>
+          </BentoCard>
+          <BentoCard
+            href={"/learn-modules-quiz"}
+            className="md:row-span-1"
+            withGradientOutline
+          >
+            <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center p-4">
+              <h2 className="text-2xl font-bold">
+                {" "}
+                {i18n[lng]["learn-modules-quiz"]}
               </h2>
             </div>
           </BentoCard>
