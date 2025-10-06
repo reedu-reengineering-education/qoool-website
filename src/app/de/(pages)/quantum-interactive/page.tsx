@@ -10,6 +10,8 @@ export default function LearnModulesQuizPage() {
         src="https://reedu-reengineering-education.github.io/qoool-nv-quiz/NV_To_Go.html"
         style={{ width: "100%", height: "100vh" }}
         license={"GPLv3"}
+        allowFullScreen
+        allow="fullscreen; geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor"
       />
     </div>
   )
