@@ -67,7 +67,6 @@ export default function Home() {
           >
             <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center p-4">
               <h2 className="text-2xl font-bold">
-                {" "}
                 {i18n[lng]["learn-modules-quiz"]}
               </h2>
             </div>
