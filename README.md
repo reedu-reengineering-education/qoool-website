@@ -4,6 +4,10 @@
 
 This repository contains the codebase for the project website, developed using Next.js, Tailwind CSS, and MDX.
 
+## About QOOOL
+
+QOOOL is a project for Quantum Sensing for Digital Education
+
 ## Technologies Used
 
 - **Next.js**: A React framework for building fast and scalable web applications.
