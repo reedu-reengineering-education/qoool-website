@@ -5,6 +5,7 @@ import mexlabLogo from "@/assets/images/partners/mexlab/MExLab ExperiMINTe.png"
 import qsensLogo from "@/assets/images/partners/qsens/qsens.png"
 import reeduLogo from "@/assets/images/partners/reedu/reedu-logo.svg"
 import piLogo from "@/assets/images/partners/pi/Logo-Physik+Didaktik-4c.jpeg"
+import openSenseLabLogo from "@/assets/images/partners/openSenseLab/openSenseLab-LogoTypo.png"
 import { AnimatedTooltip } from "@/components/animated/animated-tooltip"
 import { Spotlight } from "@/components/animated/spotlight"
 import { MdxImage as Image } from "@/components/mdx/mdx-image"
@@ -196,6 +197,28 @@ QSens widmet sich der Entwicklung von Quantensensoren, eine neuartige Technologi
 
     <CardFooter className="px-0">
       <Link href="https://www.q-sens.org">
+        { /* prettier-ignore */}
+        <Button>zur Website<ArrowRightIcon className="w-5 ml-2" /></Button>
+      </Link>
+    </CardFooter>
+
+  </CardContent>
+
+</Card>
+
+<div className="h-20" />
+
+<Card>
+  <CardContent className="pt-6">
+
+<Image src={openSenseLabLogo} width={200} className="rounded bg-white" />
+
+### openSenseLab
+
+openSenseLab gGmbH ist eine gemeinnützige Organisation aus Münster, die digitale Bildung, Umweltbewusstsein und offenes Wissen miteinander verbindet. Das Lab entwickelt Bildungsangebote und Technologien, die Kinder, Jugendliche und Bildungseinrichtungen befähigen, digitale Kompetenzen praktisch anzuwenden – etwa in den Bereichen Coding, Sensorik, Making und Citizen Science. Mit Projekten wie der openSenseMap oder Jugend hackt Lab Münster fördert openSenseLab nicht nur technisches Verständnis, sondern auch gesellschaftliches Engagement für Klima- und Umweltschutz. Durch den konsequenten Einsatz von Open-Source- und Open-Data-Prinzipien steht das Unternehmen für Transparenz, Teilhabe und nachhaltige digitale Innovation – und ist damit ein starker Partner für Projekte an der Schnittstelle von Bildung, Technologie und Nachhaltigkeit.
+
+    <CardFooter className="px-0">
+      <Link href="https://opensenselab.org/">
         { /* prettier-ignore */}
         <Button>zur Website<ArrowRightIcon className="w-5 ml-2" /></Button>
       </Link>
