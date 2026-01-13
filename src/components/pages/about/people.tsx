@@ -10,7 +10,7 @@ export const reeduPeople = [
     id: 2,
     name: "Artur Kim Shum",
     designation: "Innovation Designer",
-    image: "https://reedu.de/assets/img/team/KIMSHUM.png",
+    image: "https://reedu.de/assets/img/team/Artur_Kim_Shum.jpg",
     about:
       "Kim ist Architekt und Innovationsdesigner und arbeitet seit 2021 im Bereich Design Thinking und Innovationsmanagement bei re:edu. Er ist im QOOOL-Projekt für die Konzeption und Umsetzung des QOOOL-Kits verantwortlich.",
   },
@@ -34,7 +34,7 @@ export const reeduPeople = [
     id: 5,
     name: "Umut Taş",
     designation: "Software Developer",
-    image: "https://reedu.de/assets/img/team/umut_new.jpg",
+    image: "https://reedu.de/assets/img/team/Umut_Tas.jpg",
     about:
       "Umut ist Co-Founder und Software Developer bei re:edu und kümmert sich im QOOOL-Projekt um die Entwicklung der Webseite und des Simulators.",
   },
