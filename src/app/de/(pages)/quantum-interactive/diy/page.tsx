@@ -2,8 +2,7 @@
 import { useRouter } from "next/navigation"
 
 export default function LearnModulesQuizPage() {
-  // replace to /de/quantum-interactive/lernmaterialien
   const router = useRouter()
-  router.replace("/de/quantum-interactive/lernmaterialien")
+  router.replace("/de/quantum-interactive/diy/quenching")
   return null
 }

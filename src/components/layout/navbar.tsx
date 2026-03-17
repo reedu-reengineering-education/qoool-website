@@ -9,7 +9,13 @@ import { usePathname } from "next/navigation"
 import LanguageSwitcher from "../language-switcher"
 import { Button } from "../ui/button"
 
-export default function Navbar({ sticky }: { sticky?: boolean }) {
+export default function Navbar({
+  sticky,
+  children,
+}: {
+  sticky?: boolean
+  children?: React.ReactNode
+}) {
   const pathname = usePathname()
 
   const lng = pathname.split("/")[1]
@@ -31,6 +37,8 @@ export default function Navbar({ sticky }: { sticky?: boolean }) {
       ) : (
         <Image src={QooolLogo} width={160} height={100} alt="Logo" />
       )}
+
+      <div className="flex-1">{children}</div>
 
       <div className="flex items-center gap-2">
         <Link href={`https://www.instagram.com/qoool_sensing/`} target="_blank">
