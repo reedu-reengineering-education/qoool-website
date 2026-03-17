@@ -29,7 +29,7 @@ export default function QuantumInteractiveLayout({
 }: {
   children: React.ReactNode
 }) {
-  const pathname = typeof window !== "undefined" ? window.location.pathname : ""
+  const pathname = usePathname()
   const [active, setActive] = useState<string>()
 
   console.log(pathname)
