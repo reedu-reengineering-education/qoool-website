@@ -11,7 +11,6 @@ import Link from "next/link"
 export default function LernmaterialienPage() {
   return (
     <div>
-      <H1>Quanten Interaktiv</H1>
       <P>
         In diesem Bereich werden interaktive Lern- und Experimentiermaterialien
         zum Thema Quantensensorik bereitgestellt. Die Angebote reichen von

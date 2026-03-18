@@ -1,8 +1,6 @@
 "use client"
 
-import Navbar from "@/components/layout/navbar"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import H1 from "@/components/ui/typography/H1"
 import { cn } from "@/lib/utils"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
@@ -10,19 +8,19 @@ import React, { useEffect, useState } from "react"
 
 const tabs = [
   {
-    label: "Lern- und Experimentiermaterialien",
-    value: "lernmaterialien",
-    href: "/de/quantum-interactive/lernmaterialien",
+    label: "Quenching",
+    value: "quenching",
+    href: "/en/quantum-interactive/diy/quenching",
   },
   {
-    label: "QOOOL Sensing DIY",
-    value: "diy",
-    href: "/de/quantum-interactive/diy",
+    label: "ODMR",
+    value: "odmr",
+    href: "/en/quantum-interactive/diy/odmr",
   },
   {
-    label: "QOOOL Kit Magneto",
-    value: "magneto",
-    href: "/de/quantum-interactive/magneto",
+    label: "Challenge",
+    value: "challenge",
+    href: "/en/quantum-interactive/diy/challenge",
   },
 ]
 
@@ -34,6 +32,8 @@ export default function QuantumInteractiveLayout({
   const pathname = usePathname()
   const [active, setActive] = useState<string>()
 
+  console.log(pathname)
+
   useEffect(() => {
     const currentTab = tabs.find((tab) => pathname.includes(tab.value))
     if (currentTab) {
@@ -44,8 +44,7 @@ export default function QuantumInteractiveLayout({
   }, [pathname])
 
   return (
-    <>
-      <H1>Quanten Interaktiv</H1>
+    <div>
       <div className="flex justify-center py-6">
         <div className="rounded-2xl shadow-lg w-full max-w-5xl px-2">
           <Tabs
@@ -53,18 +52,16 @@ export default function QuantumInteractiveLayout({
             onValueChange={(value) => setActive(value)}
             className="w-full"
           >
-            <TabsList className="w-full flex flex-col sm:flex-row bg-gradient-to-br from-[#96b239]/80 to-[#96b239]/70 backdrop-blur-3xl text-white rounded-2xl h-fit">
+            <TabsList className="w-full flex h-fit">
               {tabs.map((tab) => (
                 <Link
                   key={tab.value}
                   href={tab.href}
-                  className="w-full sm:flex-1 text-center"
+                  className="flex-1 text-center"
                 >
                   <TabsTrigger
                     value={tab.value}
-                    className={cn(
-                      "w-full text-base sm:text-md p-3 sm:p-4 whitespace-pre-wrap"
-                    )}
+                    className={cn("w-full text-md")}
                   >
                     {tab.label}
                   </TabsTrigger>
@@ -74,8 +71,7 @@ export default function QuantumInteractiveLayout({
           </Tabs>
         </div>
       </div>
-
-      <div className="max-w-5xl mx-auto">{children}</div>
-    </>
+      <div className="max-w-5xl mx-auto px-2 pb-12">{children}</div>
+    </div>
   )
 }

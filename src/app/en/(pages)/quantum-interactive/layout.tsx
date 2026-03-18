@@ -1,6 +1,5 @@
 "use client"
 
-import Navbar from "@/components/layout/navbar"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import H1 from "@/components/ui/typography/H1"
 import { cn } from "@/lib/utils"
@@ -10,19 +9,19 @@ import React, { useEffect, useState } from "react"
 
 const tabs = [
   {
-    label: "Lern- und Experimentiermaterialien",
+    label: "Learning and Experimental Materials",
     value: "lernmaterialien",
-    href: "/de/quantum-interactive/lernmaterialien",
+    href: "/en/quantum-interactive/lernmaterialien",
   },
   {
     label: "QOOOL Sensing DIY",
     value: "diy",
-    href: "/de/quantum-interactive/diy",
+    href: "/en/quantum-interactive/diy",
   },
   {
     label: "QOOOL Kit Magneto",
     value: "magneto",
-    href: "/de/quantum-interactive/magneto",
+    href: "/en/quantum-interactive/magneto",
   },
 ]
 
@@ -45,7 +44,7 @@ export default function QuantumInteractiveLayout({
 
   return (
     <>
-      <H1>Quanten Interaktiv</H1>
+      <H1>Quantum Interactive</H1>
       <div className="flex justify-center py-6">
         <div className="rounded-2xl shadow-lg w-full max-w-5xl px-2">
           <Tabs
@@ -53,7 +52,7 @@ export default function QuantumInteractiveLayout({
             onValueChange={(value) => setActive(value)}
             className="w-full"
           >
-            <TabsList className="w-full flex flex-col sm:flex-row bg-gradient-to-br from-[#96b239]/80 to-[#96b239]/70 backdrop-blur-3xl text-white rounded-2xl h-fit">
+            <TabsList className="w-full flex flex-col sm:flex-row bg-gradient-to-br from-[#96b239]/80 to-[#96b239]/70 backdrop-blur-3xl text-white rounded-xl h-fit">
               {tabs.map((tab) => (
                 <Link
                   key={tab.value}
