@@ -1,3 +1,38 @@
-## Quenching Experiment mit QOOOL Kit DIY (ohne Mikrowelle)
+## QOOOL Kit DIY Quenching Experiment
 
-3D-Model Gehäuse von Volker Aufbau Jan, Sergey, Eric, Simon, Olga replizieren
+In this simple example, we show you how to use the QOOOL Kit DIY to build a basic, microwave-free sensor setup with the senseBox that makes changes in magnetic fields visible. Alongside the senseBox, we use an OLED display to show measurement values, a green LED, a transistor, various resistors, Blockly, and some 3D-printed parts designed in TinkerCAD.
+
+### The Idea
+The green LED of the QOOOL Kit DIY optically excites the diamond, and the photodiode with color filter reads the intensity of the diamond's fluorescence—that is, the red light emitted by the diamond when excited. The LED must be powered, and the photodiode current measured. The digitization of the photocurrent is done by measuring the voltage drop across a resistor, which is then digitized by the senseBox's analog-to-digital converter. Another green LED serves as an indicator that a change in the magnetic field has been detected, and the OLED display shows the corresponding measurement values. The basic wiring on the senseBox breadboard was created with TinkerCAD:
+
+{/* MCU IMAGE HERE */}
+
+The corresponding circuit diagram looks like this:
+
+{/* CIRCUIT DIAGRAM IMAGE HERE */}
+
+### Function - Excitation Circuit Design:
+Calculation of LED resistor R1: The LED drops about 3.2 V at 30mA (you can find this in the datasheet, usually as a diagram or table value). These 3.2 V must be subtracted from 5 V. Thus, 1.8 V falls across the resistor. According to Ohm's law, the resistance value is the voltage across the resistor divided by the current.
+
+So, 1.8 V divided by 30 mA gives 60 Ω; the next standard value is 62 Ω. The transistor BC547 also drops a maximum of 0.1V, but this is negligible for this calculation.
+
+The transistor amplifies the current flowing into its base (the middle connection of the schematic symbol) by a factor known as current gain "hfe." If used as a switch, the collector current (top connection) must not exceed the base current multiplied by the current gain. The base current is calculated from the voltage at the senseBox MCU digital output (3.3 V) and the base resistor R2. Note: the senseBox MCU has a 330 Ω resistor at its outputs (see [https://github.com/watterott/senseBox-MCU/blob/master/hardware/senseBox-MCU_v15.pdf](https://github.com/watterott/senseBox-MCU/blob/master/hardware/senseBox-MCU_v15.pdf), Sheet 3, R26…R31), which must be added to the 470 Ω of R2. So, we get 800 Ω base resistance. Also, there is a diode voltage drop of 0.7 V between base and emitter (the connection with the arrow, indicating a diode). Subtracting 0.7 V from 3.3 V gives 2.6 V. Divided by 800 Ω (Ohm's law), this gives 3.25 mA. Thus, the lowest current gain class "A" with hfe greater than 110 for the BC547 (see datasheet) is sufficient to switch the 30 mA.
+The Blockly program only needs to set output C5 to "On" (for an analog output, that would be 255 counts).
+
+### Function - Measuring Photodiode Current and Indicator LED:
+The readout photodiode generates a light-dependent photocurrent, which is converted into a voltage by resistor R3. The senseBox MCU's analog-to-digital converter ("ADC") converts this voltage into a number, which can then be read and processed by the Blockly program. R3 can be chosen between about 330 kΩ and 1 MΩ; we've had good results with 680 kΩ. The read value should be as large as possible but still below the ADC upper limit of 1023; values in the range of 800 to 900 are ideal.
+
+To avoid reacting to the green light of the excitation LED and only detect the red fluorescence of the micro-NV diamond, a red color filter is placed on the photodiode.
+
+When an external magnetic field is present, the micro-NV diamond glows less brightly—the stronger the field, the less light. The Blockly program is designed to react to changes in brightness; if it drops below a threshold, the green indicator LED (LED2) is switched on.
+
+You should never operate an LED without a series resistor (or current source), so the TinkerCAD-Arduino wiring includes a standard 470 Ω resistor. In the circuit diagram for LED2, this is missing because the senseBox MCU already has 330 Ω resistors at its outputs. Thus, the LED has a 330 Ω series resistor.
+Program "QuenchOnOffCase" in senseBox Blockly:
+
+Programming the senseBox is done via Blockly. The Blockly program for the experiment, with explanations, is shown below:
+
+{/* BLOCKLY IMAGE HERE */}
+
+### Experimental Setup:
+Bend the excitation LED over the readout photodiode so that both are as centered as possible, and the LED can shine through the micro-NV diamond (small opening in the flex cable of the resonator) onto the photodiode. The excitation LED runs at maximum brightness at about 30mA. The OLED display is connected to the required port of the senseBox.
+

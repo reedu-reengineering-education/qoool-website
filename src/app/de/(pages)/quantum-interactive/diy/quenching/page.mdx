@@ -1,3 +1,73 @@
-## Quenching Experiment mit QOOOL Kit DIY (ohne Mikrowelle)
+## QOOOL Kit DIY Quenching Experiment
 
-3D-Model Gehäuse von Volker Aufbau Jan, Sergey, Eric, Simon, Olga replizieren
+
+In diesem einfachen Beispiel wollen wir euch zeigen, wie man mit dem QOOOL Kit DIY einen einfachen, mikrowellenfreien Sensoraufbau mit der senseBox realisieren kann, der Magnetfeldänderungen sichtbar macht. Dazu verwenden wir, neben der senseBox, ein OLED-Display, um Messwerte anzuzeigen, eine grüne LED, einen Transistor und diverse Widerstände sowie Blockly und einige 3D-Druckteile, die in TinkerCAD gezeichnet wurden.
+
+### Die Idee
+Die grüne LED des QOOOL Kit DIY regt den Diamanten optisch an, die Fotodiode mit Farbfilter liest die Intensität der Fluoreszenz des Diamanten, also des roten Lichts, das der Diamant bei Anregung aussendet. Dazu muss die LED mit Strom versorgt werden und der Fotodiodenstrom gemessen werden. Die Digitalisierung des Fotostroms erfolgt über die Messung eines Spannungsabfalls über einen Widerstand und diese Spannung wird mit dem Analog-Digital-Umsetzer der senseBox digitalisiert. Eine weitere grüne LED dient als Anzeige dafür, dass ein Magnetfeldänderung erkannt wurde und auf dem OLED-Display werden die zugehörigen Messwerte angezeigt. Die grundsätzliche Verdrahtung auf dem Steckbrett der senseBox wurde mit TinkerCAD erstellt:
+ 
+{/* MCU IMAGE HERE */}
+
+
+Der dazugehörige Schaltplan sieht wie folgt aus:
+ 
+{/* SCHALTPLAN IMAGE HERE */}
+
+
+### Die Funktion - Auslegung Schaltung der Anregung:
+Berechnung LED-Widerstand R1: An der LED fallen bei 30mA etwa 3,2 V ab (das bekommt man aus dem Datenblatt, dort findet man üblicherweise ein Diagramm dazu, aus dem man das ablesen kann oder direkt einen Tabellenwert. Diese 3,2 V müssen von 5 V abgezogen werden. Am Widerstand fallen somit 1,8 V ab. Nach dem ohmschen Gesetz ist der Widerstandswert gleich der Spannung am Widerstand durch den Strom, der darüber fließen soll. 
+
+Also 1,8 V durch 30 mA geteilt, das ergibt 60 Ω, der nächste übliche Wert sind 62 Ω. Tatsächlich fallen am Transistor BC547 auch noch max. 0,1V ab, das spielt aber keine Rolle für diese Rechnung.
+
+Der Transistor verstärkt den Strom, der in seine Basis fließt (Anschluss in der Mitte des senkrechten Striches vom Schaltplansymbol), um einen als Stromverstärkung „hfe“ bekannten Faktor. Wenn man ihn als Schalter benutzen möchte, dann darf der geschaltete Strom in den Kollektor (oberer Anschluss) nicht größer sein als der Basisstrom multipliziert mit der Stromverstärkung. Der Basisstrom errechnet sich aus der Spannung am Digitalausgang der senseBox MCU (also 3,3 V) und dem Basiswiderstand R2. Aber Achtung, die senseBox MCU hat noch einen 330 Ω Widerstand an ihren Ausgängen (siehe [https://github.com/watterott/senseBox-MCU/blob/master/hardware/senseBox-MCU_v15.pdf](https://github.com/watterott/senseBox-MCU/blob/master/hardware/senseBox-MCU_v15.pdf), Sheet 3, R26…R31), dieser muss zu den 470 Ω von R2 addiert werden. Wir kommen also auf 800 Ω Basiswiderstand. Außerdem ist zu beachten, dass zwischen Basis und Emitter (das ist der Anschluss mit dem Pfeil, dieser Pfeil deutet eine Diode an) eine Diodenspannung abfällt, also 0,7 V. Somit ziehen wir 0,7 V von 3,3 V ab und erhalten 2,6 V. Diese geteilt durch die 800 Ω (wir erinnern uns, das ohmsche Gesetz) ergibt 3,25 mA. Somit reicht schon die niedrigste Stromverstärkungsklasse „A“ mit hfe größer 110 für den BC547 (siehe Datenblatt) problemlos aus, um die 30 mA zu schalten.
+Das Blockly-Programm muss nun nur noch den Ausgang C5 auf „An“ setzen (bei einem Analogausgang wären das 255 Zähler).
+
+### Die Funktion – Messung des Fotodiodenstroms und Anzeige-LED:
+Die Auslese-Fotodiode erzeugt einen helligkeitsabhängigen Fotostrom, der durch den Widerstand R3 in eine Spannung gewandelt wird. Diese wandelt der Analog-Digital-Wandler („ADC“) der senseBox MCU in eine Zahl um, die dann vom Blockly-Programm gelesen und weiterverarbeitet werden kann. R3 kann dabei zwischen ca. 330 kΩ und 1 MΩ gewählt werden, wir haben gute Erfahrungen mit 680 kΩ gemacht. Die eingelesene Zahl sollte möglichst groß sein, aber noch etwas Luft zur ADC-Obergrenze von 1023 lassen, Werte im Bereich 800 bis 900 scheinen hier günstig.
+
+Um möglichst nicht auf das grüne Licht der Anrege-LED zu reagieren, sondern nur auf das rote Fluoreszenzlicht des Mikro-NV-Diamanten, ist auf der Fotodiode ein rotes Farbfilter angebracht.
+
+Bei Anwesenheit eines externen Magnetfeldes leuchtet der Mikro-NV-Diamant weniger hell, je stärker das Magnetfeld, desto weniger. Daher ist das Blockly-Programm so gemacht, dass es auf Änderungen der Helligkeit reagiert, wenn diese eine Grenze unterschreitet, wird die grüne Anzeige-LED (LED2) eingeschaltet.
+
+Nun sollte man eine LED niemals ohne Vorwiderstand (oder Stromquelle) betreiben, weswegen bei der TinkerCAD-Arduino-Verkabelung einer der Standardwiderstände mit 470 Ω vorgesehen ist. Im Schaltplan zu LED2 fehlt dieser, weil die senseBox MCU ja noch die 330 Ω Widerstände an Ihren Ausgängen hat. Somit hat die LED einen 330 Ω Vorwiderstand.
+Programm „QuenchOnOffCase“ in senseBox Blockly:
+
+Die Programmierung der senseBox erfolgt über Blockly. Das zum Experiment zugehörige Blockly-Programm mit den jeweiligen Erklärungen findet ihr im Folgenden dargestellt:
+
+{/* BLOCKLY IMAGE HERE */}
+
+### Der Versuchsaufbau:
+Man biegt die Anrege-LED so über die Auslese-Fotodiode, dass beide möglichst mittig übereinander liegen und die LED durch den Mikro-NV-Diamanten (kleine Öffnung im Flexleiter des Resonators) auf die Fotodiode strahlen kann. Die Anrege-LED läuft mit maximaler Helligkeit bei ca. 30mA. Das OLED-Display ist an dem dafür notwendigen Port der senseBox angeschlossen.
+ 
+{/* VERSUCHSAUFBAU IMAGE HERE */}
+{/* VERSUCHSAUFBAU IMAGE HERE */}
+
+ 
+Wenn man dies aufbaut und in Betrieb nimmt und einen Magneten in die Nähe bringt, stellt man fest, dass der Sensor nicht nur auf Magnetfeldänderungen reagiert, sondern auch auf Änderungen des Umgebungslichts, speziell, wenn dieses schlagartig dunkler wird.
+
+Nun könnte man das Umgebungslicht messen und dessen Einfluss im Blockly-Programm berücksichtigen. Dazu eignen sich ggf. die Umgebungslichtsensoren, die der senseBox EDU beiliegen. Die einfachste Lösung ist jedoch, das Umgebungslicht einfach abzuschirmen. Zu diesem Zweck wurde in TinkerCAD ein Gehäuse, wir nennen es QOOOLBrick,  für den Quantensensor entworfen, das 3D-gedruckt werden kann:
+
+{/* 3D PRINT IMAGE HERE */}
+ 
+Gedruckt sieht das Unterteil mit Fotodiode dann so aus. Die Fotodiode wird durch die Basis des Gehäuses in das Steckbrett eingesetzt:
+
+{/* Steckbrett 1 IMAGE HERE */}
+
+ 
+Danach wird die Anrege-LED mit Resonator und Mikrodiamant montiert:
+
+{/* Steckbrett 2 IMAGE HERE */}
+
+ 
+Zuletzt wird noch der Deckel aufgesetzt: 
+ 
+ {/* Deckel IMAGE HERE */}
+
+damit ist der Aufbau vor Fremdlicht geschützt.
+
+Bringt man nun einen Magneten in die Nähe, erkennt der Quantensensor das Magnetfeld, die Anzeige-LED leuchtet grün auf und die zugehörigen Messwerte werden auf dem OLED-Display angezeigt:
+
+ {/* RESULT IMAGE HERE */}
+ 
+Zusätzlich wird der gemittelte Wert der ADC-Spannung (oberer großer Wert auf dem OLED-Display) über das USB-Kabel an den PC geschickt und kann hier weiterverarbeitet werden.
+
