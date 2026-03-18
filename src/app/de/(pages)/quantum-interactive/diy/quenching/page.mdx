@@ -6,11 +6,11 @@ In diesem einfachen Beispiel wollen wir euch zeigen, wie man mit dem QOOOL Kit D
 
 Die grüne LED des QOOOL Kit DIY regt den Diamanten optisch an, die Fotodiode mit Farbfilter liest die Intensität der Fluoreszenz des Diamanten, also des roten Lichts, das der Diamant bei Anregung aussendet. Dazu muss die LED mit Strom versorgt werden und der Fotodiodenstrom gemessen werden. Die Digitalisierung des Fotostroms erfolgt über die Messung eines Spannungsabfalls über einen Widerstand und diese Spannung wird mit dem Analog-Digital-Umsetzer der senseBox digitalisiert. Eine weitere grüne LED dient als Anzeige dafür, dass ein Magnetfeldänderung erkannt wurde und auf dem OLED-Display werden die zugehörigen Messwerte angezeigt. Die grundsätzliche Verdrahtung auf dem Steckbrett der senseBox wurde mit TinkerCAD erstellt:
 
-{/* MCU IMAGE HERE */}
+![MCU](https://cloud.reedu.de/s/aXm29kkFnstNqwP/download)
 
 Der dazugehörige Schaltplan sieht wie folgt aus:
 
-{/* SCHALTPLAN IMAGE HERE */}
+![CIRCUIT](https://cloud.reedu.de/s/eXixWaYkXoPic9d/download)
 
 ### Die Funktion - Auslegung Schaltung der Anregung:
 
@@ -34,37 +34,43 @@ Programm „QuenchOnOffCase“ in senseBox Blockly:
 
 Die Programmierung der senseBox erfolgt über Blockly. Das zum Experiment zugehörige Blockly-Programm mit den jeweiligen Erklärungen findet ihr im Folgenden dargestellt:
 
-{/* BLOCKLY IMAGE HERE */}
+![Blockly 1](https://cloud.reedu.de/s/sa2GLfJArewTYcp/download)
+![Blockly 2](https://cloud.reedu.de/s/FBj7dQBE4nK4Nfc/download)
 
 ### Der Versuchsaufbau:
 
 Man biegt die Anrege-LED so über die Auslese-Fotodiode, dass beide möglichst mittig übereinander liegen und die LED durch den Mikro-NV-Diamanten (kleine Öffnung im Flexleiter des Resonators) auf die Fotodiode strahlen kann. Die Anrege-LED läuft mit maximaler Helligkeit bei ca. 30mA. Das OLED-Display ist an dem dafür notwendigen Port der senseBox angeschlossen.
 
-{/* VERSUCHSAUFBAU IMAGE HERE */}
-{/* VERSUCHSAUFBAU IMAGE HERE */}
+![Versuchsaufbau 1](https://cloud.reedu.de/s/48qSgeEADg2NkFt/download)
+![Versuchsaufbau 2](https://cloud.reedu.de/s/cPNmTXR4dTsE6HQ/download)
 
 Wenn man dies aufbaut und in Betrieb nimmt und einen Magneten in die Nähe bringt, stellt man fest, dass der Sensor nicht nur auf Magnetfeldänderungen reagiert, sondern auch auf Änderungen des Umgebungslichts, speziell, wenn dieses schlagartig dunkler wird.
 
 Nun könnte man das Umgebungslicht messen und dessen Einfluss im Blockly-Programm berücksichtigen. Dazu eignen sich ggf. die Umgebungslichtsensoren, die der senseBox EDU beiliegen. Die einfachste Lösung ist jedoch, das Umgebungslicht einfach abzuschirmen. Zu diesem Zweck wurde in TinkerCAD ein Gehäuse, wir nennen es QOOOLBrick, für den Quantensensor entworfen, das 3D-gedruckt werden kann:
 
-{/* 3D PRINT IMAGE HERE */}
+![3D Print](https://cloud.reedu.de/s/L7x8L3w3C8oKeGt/download)
 
 Gedruckt sieht das Unterteil mit Fotodiode dann so aus. Die Fotodiode wird durch die Basis des Gehäuses in das Steckbrett eingesetzt:
 
-{/* Steckbrett 1 IMAGE HERE */}
+![Steckbrett 1](https://cloud.reedu.de/s/4KzNfBZ6xeWjZc3/download)
 
 Danach wird die Anrege-LED mit Resonator und Mikrodiamant montiert:
 
-{/* Steckbrett 2 IMAGE HERE */}
+![Steckbrett 2](https://cloud.reedu.de/s/cZJeT2D9pBDi4t5/download)
 
 Zuletzt wird noch der Deckel aufgesetzt:
 
-{/* Deckel IMAGE HERE */}
+![Deckel](https://cloud.reedu.de/s/wLiybpc3xBnyGEn/download)
 
 damit ist der Aufbau vor Fremdlicht geschützt.
 
 Bringt man nun einen Magneten in die Nähe, erkennt der Quantensensor das Magnetfeld, die Anzeige-LED leuchtet grün auf und die zugehörigen Messwerte werden auf dem OLED-Display angezeigt:
 
-{/* RESULT IMAGE HERE */}
+![Ergebnis](https://cloud.reedu.de/s/RrmD88FDbjfwyfC/download)
 
 Zusätzlich wird der gemittelte Wert der ADC-Spannung (oberer großer Wert auf dem OLED-Display) über das USB-Kabel an den PC geschickt und kann hier weiterverarbeitet werden.
+
+
+## Hilfreiche Links:
+- [Blockly Projekt](https://blockly.sensebox.de/)
+- [3D Modell QOOOL_Kit_DIY_Quenching.stl](https://cloud.reedu.de/s/rX8JQc7pnMnbtD5/download)
