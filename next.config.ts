@@ -1,5 +1,5 @@
 import createMdx from "@next/mdx"
-import { withContentlayer } from "next-contentlayer"
+import { withContentlayer } from "next-contentlayer2"
 import rehypePrism from "rehype-prism-plus"
 import remarkGfm from "remark-gfm"
 import type { NextConfig } from "next"
