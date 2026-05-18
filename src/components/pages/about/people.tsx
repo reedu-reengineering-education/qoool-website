@@ -53,7 +53,7 @@ export const ifmPeople = [
     id: 7,
     name: "André Bülau",
     designation: "Dr. Elektrotechnik",
-    image: require("@/assets/images/partners/ifm/andre.JPG").default.src,
+    image: require("@/assets/images/partners/ifm/andre.jpg").default.src,
     about:
       "André Bülau hat seinen Abschluss in Elektrotechnik 2007 von der Universität Magdeburg, Deutschland, mit dem Fokus auf Informationstechnologie und Mikrosystemtechnik erhalten. Im Jahr 2024 hat er seine Doktorprüfung erfolgreich abgelegt. Seit 2007 arbeitet er bei Hahn-Schickard am Institut für Mikroaufbautechnik in Stuttgart in der Gruppe Sensoren und Aktoren und ist dort Gruppenleiter. Im Projekt fungiert er als Konsortialführung und Projektleitung und befasst sich mit der Entwicklung des QOOOL Kits.",
   },
