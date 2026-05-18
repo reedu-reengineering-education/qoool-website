@@ -53,7 +53,7 @@ export const ifmPeople = [
     id: 7,
     name: "André Bülau",
     designation: "Dr. Elektrotechnik",
-    image: require("@/assets/images/partners/ifm/andre.JPG").default.src,
+    image: "https://cloud.reedu.de/s/6YXJdRP5sNagg3j/download",
     about:
       "André Bülau hat seinen Abschluss in Elektrotechnik 2007 von der Universität Magdeburg, Deutschland, mit dem Fokus auf Informationstechnologie und Mikrosystemtechnik erhalten. Im Jahr 2024 hat er seine Doktorprüfung erfolgreich abgelegt. Seit 2007 arbeitet er bei Hahn-Schickard am Institut für Mikroaufbautechnik in Stuttgart in der Gruppe Sensoren und Aktoren und ist dort Gruppenleiter. Im Projekt fungiert er als Konsortialführung und Projektleitung und befasst sich mit der Entwicklung des QOOOL Kits.",
   },
@@ -61,8 +61,7 @@ export const ifmPeople = [
     id: 8,
     name: "Daniela Walter",
     designation: "Medizintechnik",
-    image: require("@/assets/images/partners/ifm/Daniela_Walter.jpg").default
-      .src,
+    image: "https://cloud.reedu.de/s/PwPxxD2FHffitNs/download",
     about:
       "Daniela Walter hat ihren Abschluss in Medizintechnik mit dem Fokus auf Mikrosystemtechnologie und Signalverarbeitung von der Universität Stuttgart, Deutschland im Jahr 2018 erhalten. Seit 2019 arbeitet sie bei Hahn-Schickard am Institut für Mikroaufbautechnik in Stuttgart in der Gruppe Sensoren und Aktoren und ist dort stellvertretende Gruppenleitung. Im Projekt fungiert Sie als Stellvertretung in der Konsortialführung und Projektleitung und befasst sich mit der Entwicklung des QOOOL Kits.",
   },
@@ -73,8 +72,7 @@ export const iisPeople = [
     id: 9,
     name: "Prof. Dr. Jens Anders",
     designation: "Institutsleiter",
-    image: require("@/assets/images/partners/iis/Bild_Jens_Anders.jpg").default
-      .src,
+    image: "https://cloud.reedu.de/s/jAJNKM9LsMySpTQ/download",
     about:
       "Jens Anders erhielt den MSc Abschluss von der University of Michigan, Ann Arbor sowie den Dipl.-Ing. von der Leibniz Universität Hannover jeweils in Elektrotechnik in den Jahren 2005 bzw. 2007. Im Jahr 2011 erhielt er den Doktorgrad von der École Polytechnique Fédérale de Lausanne (EPFL). Von 2013 bis 2017 war er Juniorprofessor für Biomedizinische Integrierte Sensoren am Institut für Mikroelektronik der Universität Ulm. Seit 2017 ist er Inhaber des Lehrstuhls für „Elektrotechnik Bionischer Systeme“ und Direktor des Instituts für Intelligente Sensorik an der Universität Stuttgart. Seit 2022 ist er zudem auch Direktor am Institut für Mikroelektronik Stuttgart (IMS CHIPS). Er konzeptioniert und leitet alle Aufgaben des IIS in Rahmen des QOOOL-Sensing Projekts.",
   },
@@ -82,8 +80,7 @@ export const iisPeople = [
     id: 10,
     name: "Dr. Michal Kern",
     designation: "PhD Physical Chemistry",
-    image: require("@/assets/images/partners/iis/Bild_Michal_Kern.png").default
-      .src,
+    image: "https://cloud.reedu.de/s/3R3LME7PwkpSQHG/download",
     about:
       "Michal Kern erhielt den MSc Abschluss von der Brno University of Technology, Czechien, im Bereich Physikalische Ingenieurwesen und Nanotechnologien. Im Jahr 2021 erhielt er den Doktorgrad von der Universität Stuttgart in Physikalische Chemie. Derzeit ist er Akademischer Rat und Gruppenleiter der ‚Magnetische Resonanz und Spintronik‘ Gruppe am IIS. Er hilft bei der Konzeptionierung der benötigten Mikrowellentechnik, sowie bei der Umsetzung des Konzeptes im Labor.",
   },
@@ -91,7 +88,7 @@ export const iisPeople = [
     id: 11,
     name: "Yichao Peng",
     designation: "MSc. Elektrotechnik & Informationstechnik",
-    image: require("@/assets/images/partners/iis/Yichao Peng.jpg").default.src,
+    image: "https://cloud.reedu.de/s/dEZRAtL8NP8968X/download",
     about:
       "Yichao Peng erhielt seinen MSc Titel von der Universität Stuttgart in Elektrotechnik und Informationstechnik im Jahr 2023. Er hat sich schon in seiner Masterarbeit mit der Entwicklung von integrierten Quantensensorsystemen beschäftigt und wird im Rahmen seiner Promotion das QOOOL-Kit mitentwickeln.",
   },

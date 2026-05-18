@@ -27,11 +27,7 @@ export default function Markdown(props: Readonly<Options>) {
         ol: ({ children }) => (
           <ol className="my-6 ml-6 list-decimal [&>li]:mt-2">{children}</ol>
         ),
-        code: ({ children }) => (
-          <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold">
-            {children}
-          </code>
-        ),
+        code: (props) => <code {...props} />,
         img: (props) => (
           <div className="w-full aspect-video relative">
             <MdxImage
