@@ -1,1 +1,439 @@
 ## ODMR Experiment mit QOOOL Kit DIY
+
+**QOOOL Kit DIY - CW-ODMR Experiment**
+
+In diesem Beispiel zeigen wir, wie man mit dem QOOOL Kit DIY einen Quantensensor mit Mikrowellenanregung mit der senseBox realisieren kann, der als Magnetdetektor fungiert. Dazu verwenden wir, neben der senseBox, einen PC, um Messwerte abzurufen und anzuzeigen, eine rote LED, einen Transistor und diverse Widerstände sowie die Arduino-IDE und einige 3D-Druckteile, die in TinkedCAD gezeichnet wurden. Auf dem PC läuft ein Python-Skript, welches die Messung steuert.
+
+**Die Idee**
+
+Die grüne LED des QOOOL Kit DIY regt den Diamanten dauerhaft optisch an, daher auch die Bezeichnung Continuous Wave Optically Detected Magnetic Resonance (CW-ODMR), gleichzeitig wird eine Mikrowelle in einzelnen Frequenzschritten durchfahren und die Fotodiode mit rotem Farbfilter detektiert die Intensität der Fluoreszenz des Diamanten bei der jeweiligen Mikrowellenfrequenz. Der Diamant fluoresziert bei den verschiedenen Mikrowellenfrequenzen unterschiedlich hell, je nachdem, welches Magnetfeld gerade anliegt. Trägt man die Fluoreszenz über die Mikrowellenfrequenz auf, erhält man ein Fluoreszenzspektrum mit Resonanzdips.
+
+Dazu muss die LED mit Strom versorgt und der Fotodiodenstrom (Achtung, die Fotodiode muss in Sperr-Richtung betrieben werden) gemessen werden. Die Digitalisierung des Fotostroms erfolgt über die Messung eines Spannungsabfalls über einen Widerstand und diese Spannung wird mit dem Analog-Digital-Umsetzer der senseBox digitalisiert. Eine rote LED dient als Anzeige dafür, dass der ebenfalls anzuschließende Mikrowellengenerator (hier ein ADF4351 Board, das es für ca. 30 € bei ebay oder Amazon gibt) für die Mikrowellenanregung des Diamanten einen Fehler hat und nicht die richtige Frequenz ausgibt. Über den USB-Port werden die Frequenzen vorgegeben und die dabei gemessenen Messwerte von der Fotodiode angezeigt. Die grundsätzliche Verdrahtung auf dem Steckbrett der senseBox entspricht weitestgehend dem Quenching-Experiment, mit zwei Unterschieden: Der Widerstand an der Fotodioden ist nur noch 330 kΩ groß und es gibt eine zusätzliche rote LED. Weiterhin wird das OLED-Display nicht mehr verwendet, stattdessen der PC über USB.
+
+Hier die Polung der Fotodiode, BC547 und LEDs (teils aus „Elektronik-Kompendium"):
+
+![Polung](https://cloud.reedu.de/s/MPN6DYSTryCACHf/download)
+
+Der dazugehörige Schaltplan sieht wie folgt aus:
+
+![Schaltplan](https://cloud.reedu.de/s/GMTEatMXfs9Ex5g/download)
+
+**Die Funktion - Auslegung Schaltung der Anregung:**
+
+Der Mikrowellengenerator ADF4351 wird an das sogenannte Serial Peripheral Interface (SPI) der senseBox angeschlossen. Dieses ist an den Pins 11, 17 und 18 des Anschlusses für die XBEE2 verfügbar, siehe Schaltplan und [https://github.com/watterott/senseBox-MCU/blob/master/hardware/senseBox-MCU_v15.pdf](https://github.com/watterott/senseBox-MCU/blob/master/hardware/senseBox-MCU_v15.pdf), Sheet 2/4 unten. Weiterhin werden aus dem mittleren Digitalanschluss 5V und GND entnommen sowie der Chip Enable (CE) Ausgang und der Lock Detect - Eingang (Muxout des ADF4351) angeschlossen. Dann muss der Mikro-Koaxialstecker, ein U.FL-Anschluss auf dem Mikrowellenresonator auf der grünen Anrege-LED des Quantensensors, noch mit dem ADF4351 über ein Hochfrequenzkabel verbunden werden (siehe Schaltplan).
+
+Der SPI erzeugt manchmal Schwingungen, sogenanntes „Klingeln" auf den Leitungen, die eine korrekte Datenübertragung unmöglich machen, vor allem, wenn die Kabel länger sind als ca. fünf Zentimeter. Das ist zu verbessern, indem man kleine Widerstände (z.B. 33 Ω oder 47 Ω) in die Leitungen SCK und MOSI einschleift. Diese sollten möglichst nah an den Ausgängen der senseBox platziert sein. Weiterhin kann man diesen Leitungen über 4,7 kΩ bis 10 kΩ - PullDown-Widerstände möglichst nahe am ADF4351auf GND legen. Je ein 10…15 pF-Kondensator an derselben Stelle hat eine vergleichbare Wirkung.
+
+Berechnung LED-Widerstand R1 und Transistor-Basiswiderstand R2: siehe Versuch „Quenching".
+
+Hier kommt, aufgrund der aufwändigeren Programmierung, C-Code in der Arduino-IDE anstelle von Blockly zum Einsatz und zur Ansteuerung vom PC aus ein Python-Skript.
+
+**Die Funktion - Messung des Fotodiodenstroms und Anzeige-LED:**
+
+Die Fotodiode erzeugt einen helligkeitsabhängigen Fotostrom, der durch den Widerstand R3 in eine Spannung gewandelt wird. Diese wandelt der Analog-Digital-Wandler („ADC") der senseBox MCU in eine Zahl um, die dann vom C-Programm gelesen und weiterverarbeitet werden kann. R3 kann dabei zwischen ca. 150 kΩ und 470 kΩ gewählt werden, wir haben gute Erfahrungen mit 330 kΩ gemacht.
+
+Um möglichst nicht auf das grüne Licht der Anrege-LED zu reagieren, sondern nur auf das rote Fluoreszenzlicht des Mikrodiamanten mit NVs, ist auf der Fotodiode ein rotes Farbfilter aufgebracht.
+
+Bei Anwesenheit eines externen Magnetfeldes und gleichzeitigem Durchlaufen des Frequenzbereiches von 2,67 GHz bis 3,07 GHz zeigen sich im Diagramm „Fluoreszenzintensität über Mikrowellenfrequenz" typische Helligkeitseinbrüche. Je weiter diese voneinander entfernt sind, desto stärker das äußere Magentfeld.
+
+**Programm „QOOOL_DIY_MICROWAVE.ino" in Arduino-IDE mit senseBox:**
+
+Die Programmierung der senseBox erfolgt über die Arduino-IDE in C. Das zugehörige Programm ist wie folgt:
+
+```c
+#include <senseBoxIO.h>
+#include <SPI.h>
+#include <variant.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <HSS_ADI_ADF4351.h>
+
+HSS_ADI_ADF4351 adf4351;
+
+void setup() {
+    adf4351.begin();
+    delay(10);
+
+    pinMode(5, OUTPUT);   // Bias-LED NV sensor (green)
+    digitalWrite(5, HIGH);
+
+    pinMode(1, OUTPUT);   // GREEN status-LED
+    digitalWrite(1, LOW);
+
+    pinMode(A6, INPUT);   // ADC input
+
+    pinMode(2, OUTPUT);   // RED status-LED
+    digitalWrite(2, !adf4351.readLockDetect());
+
+    SerialUSB.begin(115200);
+    SerialUSB.setTimeout(30000);
+}
+
+void loop() {
+    String strReceived = SerialUSB.readStringUntil('\r');
+
+    if (adf4351.processVcomStr(strReceived) && ADCprocessVcomStr(strReceived))
+        SerialUSB.println("Unknown: " + strReceived);
+
+    digitalWrite(2, !adf4351.readLockDetect());
+}
+```
+
+Den proprietären ADF4351-Treiber HSS_ADI_ADF4351 findet ihr im Anhang.
+
+Hier noch die VCOM-Routine für den internen ADC der senseBox:
+
+```c
+bool ADCprocessVcomStr(String strRX)
+{
+    uint32_t ADCresult, ui32convVal;
+    char* pcBuf;
+    char* pcEnd;
+    char outStr[18];
+    if (strRX.length() < 4)
+        return true;
+
+    String strStart = strRX.substring(0, 4);
+
+    if (strStart != "ADC?")
+        return true;
+
+    if (adf4351.readLockDetect())
+    {
+        strStart = strRX.substring(4, strRX.length());
+        if ((strStart.length() < 1) || (strStart.length() > 8))
+        {
+            SerialUSB.println("ADC0000!ErrParLN");
+            return false;
+        }
+        pcBuf = (char*)(strStart.c_str()); // get internal char array
+        ui32convVal = strtoul ((const char*)pcBuf, &pcEnd, 16); // convert hex str to ui32
+
+        if ((((uint32_t)(pcEnd-pcBuf)) < 1) || (((uint32_t)(pcEnd-pcBuf)) > 8)) // check if conversion was completed
+        {
+            SerialUSB.println("ADC0000!ErrParCV");
+            return false;
+        }
+
+
+        if ((ui32convVal == 0) || (ui32convVal > 4096))
+        {
+            SerialUSB.println("ADC0000!ErrParVL");
+            return false;
+        }
+        //delay(20);
+        ADCresult = 0;
+
+        for (uint16_t i = 0; i < (uint16_t)ui32convVal; i++)
+        {
+            //delay(2);
+            ADCresult += (uint32_t)analogRead(A6);
+        }
+        sprintf(outStr, "ADC%04X=%08X", ui32convVal, ADCresult);
+
+        SerialUSB.println(outStr);
+    }
+    else
+        SerialUSB.println("ADC0000!LockFail");
+
+    return false;
+
+}
+```
+
+**Programmierung des PC: Python-Skript „QooolKipDIYpython.py"**
+
+```python
+from tokenize import Double
+import serial
+import time
+import decimal
+import numpy as np
+import matplotlib.pyplot as plt
+
+# some settings to control the program
+serialPort = serial.Serial(
+    port="COM7",
+    baudrate=115200,
+    bytesize=8,
+    timeout=40,
+    stopbits=serial.STOPBITS_ONE
+)
+
+decFreqBeg = decimal.Decimal('2670')  # start frequency for adf4351 in MHz
+decFreqEnd = decimal.Decimal('3070')  # stop frequency for adf4351 in MHz
+decNumSteps = decimal.Decimal('200')  # '100', '200', '400', '800'
+intNumValAdc = int(100)  # number of ADC values for average
+
+# more aux variables
+serialString1 = ""
+serialString2 = ""
+serialString3 = ""
+
+decFreqDif = decFreqEnd - decFreqBeg
+decFreqPfd = decimal.Decimal('10')
+decNumbMod = decimal.Decimal('4095')
+
+adConvVal = float('NaN')
+adConvArr = np.zeros((2, int(decNumSteps + 1)))
+
+decFreqStep = decFreqDif / decNumSteps
+
+# RFOUT/fPFD = (INT + (FRAC/MOD))
+
+# prepare command for ADC read
+strADCread = "ADC?" + f"{intNumValAdc:04X}" + "\r"
+
+# select GHz-Output
+intReg4 = 0x00832424
+strReg4 = "ADF4351:" + f"{intReg4:08X}" + "\r"
+
+serialPort.reset_output_buffer()
+serialPort.reset_input_buffer()
+
+# send command to set new frequency
+serialPort.write(bytes(strReg4, "ascii"))
+
+# read response
+serialString1 = serialPort.readline().decode("ascii")
+serialString2 = serialPort.readline().decode("ascii")
+serialString3 = serialPort.readline().decode("utf_8")
+
+print(serialString2.rstrip() + " -> " + serialString3)
+
+# start loop values
+rfOut = decFreqBeg
+runInt = 0
+
+while rfOut <= decFreqEnd:
+
+    rawSteps = rfOut / decFreqPfd
+
+    decimal.getcontext().rounding = decimal.ROUND_DOWN
+    intSteps = round(rawSteps, 0)
+
+    decimal.getcontext().rounding = decimal.ROUND_HALF_DOWN
+    fracSteps = round((rawSteps - intSteps) * decNumbMod, 0)
+
+    # construct register 0 value for ADF4351
+    intReg0 = ((int(intSteps) << 15) | (int(fracSteps) << 3))
+
+    strReg0 = "ADF4351:" + f"{intReg0:08X}" + "\r"
+
+    serialPort.reset_output_buffer()
+    serialPort.reset_input_buffer()
+
+    serialPort.write(bytes(strReg0, "ascii"))
+
+    serialString1 = serialPort.readline().decode("ascii")
+    serialString2 = serialPort.readline().decode("ascii")
+    serialString3 = serialPort.readline().decode("utf_8")
+
+    try:
+        if serialString3.rstrip() == "LockDet.":
+
+            serialPort.reset_output_buffer()
+            serialPort.reset_input_buffer()
+
+            serialPort.write(bytes(strADCread, "ascii"))
+
+            serialString1 = serialPort.readline().decode("ascii")
+
+            adConvVal = float(int(serialString1.split("=")[1], 16))
+
+        else:
+            adConvVal = float('NaN')
+
+    except:
+        adConvVal = float('NaN')
+
+    adConvArr[0, runInt] = float(rfOut)
+    adConvArr[1, runInt] = adConvVal
+
+    print(
+        f"{adConvArr[0, runInt]:04.4f}"
+        + " | "
+        + f"{adConvArr[1, runInt]:08.0f}"
+    )
+
+    rfOut += decFreqStep
+    runInt += 1
+
+
+plt.plot(adConvArr[0, :], adConvArr[1, :], "-b")
+plt.show()
+```
+
+Hier die Ausgabe des Python-Skripts. Der grün markierte Bereich zeigt das zu erwartende Messsignal vom Diamanten ohne extern angelegtes Magnetfeld, der rot markierte Sprung ist ein von uns, während des Experiments, gelegentlich beobachteter unerwünschte Fehler in der Messung.
+
+![Ausgabe Python-Skript](https://cloud.reedu.de/s/kEHoBqdJQyWtpXd/download)
+
+Unerwünschter Fehler in der Messung
+
+**ODMR-Signal**
+
+**Der Versuchsaufbau:**
+
+Auf diesem Bild sieht man gut, an welcher Stelle die SPI-Kabel an der senseBox angeschlossen werden müssen (gelb-18-CLK, braun-17-LE, grün-11-DATA):
+
+![Versuchsaufbau_01](https://cloud.reedu.de/s/psomcCrdPdkZNqj/download)
+
+In unserem Aufbau hatten wir keine Widerstände in den SPI-Leitungen, dafür hatten wir das Oszilloskop an der ADF4351-Platine an diesen Leitungen angeschlossen. Die Eingangskapazität der Oszilloskop-Tastköpfe (12 pF) wirkte dabei wie ein PullDown-Widerstand und stabilisiert daher die Datenübertragung.
+
+Das Gehäuse „QOOOLBrick" aus dem Quenching-Versuch wurde in TinkerCAD überarbeitet und es wurde ein Zugang für das Mikrowellenkabel geschaffen. Nach wie vor kann das Gehäuse 3D-gedruckt werden und schirmt Fremdlicht ab.
+
+Der gesamte Versuchsaufbau mit den Oszilloskop-Tastköpfen sieht wie folgt aus:
+
+![Versuchsaufbau_02](https://cloud.reedu.de/s/nBcYWYiQpmEfwzr/download)
+
+**ANHANG: ADF4351-Treiber**
+
+```cpp
+/*!
+ * @file HSS_ADI_ADF4351.h
+ *
+ * This is part of Hahn-Schickard's library for Analog Devices ADF4351 PLL frequency synthesizer
+ *
+ * These PLLs use SPI to communicate. Simplex SPI requires 3 pins (SCK, MOSI and CS).
+ * Additionally a Chip Enable digital output and a Lock Detect digital input are required.
+ *
+ * Hahn-Schickard invests time and resources providing this open source code,
+ * please support Hahn-Schickard by advertising our solutions.
+ *
+ * Written by Dr. Eng. Volker Kible for Hahn-Schickard Stuttgart, with
+ * contributions from the open source community.
+ *
+ * BSD license, all text above, and the splash screen header file,
+ * must be included in any redistribution.
+ */
+
+#ifndef _HSS_ADI_ADF4351_H_
+#define _HSS_ADI_ADF4351_H_
+
+#include <Arduino.h>
+#include <SPI.h>
+#include <variant.h>
+
+class HSS_ADI_ADF4351 {
+
+public:
+    HSS_ADI_ADF4351(
+        uint8_t chipSel_pin = (28u),
+        uint8_t chipEnable_pin = (4u),
+        uint8_t lockDetect_pin = (3u),
+        SPIClassSAMD* p_SPI = &SPI
+    );
+
+    //~HSS_ADI_ADF4351(void);
+
+    bool begin(bool configureADF4351 = true, bool resetConfig = true, bool periphBegin = true);
+
+    void writeChipEnable(bool bState);
+    void writeChipSelectNot(bool bState);
+    bool readLockDetect(void);
+
+    void writeRegister(uint32_t reg);
+    void writeConfig(uint32_t* pConfig);
+
+    bool processVcomStr(String strRX, Stream& vCom = SerialUSB);
+
+private:
+    SPIClassSAMD* pSpi;
+
+    uint8_t pinChipSel;
+    uint8_t pinChipEna;
+    uint8_t pinLockDet;
+
+    uint32_t ui32Config[6];
+};
+
+#endif // _HSS_ADI_ADF4351_H_
+```
+
+```c
+/*!
+ * @file HSS_ADI_ADF4351.cpp
+ */
+
+#if defined(__AVR__) || defined(ARDUINO_ARCH_RTTHREAD)
+#include <avr/pgmspace.h>
+
+#elif defined(ARDUINO_NANO33BLE) || \
+      defined(ARDUINO_ARCH_MBED_RP2040) || defined(ARDUINO_ARCH_RP2040)
+#include <api/deprecated-avr-comp/avr/pgmspace.h>
+
+#elif defined(ESP8266) || defined(ESP32)
+#include <pgmspace.h>
+
+#else
+#define pgm_read_byte(addr) (*(const unsigned char *)(addr))
+#endif
+
+#if !defined(__ARM_ARCH) && !defined(ENERGIA) && !defined(ESP8266) && \
+    !defined(ESP32) && !defined(__arc__) && !defined(__RL78__) && \
+    !defined(CH32V20x) && !defined(PICO_RISCV)
+#include <util/delay.h>
+#endif
+
+#include <SPI.h>
+#include <variant.h>
+#include "HSS_ADI_ADF4351.h"
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+
+HSS_ADI_ADF4351::HSS_ADI_ADF4351(
+    uint8_t chipSel_pin,
+    uint8_t chipEnable_pin,
+    uint8_t lockDetect_pin,
+    SPIClassSAMD* p_SPI
+) {
+    if (p_SPI == nullptr) {
+        SPIClassSAMD adf4351spi(&sercom1, 21u, 20u, 19u,
+                               SPI_PAD_0_SCK_1, SERCOM_RX_PAD_3);
+        pSpi = &adf4351spi;
+    } else {
+        pSpi = p_SPI;
+    }
+
+    pinChipEna = chipEnable_pin;
+    pinMode(pinChipEna, OUTPUT);
+    writeChipEnable(LOW);
+
+    delayMicroseconds(10);
+
+    pinChipSel = chipSel_pin;
+    pinMode(pinChipSel, OUTPUT);
+    writeChipSelectNot(LOW);
+
+    pinLockDet = lockDetect_pin;
+    pinMode(pinLockDet, INPUT);
+}
+
+void HSS_ADI_ADF4351::writeChipEnable(bool bState) {
+    digitalWrite(pinChipEna, bState);
+}
+
+void HSS_ADI_ADF4351::writeChipSelectNot(bool bState) {
+    digitalWrite(pinChipSel, bState);
+}
+
+bool HSS_ADI_ADF4351::readLockDetect(void) {
+    return digitalRead(pinLockDet);
+}
+
+void HSS_ADI_ADF4351::writeRegister(uint32_t reg) {
+    uint8_t runb;
+    uint8_t* transfData = (uint8_t*)&reg;
+
+    writeChipSelectNot(LOW);
+    delayMicroseconds(1);
+
+    for (runb = 4; runb > 0; runb--)
+        pSpi->transfer(transfData[runb - 1]);
+
+    delayMicroseconds(1);
+    writeChipSelectNot(HIGH);
+    delayMicroseconds(5);
+}
+```

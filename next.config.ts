@@ -1,12 +1,18 @@
-import NextMdx from "@next/mdx"
+import createMdx from "@next/mdx"
 import { withContentlayer } from "next-contentlayer"
+import rehypePrism from "rehype-prism-plus"
+import remarkGfm from "remark-gfm"
+import type { NextConfig } from "next"
 
-const withMDX = NextMdx({
-  extension: /\.mdx?$/,
+const withMDX = createMdx({
+  extension: /\.(md|mdx)$/,
+  options: {
+    remarkPlugins: ["remark-gfm"],
+    rehypePlugins: ["rehype-prism-plus"],
+  },
 })
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig: NextConfig = {
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
   images: {
     unoptimized: true,
@@ -26,7 +32,6 @@ const nextConfig = {
     ],
   },
   reactStrictMode: true,
-  swcMinify: true,
 }
 
 export default withMDX(withContentlayer(nextConfig))

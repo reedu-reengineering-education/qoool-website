@@ -7,6 +7,7 @@ import H3 from "./components/ui/typography/H3"
 import H4 from "./components/ui/typography/H4"
 import P from "./components/ui/typography/P"
 import slugify from "slugify"
+import { cx } from "class-variance-authority"
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
@@ -59,10 +60,10 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ol: ({ children }) => (
       <ol className="my-6 ml-6 list-decimal [&>li]:mt-2">{children}</ol>
     ),
-    code: ({ children }) => (
-      <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold">
+    pre: ({ children, ...props }) => (
+      <pre {...props} className={cx(props.className, "rounded-lg")}>
         {children}
-      </code>
+      </pre>
     ),
     img: (props) => (
       <div className="w-full aspect-video relative my-2">
