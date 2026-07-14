@@ -22,10 +22,11 @@ export default function FluoroPage() {
           className="inline-flex items-center gap-1.5 text-sm text-[#96b239] hover:underline mt-1"
         >
           <ExternalLink className="h-4 w-4" />
-          Open in new tab
+          Open the senseBox Blockly Simulator in a new tab and select the
+          senseBox MCU-S2
         </Link>
       </div>
-      <div
+      {/* <div
         className="rounded-2xl overflow-hidden border shadow-lg w-full"
         style={{ height: "80vh" }}
       >
@@ -35,7 +36,7 @@ export default function FluoroPage() {
           title="QOOOL Blockly Simulator"
           allow="fullscreen"
         />
-      </div>
+      </div> */}
     </div>
   )
 }
