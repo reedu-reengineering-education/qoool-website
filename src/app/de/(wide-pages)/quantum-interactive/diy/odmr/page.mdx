@@ -436,4 +436,100 @@ void HSS_ADI_ADF4351::writeRegister(uint32_t reg) {
     writeChipSelectNot(HIGH);
     delayMicroseconds(5);
 }
+
+void HSS_ADI_ADF4351::writeConfig(uint32_t* pConfig) {
+    uint8_t runi;
+
+    for (runi = 6; runi > 0; runi--)
+        writeRegister(pConfig[runi - 1]);
+}
+
+bool HSS_ADI_ADF4351::begin(bool configureADF4351, bool resetConfig, bool periphBegin) {
+    writeChipSelectNot(HIGH);
+    delayMicroseconds(10);
+    writeChipEnable(HIGH);
+
+    if (periphBegin) {
+        pSpi->begin();
+        pSpi->setBitOrder(MSBFIRST);
+        pSpi->setDataMode(SPI_MODE0);
+        pSpi->setClockDivider(SPI_CLOCK_DIV8);
+    }
+
+    if (resetConfig) {
+        ui32Config[0] = 0x00858000; // 2.67 GHz Out
+        ui32Config[1] = 0x0000FFF9;
+        ui32Config[2] = 0x79008C42;
+        ui32Config[3] = 0x0080802B;
+        ui32Config[4] = 0x00D32424; // divided out for oscilloscope check
+        ui32Config[5] = 0x00580005;
+    }
+
+    if (configureADF4351)
+        writeConfig(ui32Config);
+}
+
+bool HSS_ADI_ADF4351::processVcomStr(String strRX, Stream& vCom) {
+    String strStart, strRead, strSub;
+    uint8_t runi, ui8runs, embeddedAddress, highestAddress = 0;
+    char outStr[15];
+    char* pcBuf;
+    char* pcEnd;
+    uint32_t milSecSt, ui32convVal = 0;
+    bool isInTim, isLockd;
+
+    if (strRX.length() < 8)
+        return true;
+
+    strStart = strRX.substring(0, 8);
+
+    if (strStart != "ADF4351:")
+        return true;
+
+    strRead = strRX.substring(8, strRX.length());
+
+    ui8runs = (uint8_t)(strRead.length() / 8);
+
+    if (((strRead.length() <= 48) && ((strRead.length() % 8) == 0)) && ((ui8runs > 0) && (ui8runs <= 6))) { // check if complete set of input values was received
+        vCom.println(ui8runs);
+
+        for (runi = 0; runi < ui8runs; runi++) { // sort input values according to embedded addresses
+            strSub = strRead.substring((uint32_t)runi * 8, (uint32_t)(runi * 8 + 8)); // get separate input values
+            pcBuf = (char*)(strSub.c_str()); // get internal char array
+            //vCom.println(pcBuf);
+
+            ui32convVal = strtoul((const char*)pcBuf, &pcEnd, 16); // convert hex str to ui32
+            if (((uint32_t)(pcEnd - pcBuf)) == 8) { // check if conversion was completed
+                embeddedAddress = ui32convVal & 0x07; // last three bits contain the embedded register address
+                if (embeddedAddress < 6) { // check if value is allowed (0...5)
+                    ui32Config[embeddedAddress] = ui32convVal; // memory image of registers is only overwritten if conversion and all tests were successful
+                    sprintf(outStr, "Reg%01d=%08X", embeddedAddress, ui32convVal);
+                    vCom.println(outStr);
+                    if (highestAddress < embeddedAddress)
+                        highestAddress = embeddedAddress;
+                }
+            }
+        }
+
+        for (runi = (highestAddress + 1); runi > 0; runi--) // transmit input values in reverse order as required by device, if conversion was not successful for a part, transmit the last valid value from memory
+            writeRegister(ui32Config[runi - 1]);
+
+        // Poll Pin MUXOUT (Lock Detect) until Locked or Timeout.
+        milSecSt = millis();
+        do {
+            isInTim = ((millis() - milSecSt) < 2);
+            isLockd = readLockDetect();
+        } while (isInTim && !isLockd);
+
+        // Report LockDet or TimeOut via USB.
+        if (isInTim && isLockd)
+            vCom.println("LockDet.");
+        else
+            vCom.println("TimeOut!");
+    } else
+        // report FormErr via USB. Alternatively, put communication protocol here
+        vCom.println("FormErr!");
+
+    return false;
+}
 ```
