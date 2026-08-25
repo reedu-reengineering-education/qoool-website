@@ -3,8 +3,12 @@ import { allNews } from "contentlayer/generated"
 import { format, parseISO } from "date-fns"
 import MdxRenderer from "@/components/MdxRenderer"
 
-// export const generateStaticParams = async () =>
-//   allNews.map((news) => ({ slug: news._raw.flattenedPath }))
+export const generateStaticParams = async () =>
+  allNews
+    .filter((news) => news.language === "de")
+    .map((news) => ({
+      slug: news._raw.flattenedPath.replace(/^news\//, ""),
+    }))
 
 export const generateMetadata = async (props: {
   params: Promise<{ slug: string }>
