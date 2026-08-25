@@ -1,12 +1,19 @@
-import { headers } from "next/headers"
-import { redirect } from "next/navigation"
+"use client"
 
-export default async function Page() {
-  const language = (await headers()).get("Accept-Language")
+import { useEffect } from "react"
+import { useRouter } from "next/navigation"
 
-  if (language?.includes("de")) {
-    redirect("/de")
-  }
+export default function Page() {
+  const router = useRouter()
 
-  redirect("/en")
+  useEffect(() => {
+    const lang = navigator.language || navigator.languages?.[0] || ""
+    router.replace(lang.toLowerCase().startsWith("de") ? "/de" : "/en")
+  }, [router])
+
+  return (
+    <noscript>
+      <meta httpEquiv="refresh" content="0; url=/en" />
+    </noscript>
+  )
 }
