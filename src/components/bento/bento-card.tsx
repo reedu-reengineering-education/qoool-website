@@ -110,7 +110,7 @@ export default function BentoCard({
   if (href) {
     return (
       <Link
-        href={prependLngToHref ? `${lng}${href}` : href}
+        href={prependLngToHref ? `/${lng}${href}` : href}
         passHref
         className={cn(
           "h-full",
