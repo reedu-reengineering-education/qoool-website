@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {process.env.VERCEL_ENV === "production" && (
+        {process.env.NODE_ENV === "production" && (
           <Script
             async
             src="https://umami.reedu.de/script.js"
