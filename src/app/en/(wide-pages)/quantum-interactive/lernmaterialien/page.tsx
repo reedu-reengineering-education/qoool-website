@@ -2,12 +2,19 @@
 
 import { Alert, AlertTitle } from "@/components/ui/alert"
 import { Button } from "@/components/ui/button"
-import H1 from "@/components/ui/typography/H1"
+import H5PPlayer from "@/components/pages/quantum-interactive/h5p-player"
+import { h5pElements } from "@/components/pages/quantum-interactive/h5p-elements"
 import H4 from "@/components/ui/typography/H4"
 import P from "@/components/ui/typography/P"
 import IframeResizer from "@iframe-resizer/react"
 import { Download, InfoIcon } from "lucide-react"
 import Link from "next/link"
+
+const h5pLabels = {
+  start: "Start course",
+  loading: "Loading course …",
+  error: "This content could not be loaded. Please reload the page.",
+}
 
 export default function LernmaterialienPage() {
   return (
@@ -94,6 +101,21 @@ export default function LernmaterialienPage() {
             </Link>
           </div>
         </div>
+        {h5pElements.map((element) => (
+          <div
+            key={element.h5pJsonPath}
+            className="rounded bg-white overflow-hidden text-black"
+          >
+            <div className="p-4">
+              <h4 className="font-semibold">{element.title}</h4>
+            </div>
+            <H5PPlayer
+              h5pJsonPath={element.h5pJsonPath}
+              title={element.title}
+              labels={h5pLabels}
+            />
+          </div>
+        ))}
       </div>
     </div>
   )
