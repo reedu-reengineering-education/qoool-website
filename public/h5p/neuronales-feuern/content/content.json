@@ -1,0 +1,3173 @@
+{
+  "branchingScenario": {
+    "content": [
+      {
+        "type": {
+          "library": "H5P.CoursePresentation 1.25",
+          "params": {
+            "presentation": {
+              "slides": [
+                {
+                  "elements": [
+                    {
+                      "x": 10.239896523150923,
+                      "y": 13.307286537816648,
+                      "width": 39.99959579355829,
+                      "height": 7.984371922689989,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p><span style=\"font-size:1.125em;\"><strong>Neuronales Feuern</strong></span></p>"
+                        },
+                        "subContentId": "4b004951-a1e5-43d5-9670-d12c2d8d13fe",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Neuronales Feuern"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 25.599741307877306,
+                      "y": 63.87497538151991,
+                      "width": 26.273688805490266,
+                      "height": 34.59894499832328,
+                      "action": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                          "decorative": false,
+                          "contentName": "Image",
+                          "expandImage": "Expand Image",
+                          "minimizeImage": "Minimize Image",
+                          "file": {
+                            "path": "images/file-6a676c6925b9f.jpg",
+                            "mime": "image/jpeg",
+                            "copyright": { "license": "U" },
+                            "width": 1920,
+                            "height": 1280
+                          },
+                          "alt": "versuchsperson"
+                        },
+                        "subContentId": "01aa88dd-6378-4a06-a67c-77ffc2f2771e",
+                        "metadata": {
+                          "contentType": "Image",
+                          "license": "U",
+                          "title": "Versuchsperson Bildquelle https://pixabay.com/de/photos/eeg-integration-hirnstrommessung-2680957/ von &quot;ulrichw&quot;"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 53.89419222711012,
+                      "y": 34.332799267566955,
+                      "width": 43.563482706467994,
+                      "height": 64.53821054256468,
+                      "action": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                          "decorative": false,
+                          "contentName": "Image",
+                          "expandImage": "Expand Image",
+                          "minimizeImage": "Minimize Image",
+                          "file": {
+                            "path": "images/file-6a676c94ce873.jpeg",
+                            "mime": "image/jpeg",
+                            "copyright": { "license": "U" },
+                            "width": 1920,
+                            "height": 1440
+                          },
+                          "alt": "Messaufbau"
+                        },
+                        "subContentId": "b10f6276-d5bc-4b25-9afa-c5d4743b0369",
+                        "metadata": {
+                          "contentType": "Image",
+                          "license": "U",
+                          "title": "Messaufbau"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 52.546837421432365,
+                      "y": 29.276030383196627,
+                      "width": 40,
+                      "height": 40,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>In dieser Einheit lernst du, wieso es wichtig ist Magnetfelder sehr genau messen zu können. Du lernst über quantenmechanischen Sensoren mit denen Personen medizinisch behandelt werden und stellt das Prinzip selbst praktisch nach.</p>"
+                        },
+                        "subContentId": "7ba61807-20dc-4840-b5c0-ce4027b66e9c",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Lernziel"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": true,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 4.042064417033259,
+                      "y": 29.276030383196627,
+                      "width": 47.15741819872136,
+                      "height": 39.994517397946424,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Kompasse gibt es schon lange, selbst im Smartphone sind sie angekommen.&nbsp;</p><p>Wieso braucht es dann noch Forschung an Magnetfeldsensoren. Vorallem wieso sollte man quantenmechanische Magnetfeldsensoren erforschen?</p>"
+                        },
+                        "subContentId": "0d46f657-7acb-40c5-83e6-55731317183a",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Magnetfeldmessung"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 4.042064417033259,
+                      "y": 63.87497538151991,
+                      "width": 18.862967279488544,
+                      "height": 13.307286537816648,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Willkommen im Kurs, lass uns durchsteigen.</p>"
+                        },
+                        "subContentId": "f93f26d6-2bfd-4975-afc8-0dfb9fbc98d4",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Willkommen"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": {
+                    "imageSlideBackground": {
+                      "path": "images/imageSlideBackground-6a676e411081c.png",
+                      "mime": "image/png",
+                      "copyright": { "license": "U" },
+                      "width": 1600,
+                      "height": 800
+                    },
+                    "fillSlideBackground": ""
+                  }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 78.25,
+                      "y": 2.7160493827160495,
+                      "width": 21.426447906416076,
+                      "height": 21.291658460506635,
+                      "action": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                          "decorative": false,
+                          "contentName": "Image",
+                          "expandImage": "Expand Image",
+                          "minimizeImage": "Minimize Image",
+                          "file": {
+                            "path": "images/file-6a676ce74af9c.png",
+                            "mime": "image/png",
+                            "copyright": { "license": "U" },
+                            "width": 978,
+                            "height": 492
+                          },
+                          "alt": "Neuron"
+                        },
+                        "metadata": {
+                          "contentType": "Image",
+                          "license": "U",
+                          "title": "Neuron Bildquelle https://commons.wikimedia.org/wiki/File:Neuron_Hand-tuned2.svg CCBY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/ von Mauro Lanari"
+                        },
+                        "subContentId": "d8d473db-f969-4db1-96e5-a6bf47e87efd"
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 83.5359979520207,
+                      "y": 13.30728653781665,
+                      "width": 10.778838445422025,
+                      "height": 10.645829230253318,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": { "text": "<p>Nervenzelle / Neuron</p>" },
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Nervenzelle / Neuron"
+                        },
+                        "subContentId": "315072b6-17c5-4771-ad9f-463a7c263eda"
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 3.75,
+                      "y": 29.280727056809415,
+                      "width": 83.5359979520207,
+                      "height": 70.72210659668808,
+                      "action": {
+                        "library": "H5P.MultiMediaChoice 0.3",
+                        "params": {
+                          "behaviour": {
+                            "aspectRatio": "16to9",
+                            "enableRetry": true,
+                            "enableSolutionsButton": true,
+                            "confirmCheckDialog": false,
+                            "confirmRetryDialog": false,
+                            "singlePoint": false,
+                            "showSolutionsRequiresInput": true,
+                            "questionType": "auto",
+                            "maxAlternativesPerRow": "4",
+                            "passPercentage": 100
+                          },
+                          "media": { "disableImageZooming": false },
+                          "options": [
+                            {
+                              "media": {
+                                "params": {
+                                  "decorative": false,
+                                  "contentName": "Image",
+                                  "expandImage": "Expand Image",
+                                  "minimizeImage": "Minimize Image",
+                                  "file": {
+                                    "path": "images/file-6a9ff863ab5a8.jpeg",
+                                    "mime": "image/jpeg",
+                                    "copyright": { "license": "U" },
+                                    "width": 1248,
+                                    "height": 664,
+                                    "originalImage": {
+                                      "path": "images/file-6a676cae00663.jpeg",
+                                      "mime": "image/jpeg",
+                                      "height": 548,
+                                      "width": 1920
+                                    }
+                                  },
+                                  "alt": "Kammerflimmern"
+                                },
+                                "library": "H5P.Image 1.1",
+                                "metadata": {
+                                  "contentType": "Image",
+                                  "license": "U",
+                                  "title": "Kammerflimmern"
+                                },
+                                "subContentId": "d7e776a4-dc75-4d1e-a3ff-fd36fdb5dc8f"
+                              },
+                              "correct": false
+                            },
+                            {
+                              "media": {
+                                "params": {
+                                  "decorative": false,
+                                  "contentName": "Image",
+                                  "expandImage": "Expand Image",
+                                  "minimizeImage": "Minimize Image",
+                                  "file": {
+                                    "path": "images/file-6a9ff86c659f3.jpeg",
+                                    "mime": "image/jpeg",
+                                    "copyright": { "license": "U" },
+                                    "width": 1248,
+                                    "height": 664,
+                                    "originalImage": {
+                                      "path": "images/file-6a676cc3a991f.jpeg",
+                                      "mime": "image/jpeg",
+                                      "height": 621,
+                                      "width": 1920
+                                    }
+                                  },
+                                  "alt": "Vorhofflimmern"
+                                },
+                                "library": "H5P.Image 1.1",
+                                "metadata": {
+                                  "contentType": "Image",
+                                  "license": "U",
+                                  "title": "Vorhofflimmern"
+                                },
+                                "subContentId": "f298d80a-7172-418c-a967-0213d6e8a4a1"
+                              },
+                              "correct": false
+                            },
+                            {
+                              "media": {
+                                "params": {
+                                  "decorative": false,
+                                  "contentName": "Image",
+                                  "expandImage": "Expand Image",
+                                  "minimizeImage": "Minimize Image",
+                                  "file": {
+                                    "path": "images/file-6a9ff8767ab63.jpeg",
+                                    "mime": "image/jpeg",
+                                    "copyright": { "license": "U" },
+                                    "width": 1248,
+                                    "height": 664,
+                                    "originalImage": {
+                                      "path": "images/file-6a676ccc83040.jpeg",
+                                      "mime": "image/jpeg",
+                                      "height": 621,
+                                      "width": 1920
+                                    }
+                                  },
+                                  "alt": "Normaler Sinus Rhythmus"
+                                },
+                                "library": "H5P.Image 1.1",
+                                "metadata": {
+                                  "contentType": "Image",
+                                  "license": "U",
+                                  "title": "Normaler Sinus Rhythmus"
+                                },
+                                "subContentId": "7e0ffcd2-674d-4cba-b39d-c41ba182796f"
+                              },
+                              "correct": true
+                            }
+                          ],
+                          "overallFeedback": [{ "from": 0, "to": 100 }],
+                          "l10n": {
+                            "checkAnswerButtonText": "Check",
+                            "submitAnswerButtonText": "Submit",
+                            "checkAnswer": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+                            "showSolutionButtonText": "Show solution",
+                            "showSolution": "Show the solution. The correct options will be marked.",
+                            "correctAnswer": "Correct answer",
+                            "wrongAnswer": "Wrong answer",
+                            "shouldCheck": "Should have been checked",
+                            "shouldNotCheck": "Should not have been checked",
+                            "noAnswer": "Please answer before viewing the solution",
+                            "retryText": "Retry",
+                            "retry": "Retry the task. Reset all responses and start the task over again.",
+                            "result": "You got :num out of :total points",
+                            "missingAltText": "Alt text missing",
+                            "closeModalText": "Close modal",
+                            "confirmCheck": {
+                              "header": "Finish?",
+                              "body": "Are you sure you want to finish?",
+                              "cancelLabel": "Cancel",
+                              "confirmLabel": "Finish"
+                            },
+                            "confirmRetry": {
+                              "header": "Retry?",
+                              "body": "Are you sure you wish to retry?",
+                              "cancelLabel": "Cancel",
+                              "confirmLabel": "Retry"
+                            }
+                          },
+                          "question": "<p>Wichtige Krankheitsbilder haben mit der Aktivität von Nervenzellen und Fasern zu tun.</p><p>Wie sieht ein normales Anregungssignal innerhalb eines Herzens aus?</p>"
+                        },
+                        "subContentId": "b93012e6-4e21-40bc-ac0a-5ca7b64e0fdf",
+                        "metadata": {
+                          "contentType": "Multimedia Choice",
+                          "license": "U",
+                          "title": "Untitled Multimedia Choice"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": {
+                    "imageSlideBackground": {
+                      "path": "images/imageSlideBackground-6a676e4a0901b.png",
+                      "mime": "image/png",
+                      "copyright": { "license": "U" },
+                      "width": 1600,
+                      "height": 800
+                    },
+                    "fillSlideBackground": ""
+                  }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 83.5359979520207,
+                      "y": 13.30728653781665,
+                      "width": 10.778838445422025,
+                      "height": 10.645829230253318,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": { "text": "<p>Nervenzelle / Neuron</p>" },
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Nervenzelle / Neuron"
+                        },
+                        "subContentId": "7fbe695c-afaa-4ec7-8b1c-9354bd2143ca"
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 4.042064417033259,
+                      "y": 29.276030383196627,
+                      "width": 40.420644170332594,
+                      "height": 69.19788999664657,
+                      "action": {
+                        "library": "H5P.MultiChoice 1.16",
+                        "params": {
+                          "media": { "disableImageZooming": false },
+                          "answers": [
+                            {
+                              "correct": true,
+                              "tipsAndFeedback": {
+                                "tip": "",
+                                "chosenFeedback": "",
+                                "notChosenFeedback": ""
+                              },
+                              "text": "<div>schnelles Blinken</div>"
+                            },
+                            {
+                              "correct": true,
+                              "tipsAndFeedback": {
+                                "tip": "",
+                                "chosenFeedback": "",
+                                "notChosenFeedback": ""
+                              },
+                              "text": "<div>massiver Schlafentzug</div>"
+                            },
+                            {
+                              "correct": false,
+                              "tipsAndFeedback": {
+                                "tip": "",
+                                "chosenFeedback": "",
+                                "notChosenFeedback": ""
+                              },
+                              "text": "<div>Stickstoff in der Atemluft</div>"
+                            },
+                            {
+                              "correct": true,
+                              "tipsAndFeedback": {
+                                "tip": "",
+                                "chosenFeedback": "",
+                                "notChosenFeedback": ""
+                              },
+                              "text": "<div>Fieber</div>"
+                            }
+                          ],
+                          "overallFeedback": [{ "from": 0, "to": 100 }],
+                          "behaviour": {
+                            "enableRetry": true,
+                            "enableSolutionsButton": true,
+                            "enableCheckButton": true,
+                            "type": "auto",
+                            "singlePoint": false,
+                            "randomAnswers": true,
+                            "showSolutionsRequiresInput": true,
+                            "confirmCheckDialog": false,
+                            "confirmRetryDialog": false,
+                            "autoCheck": false,
+                            "passPercentage": 100,
+                            "showScorePoints": true
+                          },
+                          "UI": {
+                            "checkAnswerButton": "Check",
+                            "submitAnswerButton": "Submit",
+                            "showSolutionButton": "Show solution",
+                            "tryAgainButton": "Retry",
+                            "tipsLabel": "Show tip",
+                            "scoreBarLabel": "You got :num out of :total points",
+                            "tipAvailable": "Tip available",
+                            "feedbackAvailable": "Feedback available",
+                            "readFeedback": "Read feedback",
+                            "wrongAnswer": "Wrong answer",
+                            "correctAnswer": "Correct answer",
+                            "shouldCheck": "Should have been checked",
+                            "shouldNotCheck": "Should not have been checked",
+                            "noInput": "Please answer before viewing the solution",
+                            "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+                            "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                            "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+                          },
+                          "confirmCheck": {
+                            "header": "Finish ?",
+                            "body": "Are you sure you wish to finish ?",
+                            "cancelLabel": "Cancel",
+                            "confirmLabel": "Finish"
+                          },
+                          "confirmRetry": {
+                            "header": "Retry ?",
+                            "body": "Are you sure you wish to retry ?",
+                            "cancelLabel": "Cancel",
+                            "confirmLabel": "Confirm"
+                          },
+                          "question": "<p>Welches sind Auslöser eines epileptischen Anfalls?</p>"
+                        },
+                        "subContentId": "bb516365-9b81-499e-a6a6-bde3d09f3e95",
+                        "metadata": {
+                          "contentType": "Multiple Choice",
+                          "license": "U",
+                          "title": "Untitled Multiple Choice"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 47.15741819872136,
+                      "y": 30.87290476773462,
+                      "width": 47.15741819872136,
+                      "height": 63.87497538151991,
+                      "action": {
+                        "library": "H5P.SingleChoiceSet 1.11",
+                        "params": {
+                          "choices": [
+                            {
+                              "subContentId": "85f4163b-bbf2-4584-95e4-f949ba1e4096",
+                              "question": "<p>Was passiert bei einer Querschnittslähmung?</p>",
+                              "answers": [
+                                "<p>Durchtrennung des Nervenfasern im Rückenmark</p>",
+                                "<p>Absterben von Gehirnzellen</p>",
+                                "<p>Absterben von Muskelzellen in gelähmten Körperteilen</p>"
+                              ]
+                            },
+                            {
+                              "subContentId": "78eee927-2d5d-46de-a72e-8c18991952c0"
+                            }
+                          ],
+                          "overallFeedback": [{ "from": 0, "to": 100 }],
+                          "behaviour": {
+                            "autoContinue": true,
+                            "timeoutCorrect": 2000,
+                            "timeoutWrong": 3000,
+                            "soundEffectsEnabled": true,
+                            "enableRetry": true,
+                            "enableSolutionsButton": true,
+                            "passPercentage": 100
+                          },
+                          "l10n": {
+                            "nextButtonLabel": "Next question",
+                            "showSolutionButtonLabel": "Show solution",
+                            "retryButtonLabel": "Retry",
+                            "solutionViewTitle": "Solution list",
+                            "correctText": "Correct!",
+                            "incorrectText": "Incorrect!",
+                            "shouldSelect": "Should have been selected",
+                            "shouldNotSelect": "Should not have been selected",
+                            "muteButtonLabel": "Mute feedback sound",
+                            "closeButtonLabel": "Close",
+                            "slideOfTotal": "Slide :num of :total",
+                            "scoreBarLabel": "You got :num out of :total points",
+                            "solutionListQuestionNumber": "Question :num",
+                            "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                            "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+                          }
+                        },
+                        "subContentId": "575bb489-3d44-4dc1-8beb-6b6c120c737b",
+                        "metadata": {
+                          "contentType": "Single Choice Set",
+                          "license": "U",
+                          "title": "Untitled Single Choice Set"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 78.14657872930968,
+                      "y": 2.6614573075633294,
+                      "width": 21.426447906416076,
+                      "height": 21.291658460506635,
+                      "action": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                          "decorative": false,
+                          "contentName": "Image",
+                          "expandImage": "Expand Image",
+                          "minimizeImage": "Minimize Image",
+                          "file": {
+                            "path": "images/file-6a676ce74af9c.png",
+                            "mime": "image/png",
+                            "copyright": { "license": "U" },
+                            "width": 978,
+                            "height": 492
+                          },
+                          "alt": "Neuron"
+                        },
+                        "metadata": {
+                          "contentType": "Image",
+                          "license": "U",
+                          "title": "Neuron Bildquelle https://commons.wikimedia.org/wiki/File:Neuron_Hand-tuned2.svg CCBY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/ von Mauro Lanari"
+                        },
+                        "subContentId": "ab6fe931-4206-4452-bc5b-e983a4e9107e"
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": {
+                    "imageSlideBackground": {
+                      "path": "images/imageSlideBackground-6a676e51d7175.png",
+                      "mime": "image/png",
+                      "copyright": { "license": "U" },
+                      "width": 1600,
+                      "height": 800
+                    },
+                    "fillSlideBackground": ""
+                  }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 4.042064417033259,
+                      "y": 29.276030383196627,
+                      "width": 95.66219120312047,
+                      "height": 69.19788999664657,
+                      "action": {
+                        "library": "H5P.MultiMediaChoice 0.3",
+                        "params": {
+                          "behaviour": {
+                            "aspectRatio": "16to9",
+                            "enableRetry": true,
+                            "enableSolutionsButton": true,
+                            "confirmCheckDialog": false,
+                            "confirmRetryDialog": false,
+                            "singlePoint": false,
+                            "showSolutionsRequiresInput": true,
+                            "questionType": "auto",
+                            "maxAlternativesPerRow": "4",
+                            "passPercentage": 100
+                          },
+                          "media": { "disableImageZooming": false },
+                          "options": [
+                            {
+                              "media": {
+                                "params": {
+                                  "decorative": false,
+                                  "contentName": "Image",
+                                  "expandImage": "Expand Image",
+                                  "minimizeImage": "Minimize Image",
+                                  "file": {
+                                    "path": "images/file-6a676d6139fc5.jpeg",
+                                    "mime": "image/jpeg",
+                                    "copyright": { "license": "U" },
+                                    "width": 1166,
+                                    "height": 1000
+                                  },
+                                  "alt": "Hammer auf Kniescheibe für einen Reflextest"
+                                },
+                                "library": "H5P.Image 1.1",
+                                "metadata": {
+                                  "contentType": "Image",
+                                  "license": "U",
+                                  "title": "Hammer auf Kniescheibe für einen Reflextest (eigenes Bild)"
+                                },
+                                "subContentId": "f51adf23-c664-4d94-a423-e781979adcd4"
+                              },
+                              "correct": false
+                            },
+                            {
+                              "media": {
+                                "params": {
+                                  "decorative": false,
+                                  "contentName": "Image",
+                                  "expandImage": "Expand Image",
+                                  "minimizeImage": "Minimize Image",
+                                  "file": {
+                                    "path": "images/file-6a676d6c82f52.png",
+                                    "mime": "image/png",
+                                    "copyright": { "license": "U" },
+                                    "width": 1920,
+                                    "height": 1277
+                                  },
+                                  "alt": "Schock"
+                                },
+                                "library": "H5P.Image 1.1",
+                                "metadata": {
+                                  "contentType": "Image",
+                                  "license": "U",
+                                  "title": "Schock Bildquelle https://pixabay.com/photos/first-aid-puppet-exercise-aed-4089599/  von &quot;JamesRein&quot;"
+                                },
+                                "subContentId": "ea24f12a-eec2-4aee-9332-eb1c3a2b8398"
+                              },
+                              "correct": true
+                            },
+                            {
+                              "media": {
+                                "params": {
+                                  "decorative": false,
+                                  "contentName": "Image",
+                                  "expandImage": "Expand Image",
+                                  "minimizeImage": "Minimize Image",
+                                  "file": {
+                                    "path": "images/file-6a676d798da20.jpg",
+                                    "mime": "image/jpeg",
+                                    "copyright": { "license": "U" },
+                                    "width": 1920,
+                                    "height": 1190
+                                  },
+                                  "alt": "Röhre"
+                                },
+                                "library": "H5P.Image 1.1",
+                                "metadata": {
+                                  "contentType": "Image",
+                                  "license": "U",
+                                  "title": "Röhre Bildquelle https://commons.wikimedia.org/wiki/File:Siemens_Magnetom_Aera_MRI_scanner.jpg#/media/File:Siemens_Magnetom_Aera_MRI_scanner.jpg CC BY-SA  4.0 https://creativecommons.org/licenses/by-sa/4.0/ von &quot;Ptrump16&quot;"
+                                },
+                                "subContentId": "0d033e20-7170-4965-b7ef-6462263248ad"
+                              },
+                              "correct": true
+                            },
+                            {
+                              "media": {
+                                "params": {
+                                  "decorative": false,
+                                  "contentName": "Image",
+                                  "expandImage": "Expand Image",
+                                  "minimizeImage": "Minimize Image",
+                                  "file": {
+                                    "path": "images/file-6a676d8483fa9.png",
+                                    "mime": "image/png",
+                                    "copyright": { "license": "U" },
+                                    "width": 1920,
+                                    "height": 1859
+                                  },
+                                  "alt": "Patient"
+                                },
+                                "library": "H5P.Image 1.1",
+                                "metadata": {
+                                  "contentType": "Image",
+                                  "license": "U",
+                                  "title": "Patient Grundlage von https://openstax.org/books/fundamentals-nursing/pages/8-1-patient-admission CC By-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/"
+                                },
+                                "subContentId": "1e0ca5d5-ac5b-4e32-a3fc-b1c64ae78cd4"
+                              },
+                              "correct": true
+                            }
+                          ],
+                          "overallFeedback": [{ "from": 0, "to": 100 }],
+                          "l10n": {
+                            "checkAnswerButtonText": "Check",
+                            "submitAnswerButtonText": "Submit",
+                            "checkAnswer": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+                            "showSolutionButtonText": "Show solution",
+                            "showSolution": "Show the solution. The correct options will be marked.",
+                            "correctAnswer": "Correct answer",
+                            "wrongAnswer": "Wrong answer",
+                            "shouldCheck": "Should have been checked",
+                            "shouldNotCheck": "Should not have been checked",
+                            "noAnswer": "Please answer before viewing the solution",
+                            "retryText": "Retry",
+                            "retry": "Retry the task. Reset all responses and start the task over again.",
+                            "result": "You got :num out of :total points",
+                            "missingAltText": "Alt text missing",
+                            "closeModalText": "Close modal",
+                            "confirmCheck": {
+                              "header": "Finish?",
+                              "body": "Are you sure you want to finish?",
+                              "cancelLabel": "Cancel",
+                              "confirmLabel": "Finish"
+                            },
+                            "confirmRetry": {
+                              "header": "Retry?",
+                              "body": "Are you sure you wish to retry?",
+                              "cancelLabel": "Cancel",
+                              "confirmLabel": "Retry"
+                            }
+                          },
+                          "question": "<p>Für verschiedene medizinische Therapien ist es wichtig die Aktivität in Nerven messen zu können.<br>Vielen Messverfahren kommen nicht ohne physikalisch technische Sensoren aus.<br>Markiere die Bilder mit solcher Sensortechnik.</p>"
+                        },
+                        "subContentId": "5f6ab23a-fe01-4675-a373-e8d26d28e3c5",
+                        "metadata": {
+                          "contentType": "Multimedia Choice",
+                          "license": "U",
+                          "title": "Untitled Multimedia Choice"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 83.5359979520207,
+                      "y": 13.307286537816648,
+                      "width": 10.778838445422025,
+                      "height": 10.645829230253318,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": { "text": "<p>Nervenzelle / Neuron</p>" },
+                        "subContentId": "4261f7e8-3f36-43d5-b95d-21b05a23e924",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Nervenzelle / Neuron"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 23.982915541064003,
+                      "y": 92.61871430320386,
+                      "width": 72.75715950659867,
+                      "height": 6.387497538151991,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Um nun die Nervenaktivität zu messen, müssen elektrische Ströme gemessen werden.</p>"
+                        },
+                        "subContentId": "94073dfb-de3d-423f-a8af-98dc829ecc88",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Strommessung"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 78.14657872930968,
+                      "y": 2.6614573075633294,
+                      "width": 21.426447906416076,
+                      "height": 21.291658460506635,
+                      "action": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                          "decorative": false,
+                          "contentName": "Image",
+                          "expandImage": "Expand Image",
+                          "minimizeImage": "Minimize Image",
+                          "file": {
+                            "path": "images/file-6a676ce74af9c.png",
+                            "mime": "image/png",
+                            "copyright": { "license": "U" },
+                            "width": 978,
+                            "height": 492
+                          },
+                          "alt": "Neuron"
+                        },
+                        "metadata": {
+                          "contentType": "Image",
+                          "license": "U",
+                          "title": "Neuron Bildquelle https://commons.wikimedia.org/wiki/File:Neuron_Hand-tuned2.svg CCBY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/ von Mauro Lanari"
+                        },
+                        "subContentId": "b88f4941-0536-4146-897f-04855118d678"
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": {
+                    "imageSlideBackground": {
+                      "path": "images/imageSlideBackground-6a676e5e059b8.png",
+                      "mime": "image/png",
+                      "copyright": { "license": "U" },
+                      "width": 1600,
+                      "height": 800
+                    },
+                    "fillSlideBackground": ""
+                  }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 4.042064417033259,
+                      "y": 29.276030383196627,
+                      "width": 36.378579753299334,
+                      "height": 69.19788999664657,
+                      "action": {
+                        "library": "H5P.SingleChoiceSet 1.11",
+                        "params": {
+                          "choices": [
+                            {
+                              "subContentId": "b7fdd4c3-13b4-420e-915a-51b0caa64be1",
+                              "question": "<p>Wähle das Messgerät aus, das elektrische Ströme messen kann.</p>",
+                              "answers": [
+                                "<p>Amperemeter</p>",
+                                "<p>Küchenwaage</p>",
+                                "<p>Tacho</p>",
+                                "<p>Gyroskop</p>"
+                              ]
+                            },
+                            {
+                              "subContentId": "17bcb638-6d2a-4d49-a793-b66d6fde7b2a"
+                            }
+                          ],
+                          "overallFeedback": [{ "from": 0, "to": 100 }],
+                          "behaviour": {
+                            "autoContinue": true,
+                            "timeoutCorrect": 2000,
+                            "timeoutWrong": 3000,
+                            "soundEffectsEnabled": true,
+                            "enableRetry": true,
+                            "enableSolutionsButton": true,
+                            "passPercentage": 100
+                          },
+                          "l10n": {
+                            "nextButtonLabel": "Next question",
+                            "showSolutionButtonLabel": "Show solution",
+                            "retryButtonLabel": "Retry",
+                            "solutionViewTitle": "Solution list",
+                            "correctText": "Correct!",
+                            "incorrectText": "Incorrect!",
+                            "shouldSelect": "Should have been selected",
+                            "shouldNotSelect": "Should not have been selected",
+                            "muteButtonLabel": "Mute feedback sound",
+                            "closeButtonLabel": "Close",
+                            "slideOfTotal": "Slide :num of :total",
+                            "scoreBarLabel": "You got :num out of :total points",
+                            "solutionListQuestionNumber": "Question :num",
+                            "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                            "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+                          }
+                        },
+                        "subContentId": "7fc9d471-a490-4fed-a7c8-4142be575d73",
+                        "metadata": {
+                          "contentType": "Single Choice Set",
+                          "license": "U",
+                          "title": "Untitled Single Choice Set"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 72.75715950659867,
+                      "y": 2.6614573075633294,
+                      "width": 24.24797736499059,
+                      "height": 36.56176976265124,
+                      "action": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                          "decorative": false,
+                          "contentName": "Image",
+                          "expandImage": "Expand Image",
+                          "minimizeImage": "Minimize Image",
+                          "file": {
+                            "path": "images/file-6a676daeb1064.png",
+                            "mime": "image/png",
+                            "copyright": { "license": "U" },
+                            "width": 862,
+                            "height": 658
+                          },
+                          "alt": "Stromkreis"
+                        },
+                        "subContentId": "6a99d603-df2e-4a0d-9e09-d801ffe4f639",
+                        "metadata": {
+                          "contentType": "Image",
+                          "license": "U",
+                          "title": "Stromkreis  Bildquelle https://phet.colorado.edu/de/simulations/circuit-construction-kit-dc  CC BY-NC 4.0  https://creativecommons.org/licenses/by-nc/4.0/"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 41.25,
+                      "y": 31.851851851851855,
+                      "width": 57.93625664414338,
+                      "height": 68.13117790777518,
+                      "action": {
+                        "library": "H5P.MultiMediaChoice 0.3",
+                        "params": {
+                          "behaviour": {
+                            "aspectRatio": "16to9",
+                            "enableRetry": true,
+                            "enableSolutionsButton": true,
+                            "confirmCheckDialog": false,
+                            "confirmRetryDialog": false,
+                            "singlePoint": false,
+                            "showSolutionsRequiresInput": true,
+                            "questionType": "auto",
+                            "maxAlternativesPerRow": "4",
+                            "passPercentage": 100
+                          },
+                          "media": { "disableImageZooming": false },
+                          "options": [
+                            {
+                              "media": {
+                                "params": {
+                                  "decorative": false,
+                                  "contentName": "Image",
+                                  "expandImage": "Expand Image",
+                                  "minimizeImage": "Minimize Image",
+                                  "file": {
+                                    "path": "images/file-6a9ff93daec76.png",
+                                    "mime": "image/png",
+                                    "copyright": { "license": "U" },
+                                    "width": 1094,
+                                    "height": 664,
+                                    "originalImage": {
+                                      "path": "images/file-6a676dbf38967.png",
+                                      "mime": "image/png",
+                                      "height": 658,
+                                      "width": 862
+                                    }
+                                  },
+                                  "alt": "Reihenschaltung"
+                                },
+                                "library": "H5P.Image 1.1",
+                                "metadata": {
+                                  "contentType": "Image",
+                                  "license": "U",
+                                  "title": "Reihenschaltung Stromkreis  Bildquelle https://phet.colorado.edu/de/simulations/circuit-construction-kit-dc  CC BY-NC 4.0  https://creativecommons.org/licenses/by-nc/4.0/"
+                                },
+                                "subContentId": "6e64c8aa-3dab-481b-8c86-5de10d8a2f2d"
+                              },
+                              "correct": true
+                            },
+                            {
+                              "media": {
+                                "params": {
+                                  "decorative": false,
+                                  "contentName": "Image",
+                                  "expandImage": "Expand Image",
+                                  "minimizeImage": "Minimize Image",
+                                  "file": {
+                                    "path": "images/file-6a676dc77dd0d.png",
+                                    "mime": "image/png",
+                                    "copyright": { "license": "U" },
+                                    "width": 862,
+                                    "height": 658
+                                  },
+                                  "alt": "Parallelschaltung"
+                                },
+                                "library": "H5P.Image 1.1",
+                                "metadata": {
+                                  "contentType": "Image",
+                                  "license": "U",
+                                  "title": "Parallelschaltung Stromkreis  Bildquelle https://phet.colorado.edu/de/simulations/circuit-construction-kit-dc  CC BY-NC 4.0  https://creativecommons.org/licenses/by-nc/4.0/"
+                                },
+                                "subContentId": "a3e5e78a-915f-4673-a413-669f06128449"
+                              },
+                              "correct": false
+                            }
+                          ],
+                          "overallFeedback": [{ "from": 0, "to": 100 }],
+                          "l10n": {
+                            "checkAnswerButtonText": "Check",
+                            "submitAnswerButtonText": "Submit",
+                            "checkAnswer": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+                            "showSolutionButtonText": "Show solution",
+                            "showSolution": "Show the solution. The correct options will be marked.",
+                            "correctAnswer": "Correct answer",
+                            "wrongAnswer": "Wrong answer",
+                            "shouldCheck": "Should have been checked",
+                            "shouldNotCheck": "Should not have been checked",
+                            "noAnswer": "Please answer before viewing the solution",
+                            "retryText": "Retry",
+                            "retry": "Retry the task. Reset all responses and start the task over again.",
+                            "result": "You got :num out of :total points",
+                            "missingAltText": "Alt text missing",
+                            "closeModalText": "Close modal",
+                            "confirmCheck": {
+                              "header": "Finish?",
+                              "body": "Are you sure you want to finish?",
+                              "cancelLabel": "Cancel",
+                              "confirmLabel": "Finish"
+                            },
+                            "confirmRetry": {
+                              "header": "Retry?",
+                              "body": "Are you sure you wish to retry?",
+                              "cancelLabel": "Cancel",
+                              "confirmLabel": "Retry"
+                            }
+                          },
+                          "question": "<p>&nbsp;...</p>"
+                        },
+                        "subContentId": "b53efd3f-9930-48b3-a5a2-77e131a55708",
+                        "metadata": {
+                          "contentType": "Multimedia Choice",
+                          "license": "U",
+                          "title": "Stromkreisfrage"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 41.76799897601035,
+                      "y": 11.178120691765985,
+                      "width": 28.294450919232812,
+                      "height": 39.996646563792474,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p><span style=\"font-size:1.125em;\">Wähle in den untenstehenden Abbildungen aus, wie das Strommessgerät im Stromkreis rechts eingebaut werden muss.</span></p>"
+                        },
+                        "subContentId": "ee388997-9efc-478e-a366-de4335b98000",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Untitled Text"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": {
+                    "imageSlideBackground": {
+                      "path": "images/imageSlideBackground-6a676e66140db.png",
+                      "mime": "image/png",
+                      "copyright": { "license": "U" },
+                      "width": 1600,
+                      "height": 800
+                    },
+                    "fillSlideBackground": ""
+                  }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 52.90784429967866,
+                      "y": 5.322914615126659,
+                      "width": 47.09234379095046,
+                      "height": 94.67522236475804,
+                      "action": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                          "decorative": false,
+                          "contentName": "Image",
+                          "expandImage": "Expand Image",
+                          "minimizeImage": "Minimize Image",
+                          "alt": "Stromstärkenskala",
+                          "file": {
+                            "path": "images/file-6a676de26a599.png",
+                            "mime": "image/png",
+                            "copyright": { "license": "U" },
+                            "width": 900,
+                            "height": 916
+                          }
+                        },
+                        "subContentId": "42157376-401f-4439-be89-f7e25a6c919b",
+                        "metadata": {
+                          "contentType": "Image",
+                          "license": "U",
+                          "title": "Stromstärkenskala  Informationsquelle https://en.wikipedia.org/wiki/Orders_of_magnitude_(current), https://www.reddit.com/r/askscience/comments/5ijvvd/what_is_the_amperage_of_the_human_nervous_system/ , https://journals.aps.org/rmp/pdf/10.1103/RevModPhys."
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 4.042064417033259,
+                      "y": 29.276030383196627,
+                      "width": 49.85212781007686,
+                      "height": 47.906231536139934,
+                      "action": {
+                        "library": "H5P.SingleChoiceSet 1.11",
+                        "params": {
+                          "choices": [
+                            {
+                              "subContentId": "113a175d-2463-4e46-bb3a-09c20ab3417f",
+                              "question": "<p>Ein standardmäßiges Amperemeter kann den Bereich von &nbsp;1 μA bis 10 A messen. Fallen Gehirnströme (\"Synapsengruppe\") in diesen Bereich?&nbsp;</p>",
+                              "answers": ["<p>Ja</p>", "<p>nein</p>"]
+                            },
+                            {
+                              "subContentId": "7c33452d-60f7-4630-b616-a66d51df398f"
+                            }
+                          ],
+                          "overallFeedback": [{ "from": 0, "to": 100 }],
+                          "behaviour": {
+                            "autoContinue": true,
+                            "timeoutCorrect": 2000,
+                            "timeoutWrong": 3000,
+                            "soundEffectsEnabled": true,
+                            "enableRetry": true,
+                            "enableSolutionsButton": true,
+                            "passPercentage": 100
+                          },
+                          "l10n": {
+                            "nextButtonLabel": "Next question",
+                            "showSolutionButtonLabel": "Show solution",
+                            "retryButtonLabel": "Retry",
+                            "solutionViewTitle": "Solution list",
+                            "correctText": "Correct!",
+                            "incorrectText": "Incorrect!",
+                            "shouldSelect": "Should have been selected",
+                            "shouldNotSelect": "Should not have been selected",
+                            "muteButtonLabel": "Mute feedback sound",
+                            "closeButtonLabel": "Close",
+                            "slideOfTotal": "Slide :num of :total",
+                            "scoreBarLabel": "You got :num out of :total points",
+                            "solutionListQuestionNumber": "Question :num",
+                            "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                            "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+                          }
+                        },
+                        "subContentId": "245e20af-6590-4a23-96ce-e3cdd5764327",
+                        "metadata": {
+                          "contentType": "Single Choice Set",
+                          "license": "U",
+                          "title": "Untitled Single Choice Set"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 4.042064417033259,
+                      "y": 85.16663384202654,
+                      "width": 48.50477300439911,
+                      "height": 13.307286537816648,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Wieso misst man Gehirnströme dann nicht mit einem Amperemeter?</p>"
+                        },
+                        "subContentId": "b08c9d8a-f543-4e15-9919-93f141047226",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Strommessung"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": {
+                    "imageSlideBackground": {
+                      "path": "images/imageSlideBackground-6a676eb5863dd.png",
+                      "mime": "image/png",
+                      "copyright": { "license": "U" },
+                      "width": 1600,
+                      "height": 800
+                    },
+                    "fillSlideBackground": ""
+                  }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 41.76799897601035,
+                      "y": 47.906231536139934,
+                      "width": 28.986096201925985,
+                      "height": 40,
+                      "action": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                          "decorative": false,
+                          "contentName": "Image",
+                          "expandImage": "Expand Image",
+                          "minimizeImage": "Minimize Image",
+                          "file": {
+                            "path": "images/file-6a676dfd09c8c.png",
+                            "mime": "image/png",
+                            "copyright": { "license": "U" },
+                            "width": 1920,
+                            "height": 1341
+                          },
+                          "alt": "Nervensäge"
+                        },
+                        "subContentId": "38d539f3-7720-468a-a5b2-148bc85c8133",
+                        "metadata": {
+                          "contentType": "Image",
+                          "license": "U",
+                          "title": "Nervensäge Bildquelle https://pixabay.com/id/photos/bayi-potret-baru-lahir-imut-20374/ von &quot;PublicDomainPictures&quot;"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": true,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 4.042064417033259,
+                      "y": 29.276030383196627,
+                      "width": 48.50477300439911,
+                      "height": 45.2447742285766,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Um ein Amperemeter einzubauen müsste man die Nervenfaser durchtrennen und das Amperemeter \"in Reihe\" (siehe vorletzte Folie) einbauen.&nbsp;</p><p>Wir bräuchten buchstäblich eine Nervensäge.&nbsp;</p><p>Das ist eine schlechte Idee. Der Fachbegriff \"zerstörungsfreie Messung\" aus der Industrie trifft hier nicht zu.</p>"
+                        },
+                        "subContentId": "27097360-f225-48cc-8490-c464080d44d7",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Nervensäge"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": {
+                    "imageSlideBackground": {
+                      "path": "images/imageSlideBackground-6a676ebe22721.png",
+                      "mime": "image/png",
+                      "copyright": { "license": "U" },
+                      "width": 1600,
+                      "height": 800
+                    },
+                    "fillSlideBackground": ""
+                  }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 4.042064417033259,
+                      "y": 29.276030383196627,
+                      "width": 94.31483639744272,
+                      "height": 66.53430352323718,
+                      "action": {
+                        "library": "H5P.MultiChoice 1.16",
+                        "params": {
+                          "media": { "disableImageZooming": false },
+                          "answers": [
+                            {
+                              "correct": false,
+                              "tipsAndFeedback": {
+                                "tip": "",
+                                "chosenFeedback": "",
+                                "notChosenFeedback": ""
+                              },
+                              "text": "<div>Nicht durchsägen, stattdessen mit einem Mikroskop von außerhalb der Faser anschauen</div>"
+                            },
+                            {
+                              "correct": true,
+                              "tipsAndFeedback": {
+                                "tip": "",
+                                "chosenFeedback": "",
+                                "notChosenFeedback": ""
+                              },
+                              "text": "<div>Ströme verursachen immer ganz bestimmte Magnetfelder, die sich stattdessen außen messen lassen.</div>"
+                            },
+                            {
+                              "correct": false,
+                              "tipsAndFeedback": {
+                                "tip": "",
+                                "chosenFeedback": "",
+                                "notChosenFeedback": ""
+                              },
+                              "text": "<div>Aktive Nervenfasern steigern im umgebenden Gewebe, den Sauerstoffgehalt des sich als Ersatz messen lässt.</div>"
+                            },
+                            {
+                              "correct": true,
+                              "tipsAndFeedback": {
+                                "tip": "",
+                                "chosenFeedback": "",
+                                "notChosenFeedback": ""
+                              },
+                              "text": "<div>Hier könnte deine Idee stehen, Teile sie gerne deinem Betreuer mit.</div>"
+                            }
+                          ],
+                          "overallFeedback": [{ "from": 0, "to": 100 }],
+                          "behaviour": {
+                            "enableRetry": true,
+                            "enableSolutionsButton": true,
+                            "enableCheckButton": true,
+                            "type": "auto",
+                            "singlePoint": false,
+                            "randomAnswers": true,
+                            "showSolutionsRequiresInput": true,
+                            "confirmCheckDialog": false,
+                            "confirmRetryDialog": false,
+                            "autoCheck": false,
+                            "passPercentage": 100,
+                            "showScorePoints": true
+                          },
+                          "UI": {
+                            "checkAnswerButton": "Check",
+                            "submitAnswerButton": "Submit",
+                            "showSolutionButton": "Show solution",
+                            "tryAgainButton": "Retry",
+                            "tipsLabel": "Show tip",
+                            "scoreBarLabel": "You got :num out of :total points",
+                            "tipAvailable": "Tip available",
+                            "feedbackAvailable": "Feedback available",
+                            "readFeedback": "Read feedback",
+                            "wrongAnswer": "Wrong answer",
+                            "correctAnswer": "Correct answer",
+                            "shouldCheck": "Should have been checked",
+                            "shouldNotCheck": "Should not have been checked",
+                            "noInput": "Please answer before viewing the solution",
+                            "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+                            "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                            "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+                          },
+                          "confirmCheck": {
+                            "header": "Finish ?",
+                            "body": "Are you sure you wish to finish ?",
+                            "cancelLabel": "Cancel",
+                            "confirmLabel": "Finish"
+                          },
+                          "confirmRetry": {
+                            "header": "Retry ?",
+                            "body": "Are you sure you wish to retry ?",
+                            "cancelLabel": "Cancel",
+                            "confirmLabel": "Confirm"
+                          },
+                          "question": "<p>Wie kann man stattdessen den Strom / die Nervenaktivität messen?</p>"
+                        },
+                        "subContentId": "ce9c1431-0294-4122-a214-30bf145ba776",
+                        "metadata": {
+                          "contentType": "Multiple Choice",
+                          "license": "U",
+                          "title": "Wie kann man das stattdessen messen"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": {
+                    "imageSlideBackground": {
+                      "path": "images/imageSlideBackground-6a676ecb16a27.png",
+                      "mime": "image/png",
+                      "copyright": { "license": "U" },
+                      "width": 1600,
+                      "height": 800
+                    },
+                    "fillSlideBackground": ""
+                  }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 4.042064417033259,
+                      "y": 29.276030383196627,
+                      "width": 48.50477300439911,
+                      "height": 39.99265437783112,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>In der Technik ist es lange bekannt, dass man Leitungen mit teils gefährlichen Strömen nicht erst durchtrennen muss sondern auch mit sogenannten Stromzangen&nbsp;<br>(Also mit einem Magnetfeldmessgerät) messen kann.</p><p>In der Medizin ist es auch lang bekannt und zunehmend wichtiger mittels Magnetfeld in den Körper hineinzuschauen.</p>"
+                        },
+                        "subContentId": "81701378-4193-4762-8198-9f5259e5e8ed",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Magnetfeldmessungen"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 60.63096625549888,
+                      "y": 5.570350301010822,
+                      "width": 20.21136737473413,
+                      "height": 87.55156573533405,
+                      "action": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                          "decorative": false,
+                          "contentName": "Image",
+                          "expandImage": "Expand Image",
+                          "minimizeImage": "Minimize Image",
+                          "file": {
+                            "path": "images/file-6a676e19c1a8b.jpg",
+                            "mime": "image/jpeg",
+                            "copyright": { "license": "U" },
+                            "width": 876,
+                            "height": 1920
+                          },
+                          "alt": "Strommesszange"
+                        },
+                        "subContentId": "4b8dc77f-4091-4b77-b0d3-73ac386cf297",
+                        "metadata": {
+                          "contentType": "Image",
+                          "license": "U",
+                          "title": "Strommesszange Bildquelle https://commons.wikimedia.org/wiki/File:Clampmeter_Fluke_337.jpg#/media/File:Clampmeter_Fluke_337.jpg public domain von &quot;Harke&quot;"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": {
+                    "imageSlideBackground": {
+                      "path": "images/imageSlideBackground-6a676edbd5d96.png",
+                      "mime": "image/png",
+                      "copyright": { "license": "U" },
+                      "width": 1600,
+                      "height": 800
+                    },
+                    "fillSlideBackground": ""
+                  }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 4.042064417033259,
+                      "y": 29.276030383196627,
+                      "width": 36.378579753299334,
+                      "height": 26.614573075633295,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Wir testen jetzt beispielhaft im Experiment wie man die Gehirnaktivität mit unserem Magnetfeldsensor auslesen kann.<br>Dafür brauchst du die abgebildeten experimentellen Aufbau.&nbsp;</p>"
+                        },
+                        "subContentId": "bbb08633-04f1-4e9f-a5d2-654ca7b51fdc",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Experiment"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 47.15741819872136,
+                      "y": 21.957022787397467,
+                      "width": 49.90312170993431,
+                      "height": 73.93022723522493,
+                      "action": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                          "decorative": false,
+                          "contentName": "Image",
+                          "expandImage": "Expand Image",
+                          "minimizeImage": "Minimize Image",
+                          "alt": "Gehirnmessung",
+                          "file": {
+                            "path": "images/file-6a676e2ab73b4.jpeg",
+                            "mime": "image/jpeg",
+                            "copyright": { "license": "U" },
+                            "width": 1920,
+                            "height": 1440
+                          }
+                        },
+                        "subContentId": "3f50b047-3f46-4721-81c7-0be006ef5401",
+                        "metadata": {
+                          "contentType": "Image",
+                          "license": "U",
+                          "title": "Gehirnmessung"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": { "fillSlideBackground": "" }
+                }
+              ],
+              "keywordListEnabled": true,
+              "globalBackgroundSelector": {
+                "imageGlobalBackground": {
+                  "path": "images/imageGlobalBackground-6a676eea91586.png",
+                  "mime": "image/png",
+                  "copyright": { "license": "U" },
+                  "width": 1600,
+                  "height": 800
+                },
+                "fillGlobalBackground": ""
+              },
+              "keywordListAlwaysShow": false,
+              "keywordListAutoHide": false,
+              "keywordListOpacity": 90
+            },
+            "override": {
+              "activeSurface": false,
+              "hideSummarySlide": false,
+              "summarySlideSolutionButton": true,
+              "summarySlideRetryButton": true,
+              "enablePrintButton": false,
+              "social": {
+                "showFacebookShare": false,
+                "facebookShare": {
+                  "url": "@currentpageurl",
+                  "quote": "I scored @score out of @maxScore on a task at @currentpageurl."
+                },
+                "showTwitterShare": false,
+                "twitterShare": {
+                  "statement": "I scored @score out of @maxScore on a task at @currentpageurl.",
+                  "url": "@currentpageurl",
+                  "hashtags": "h5p, course"
+                },
+                "showGoogleShare": false,
+                "googleShareUrl": "@currentpageurl"
+              }
+            },
+            "l10n": {
+              "slide": "Slide",
+              "score": "Score",
+              "yourScore": "Your Score",
+              "maxScore": "Max Score",
+              "total": "Total",
+              "totalScore": "Total Score",
+              "showSolutions": "Show solutions",
+              "retry": "Retry",
+              "exportAnswers": "Export text",
+              "hideKeywords": "Hide sidebar navigation menu",
+              "showKeywords": "Show sidebar navigation menu",
+              "fullscreen": "Fullscreen",
+              "exitFullscreen": "Exit fullscreen",
+              "prevSlide": "Previous slide",
+              "nextSlide": "Next slide",
+              "currentSlide": "Current slide",
+              "lastSlide": "Last slide",
+              "solutionModeTitle": "Exit solution mode",
+              "solutionModeText": "Solution Mode",
+              "summaryMultipleTaskText": "Multiple tasks",
+              "scoreMessage": "You achieved:",
+              "shareFacebook": "Share on Facebook",
+              "shareTwitter": "Share on Twitter",
+              "shareGoogle": "Share on Google+",
+              "summary": "Summary",
+              "solutionsButtonTitle": "Show comments",
+              "printTitle": "Print",
+              "printIngress": "How would you like to print this presentation?",
+              "printAllSlides": "Print all slides",
+              "printCurrentSlide": "Print current slide",
+              "noTitle": "No title",
+              "accessibilitySlideNavigationExplanation": "Use left and right arrow to change slide in that direction whenever canvas is selected.",
+              "accessibilityCanvasLabel": "Presentation canvas. Use left and right arrow to move between slides.",
+              "accessibilityProgressBarLabel": "Choose slide to display",
+              "containsNotCompleted": "@slideName contains not completed interaction",
+              "containsCompleted": "@slideName contains completed interaction",
+              "slideCount": "Slide @index of @total",
+              "containsOnlyCorrect": "@slideName only has correct answers",
+              "containsIncorrectAnswers": "@slideName has incorrect answers",
+              "shareResult": "Share Result",
+              "accessibilityTotalScore": "You got @score of @maxScore points in total",
+              "accessibilityEnteredFullscreen": "Entered fullscreen",
+              "accessibilityExitedFullscreen": "Exited fullscreen",
+              "confirmDialogHeader": "Submit your answers",
+              "confirmDialogText": "This will submit your results, do you want to continue?",
+              "confirmDialogConfirmText": "Submit and see results",
+              "slideshowNavigationLabel": "Slideshow navigation",
+              "confirmDialogConfirmLabel": "Confirm",
+              "confirmDialogCancelLabel": "Cancel"
+            }
+          },
+          "subContentId": "a520f80f-bb33-4b94-8495-9b16f69bcf4b",
+          "metadata": {
+            "contentType": "Course Presentation",
+            "license": "U",
+            "title": "Neuronales Feuern Nr.1"
+          }
+        },
+        "showContentTitle": false,
+        "proceedButtonText": "Weiter",
+        "forceContentFinished": "enabled",
+        "feedback": { "title": "", "subtitle": "" },
+        "contentBehaviour": "useBehavioural",
+        "nextContentId": 1
+      },
+      {
+        "type": {
+          "library": "H5P.BranchingQuestion 1.0",
+          "params": {
+            "branchingQuestion": {
+              "alternatives": [
+                {
+                  "nextContentId": 3,
+                  "feedback": { "title": "", "subtitle": "" },
+                  "text": "Ich hab die Materialien nicht und will nur weiter den Kurs durchklicken. (Weiter geht&#039;s.)"
+                },
+                {
+                  "nextContentId": 2,
+                  "feedback": { "title": "", "subtitle": "" },
+                  "text": "Ich hab die Materialien und brauche Hilfe bei der Vorbereitung, bevor es mit dem Kurs weiter geht."
+                },
+                {
+                  "nextContentId": 3,
+                  "feedback": { "title": "", "subtitle": "" },
+                  "text": "Es ist bereits ein QOOOL Kit Magneto vorbereitet und zur Messung bereit."
+                }
+              ],
+              "question": "<p>Wir brauchen jetzt ein Qoool Kit Magneto Messstift. Was trifft auf dich zu?</p>"
+            }
+          },
+          "subContentId": "9faf7ada-6843-4d1b-a443-9b74e77f6c1a",
+          "metadata": {
+            "contentType": "Branching Question",
+            "license": "U",
+            "title": "Untitled Branching Question"
+          }
+        },
+        "showContentTitle": false,
+        "proceedButtonText": "Weiter",
+        "forceContentFinished": "useBehavioural",
+        "feedback": { "title": "", "subtitle": "" },
+        "contentBehaviour": "useBehavioural"
+      },
+      {
+        "type": {
+          "library": "H5P.CoursePresentation 1.25",
+          "params": {
+            "presentation": {
+              "slides": [
+                {
+                  "elements": [
+                    {
+                      "x": 30.000202103220854,
+                      "y": 30.00061213518074,
+                      "width": 40,
+                      "height": 40,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>dummytext qoool kit magneto vorbereitung</p>"
+                        },
+                        "subContentId": "d07adecd-d9bf-4548-8ee5-e385f0341d49",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Untitled Text"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": { "fillSlideBackground": "" }
+                }
+              ],
+              "keywordListEnabled": true,
+              "keywordListAlwaysShow": false,
+              "keywordListAutoHide": false,
+              "keywordListOpacity": 90,
+              "globalBackgroundSelector": { "fillGlobalBackground": "" }
+            },
+            "override": {
+              "activeSurface": false,
+              "hideSummarySlide": false,
+              "summarySlideSolutionButton": true,
+              "summarySlideRetryButton": true,
+              "enablePrintButton": false,
+              "social": {
+                "showFacebookShare": false,
+                "facebookShare": {
+                  "url": "@currentpageurl",
+                  "quote": "I scored @score out of @maxScore on a task at @currentpageurl."
+                },
+                "showTwitterShare": false,
+                "twitterShare": {
+                  "statement": "I scored @score out of @maxScore on a task at @currentpageurl.",
+                  "url": "@currentpageurl",
+                  "hashtags": "h5p, course"
+                },
+                "showGoogleShare": false,
+                "googleShareUrl": "@currentpageurl"
+              }
+            },
+            "l10n": {
+              "slide": "Slide",
+              "score": "Score",
+              "yourScore": "Your Score",
+              "maxScore": "Max Score",
+              "total": "Total",
+              "totalScore": "Total Score",
+              "showSolutions": "Show solutions",
+              "retry": "Retry",
+              "exportAnswers": "Export text",
+              "hideKeywords": "Hide sidebar navigation menu",
+              "showKeywords": "Show sidebar navigation menu",
+              "fullscreen": "Fullscreen",
+              "exitFullscreen": "Exit fullscreen",
+              "prevSlide": "Previous slide",
+              "nextSlide": "Next slide",
+              "currentSlide": "Current slide",
+              "lastSlide": "Last slide",
+              "solutionModeTitle": "Exit solution mode",
+              "solutionModeText": "Solution Mode",
+              "summaryMultipleTaskText": "Multiple tasks",
+              "scoreMessage": "You achieved:",
+              "shareFacebook": "Share on Facebook",
+              "shareTwitter": "Share on Twitter",
+              "shareGoogle": "Share on Google+",
+              "summary": "Summary",
+              "solutionsButtonTitle": "Show comments",
+              "printTitle": "Print",
+              "printIngress": "How would you like to print this presentation?",
+              "printAllSlides": "Print all slides",
+              "printCurrentSlide": "Print current slide",
+              "noTitle": "No title",
+              "accessibilitySlideNavigationExplanation": "Use left and right arrow to change slide in that direction whenever canvas is selected.",
+              "accessibilityCanvasLabel": "Presentation canvas. Use left and right arrow to move between slides.",
+              "accessibilityProgressBarLabel": "Choose slide to display",
+              "containsNotCompleted": "@slideName contains not completed interaction",
+              "containsCompleted": "@slideName contains completed interaction",
+              "slideCount": "Slide @index of @total",
+              "containsOnlyCorrect": "@slideName only has correct answers",
+              "containsIncorrectAnswers": "@slideName has incorrect answers",
+              "shareResult": "Share Result",
+              "accessibilityTotalScore": "You got @score of @maxScore points in total",
+              "accessibilityEnteredFullscreen": "Entered fullscreen",
+              "accessibilityExitedFullscreen": "Exited fullscreen",
+              "confirmDialogHeader": "Submit your answers",
+              "confirmDialogText": "This will submit your results, do you want to continue?",
+              "confirmDialogConfirmText": "Submit and see results",
+              "slideshowNavigationLabel": "Slideshow navigation",
+              "confirmDialogConfirmLabel": "Confirm",
+              "confirmDialogCancelLabel": "Cancel"
+            }
+          },
+          "subContentId": "87d89579-0e61-4546-baea-f5065cc95398",
+          "metadata": {
+            "contentType": "Course Presentation",
+            "license": "U",
+            "title": "Qoool Kit Magneto Vorbereitung"
+          }
+        },
+        "showContentTitle": false,
+        "proceedButtonText": "Weiter",
+        "forceContentFinished": "enabled",
+        "feedback": { "title": "", "subtitle": "" },
+        "contentBehaviour": "useBehavioural",
+        "nextContentId": 3
+      },
+      {
+        "type": {
+          "library": "H5P.CoursePresentation 1.25",
+          "params": {
+            "presentation": {
+              "slides": [
+                {
+                  "elements": [
+                    {
+                      "x": 56.25,
+                      "y": 7.407407407407407,
+                      "width": 32.81405340195589,
+                      "height": 26.04278558767639,
+                      "action": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                          "decorative": false,
+                          "contentName": "Image",
+                          "expandImage": "Expand Image",
+                          "minimizeImage": "Minimize Image",
+                          "file": {
+                            "path": "images/file-6a676f8b648d7.jpeg",
+                            "mime": "image/jpeg",
+                            "copyright": { "license": "U" },
+                            "width": 1920,
+                            "height": 771
+                          },
+                          "alt": "Gehirnmodell"
+                        },
+                        "subContentId": "49e5a3a6-2246-4e51-9e2f-1b9e73c63c2c",
+                        "metadata": {
+                          "contentType": "Image",
+                          "license": "U",
+                          "title": "Gehirnmodell"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 4.042064417033259,
+                      "y": 23.953115768069967,
+                      "width": 51.19948261575461,
+                      "height": 76.04502121181474,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<ol><li>Stecke das 3D-Gehirn auf die Spule, die für uns das Magnetsignal erzeugt und stecke die Stromversorgung in den dazugehörigen Microcontroller.</li><li>Checke ob: Die SenseBox RGB-LED leuchtet in grün (Kläre, das mit einem Betreuer, deinem eigenen Programm-code)</li><li>Gehe bei der Messsteuerung (runterscrollen) auf den Reiter \"Roll\" (oben links)</li><li>Stelle ein: Frequenz = 2881 MHz, Roll Speed = 20 s, Y-Achse automatisch = ja, \"Start Roll\"</li><li>Checke ob: Die RGB-LED blinkt zusätzlich blau, während die Messung läuft und Daten gesendet werden.</li></ol>"
+                        },
+                        "subContentId": "e0377e7e-19ba-4a90-b2ed-5d2d2dce2998",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Anweisung"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": {
+                    "imageSlideBackground": {
+                      "path": "images/imageSlideBackground-6a676fe6cb2f5.png",
+                      "mime": "image/png",
+                      "copyright": { "license": "U" },
+                      "width": 1600,
+                      "height": 800
+                    },
+                    "fillSlideBackground": ""
+                  }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 56.588901838465624,
+                      "y": 5.322914615126659,
+                      "width": 34.284803461361676,
+                      "height": 40,
+                      "action": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                          "decorative": false,
+                          "contentName": "Image",
+                          "expandImage": "Expand Image",
+                          "minimizeImage": "Minimize Image",
+                          "file": {
+                            "path": "images/file-6a676fa701f49.jpeg",
+                            "mime": "image/jpeg",
+                            "copyright": { "license": "U" },
+                            "width": 1920,
+                            "height": 1134
+                          },
+                          "alt": "Messung Neuron"
+                        },
+                        "subContentId": "3195cca4-27a5-4822-b189-907276c1bbe6",
+                        "metadata": {
+                          "contentType": "Image",
+                          "license": "U",
+                          "title": "Messung Neuron"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 4.042064417033259,
+                      "y": 26.614573075633295,
+                      "width": 49.85212781007686,
+                      "height": 39.996646563792474,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Führe den Messkopf von oben mittig an das Gehirn (siehe Bild), halte still (gegebenfalls Ellenbogen auflegen, oder mit Finger abstützen) und beobachte das gemessene Signal.</p><p>Wenn die Messung geglückt ist siehst du in kurzen Abständen 4 bis 5 kurze Messpitzen nach unten oder oben, bevor sich das Neuron dann wieder eine Weile erholt.</p><p><br><br>&nbsp;</p>"
+                        },
+                        "subContentId": "21eb35e0-2e94-4c0e-bab3-f4ea85538435",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Messung durchführen"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 4.042064417033259,
+                      "y": 58.552060766393254,
+                      "width": 40,
+                      "height": 40,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Falls deine Messung nicht das Gewünschte anzeigt versuche folgendes.&nbsp;</p><ol><li>Achte auf eine rötliche LED neben dem Kühlkörper neben dem Gehirn. Sie gibt dir das neuronale Signal mit dem du das gemessene vergleichen kannst.</li><li>Nimm das 3D-Druck Gehirn von der Spule, und wiederhole die Messung innerhalb der Spule (stärkeres Magnetfeld)</li><li>Die Spule und der Microcontroller haben mehrere Programme. Schalte den Microcontroller neu ein um wieder zum Programm mit dem Neuronensignal zu kommen.</li><li>Wenn das gemessene Signal ohne Gehirn etc. sehr unstabil ist (wenn die Amplitude um mehr als 100 Intensitätspunkte schwankt), dann kontrolliere die Frequenz 2881 MHz und warte eventuell 3 Minuten bis sich das Messgerät beruhigt hat (Temperaturschwankungen,...)</li></ol>"
+                        },
+                        "subContentId": "819b0ef1-79f0-45f9-81f4-7f8e8e24123f",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Spickeln"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": true,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": {
+                    "imageSlideBackground": {
+                      "path": "images/imageSlideBackground-6a676ff22f2d3.png",
+                      "mime": "image/png",
+                      "copyright": { "license": "U" },
+                      "width": 1600,
+                      "height": 800
+                    },
+                    "fillSlideBackground": ""
+                  }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 4.042064417033259,
+                      "y": 29.276030383196627,
+                      "width": 44.46270858736585,
+                      "height": 58.552060766393254,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Glückwunsch falls das neuronale Feuern bei dir sichtbar war. Du hast dann das Signal eines Neurons gemessen. Nimm das Gehirn von der Spule stecke das Messgerät in die Öffnung (stillhalten oder abstellen).&nbsp;</p><p>Stelle den Microcontroller auf das zweite Programm: (Aus&amp;einschalten, und einmal den Knopf drücken). Für das dritte Programm muss man zweimal drücken und beim dritten mal Drücken ist man wieder im ersten Programm also beim neuronalen Feuern.</p>"
+                        },
+                        "subContentId": "bc215024-7227-4d6a-a456-220d6812f613",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Andere Messungen"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 56.588901838465624,
+                      "y": 7.984371922689989,
+                      "width": 36.46882314557131,
+                      "height": 40,
+                      "action": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                          "decorative": false,
+                          "contentName": "Image",
+                          "expandImage": "Expand Image",
+                          "minimizeImage": "Minimize Image",
+                          "file": {
+                            "path": "images/file-6a676fb7aacfd.jpeg",
+                            "mime": "image/jpeg",
+                            "copyright": { "license": "U" },
+                            "width": 1920,
+                            "height": 1066
+                          },
+                          "alt": "Messung in der Spule"
+                        },
+                        "subContentId": "5f97bf79-9e75-433f-8d3f-aad71da41487",
+                        "metadata": {
+                          "contentType": "Image",
+                          "license": "U",
+                          "title": "Messung in der Spule"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 51.19948261575461,
+                      "y": 50.567688843703266,
+                      "width": 45.810063393043606,
+                      "height": 47.906231536139934,
+                      "action": {
+                        "library": "H5P.SingleChoiceSet 1.11",
+                        "params": {
+                          "choices": [
+                            {
+                              "subContentId": "9fb30dd6-93b7-4554-85db-124bdd743efa",
+                              "question": "<p>Das gemessene Signal des zweiten Programms ähnelt dem Signal ....?</p>",
+                              "answers": [
+                                "<p>eines gesunden Herzens</p>",
+                                "<p>eines Toasters</p>",
+                                "<p>eines Herzens mit Kammerflimmern</p>"
+                              ]
+                            },
+                            {
+                              "subContentId": "5c328d19-13fc-4cad-847e-b84912fb9474",
+                              "question": "<p>Das gemessene Signal des dritten Programms ähnelt dem Signal ....?</p>",
+                              "answers": [
+                                "<p>eines Herzens mit Kammerflimmern</p>",
+                                "<p>eines Toasters</p>",
+                                "<p>eines gesunden Herzens</p>"
+                              ]
+                            }
+                          ],
+                          "overallFeedback": [{ "from": 0, "to": 100 }],
+                          "behaviour": {
+                            "autoContinue": true,
+                            "timeoutCorrect": 2000,
+                            "timeoutWrong": 3000,
+                            "soundEffectsEnabled": true,
+                            "enableRetry": true,
+                            "enableSolutionsButton": true,
+                            "passPercentage": 100
+                          },
+                          "l10n": {
+                            "nextButtonLabel": "Next question",
+                            "showSolutionButtonLabel": "Show solution",
+                            "retryButtonLabel": "Retry",
+                            "solutionViewTitle": "Solution list",
+                            "correctText": "Correct!",
+                            "incorrectText": "Incorrect!",
+                            "shouldSelect": "Should have been selected",
+                            "shouldNotSelect": "Should not have been selected",
+                            "muteButtonLabel": "Mute feedback sound",
+                            "closeButtonLabel": "Close",
+                            "slideOfTotal": "Slide :num of :total",
+                            "scoreBarLabel": "You got :num out of :total points",
+                            "solutionListQuestionNumber": "Question :num",
+                            "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                            "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+                          }
+                        },
+                        "subContentId": "4ac1f54e-2c2e-4794-ae5b-ffd0a851b5e2",
+                        "metadata": {
+                          "contentType": "Single Choice Set",
+                          "license": "U",
+                          "title": "Untitled Single Choice Set"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": {
+                    "imageSlideBackground": {
+                      "path": "images/imageSlideBackground-6a676ffa7624a.png",
+                      "mime": "image/png",
+                      "copyright": { "license": "U" },
+                      "width": 1600,
+                      "height": 800
+                    },
+                    "fillSlideBackground": ""
+                  }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 4.042064417033259,
+                      "y": 26.614573075633295,
+                      "width": 51.19948261575461,
+                      "height": 69.19363166495447,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Du hast gerade das Signal eines Neurons gemessen. Ein Neuron alleine ergibt noch kein Gehirn. Dafür müssen sehr viele zusammenarbeiten, sich gegenseitig über die Schwelle hin zum Feuern anregen. Das ist auch wichtig weil wirkliche statt nachgestellter Signale einzelner Neuron sind sehr klein. Schau hier gerne nochmal zur Einordnung auf die Graphik.</p><p>Die meisten Sensorsysteme sind hier nicht sensibel genug. So auch eigentlich das vorgestellte System, das auf leuchtenden Diamanten beruht. Es hat andere markante Stärken (siehe anderer Kurs über Leiterbahnen).</p><p>Signale eines Herzens sind dagegen größer, einfacher messbar und wurden mit unserem Diamant-Messverfahren schon gemessen.</p>"
+                        },
+                        "subContentId": "751cce71-4650-4ac3-a892-5d08169f43c7",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Neuronen"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 51.19948261575461,
+                      "y": 2.6614573075633294,
+                      "width": 46.94341248473862,
+                      "height": 94.37580841765717,
+                      "action": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                          "decorative": false,
+                          "contentName": "Image",
+                          "expandImage": "Expand Image",
+                          "minimizeImage": "Minimize Image",
+                          "file": {
+                            "path": "images/file-6a676fc670874.png",
+                            "mime": "image/png",
+                            "copyright": { "license": "U" },
+                            "width": 900,
+                            "height": 916
+                          }
+                        },
+                        "subContentId": "3e096fda-fa6f-47e1-90cc-f3db28cf5d86",
+                        "metadata": {
+                          "contentType": "Image",
+                          "license": "U",
+                          "title": "Untitled Image"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": {
+                    "imageSlideBackground": {
+                      "path": "images/imageSlideBackground-6a6770015e611.png",
+                      "mime": "image/png",
+                      "copyright": { "license": "U" },
+                      "width": 1600,
+                      "height": 800
+                    },
+                    "fillSlideBackground": ""
+                  }
+                }
+              ],
+              "keywordListEnabled": true,
+              "keywordListAlwaysShow": false,
+              "keywordListAutoHide": false,
+              "keywordListOpacity": 90,
+              "globalBackgroundSelector": {
+                "imageGlobalBackground": {
+                  "path": "images/image-t101xevU.png",
+                  "mime": "image/png",
+                  "copyright": { "license": "U" },
+                  "width": 1600,
+                  "height": 800
+                },
+                "fillGlobalBackground": ""
+              }
+            },
+            "override": {
+              "activeSurface": false,
+              "hideSummarySlide": false,
+              "summarySlideSolutionButton": true,
+              "summarySlideRetryButton": true,
+              "enablePrintButton": false,
+              "social": {
+                "showFacebookShare": false,
+                "facebookShare": {
+                  "url": "@currentpageurl",
+                  "quote": "I scored @score out of @maxScore on a task at @currentpageurl."
+                },
+                "showTwitterShare": false,
+                "twitterShare": {
+                  "statement": "I scored @score out of @maxScore on a task at @currentpageurl.",
+                  "url": "@currentpageurl",
+                  "hashtags": "h5p, course"
+                },
+                "showGoogleShare": false,
+                "googleShareUrl": "@currentpageurl"
+              }
+            },
+            "l10n": {
+              "slide": "Slide",
+              "score": "Score",
+              "yourScore": "Your Score",
+              "maxScore": "Max Score",
+              "total": "Total",
+              "totalScore": "Total Score",
+              "showSolutions": "Show solutions",
+              "retry": "Retry",
+              "exportAnswers": "Export text",
+              "hideKeywords": "Hide sidebar navigation menu",
+              "showKeywords": "Show sidebar navigation menu",
+              "fullscreen": "Fullscreen",
+              "exitFullscreen": "Exit fullscreen",
+              "prevSlide": "Previous slide",
+              "nextSlide": "Next slide",
+              "currentSlide": "Current slide",
+              "lastSlide": "Last slide",
+              "solutionModeTitle": "Exit solution mode",
+              "solutionModeText": "Solution Mode",
+              "summaryMultipleTaskText": "Multiple tasks",
+              "scoreMessage": "You achieved:",
+              "shareFacebook": "Share on Facebook",
+              "shareTwitter": "Share on Twitter",
+              "shareGoogle": "Share on Google+",
+              "summary": "Summary",
+              "solutionsButtonTitle": "Show comments",
+              "printTitle": "Print",
+              "printIngress": "How would you like to print this presentation?",
+              "printAllSlides": "Print all slides",
+              "printCurrentSlide": "Print current slide",
+              "noTitle": "No title",
+              "accessibilitySlideNavigationExplanation": "Use left and right arrow to change slide in that direction whenever canvas is selected.",
+              "accessibilityCanvasLabel": "Presentation canvas. Use left and right arrow to move between slides.",
+              "accessibilityProgressBarLabel": "Choose slide to display",
+              "containsNotCompleted": "@slideName contains not completed interaction",
+              "containsCompleted": "@slideName contains completed interaction",
+              "slideCount": "Slide @index of @total",
+              "containsOnlyCorrect": "@slideName only has correct answers",
+              "containsIncorrectAnswers": "@slideName has incorrect answers",
+              "shareResult": "Share Result",
+              "accessibilityTotalScore": "You got @score of @maxScore points in total",
+              "accessibilityEnteredFullscreen": "Entered fullscreen",
+              "accessibilityExitedFullscreen": "Exited fullscreen",
+              "confirmDialogHeader": "Submit your answers",
+              "confirmDialogText": "This will submit your results, do you want to continue?",
+              "confirmDialogConfirmText": "Submit and see results",
+              "slideshowNavigationLabel": "Slideshow navigation",
+              "confirmDialogConfirmLabel": "Confirm",
+              "confirmDialogCancelLabel": "Cancel"
+            }
+          },
+          "subContentId": "d2d3d39f-a656-4b96-a3d1-fe193df848fc",
+          "metadata": {
+            "contentType": "Course Presentation",
+            "license": "U",
+            "title": "Neuronales Feuern Nr.2"
+          }
+        },
+        "showContentTitle": false,
+        "proceedButtonText": "Weiter",
+        "forceContentFinished": "enabled",
+        "feedback": { "title": "", "subtitle": "" },
+        "contentBehaviour": "useBehavioural",
+        "nextContentId": 4
+      },
+      {
+        "type": {
+          "library": "H5P.BranchingQuestion 1.0",
+          "params": {
+            "branchingQuestion": {
+              "alternatives": [
+                {
+                  "nextContentId": 5,
+                  "feedback": { "title": "", "subtitle": "" },
+                  "text": "Ich will mehr darüber wissen was und wie wir das verwendet haben."
+                },
+                {
+                  "nextContentId": 6,
+                  "feedback": { "title": "", "subtitle": "" },
+                  "text": "Ich würde den Kurs gerne schnell abschließen."
+                }
+              ],
+              "question": "<p>Wir haben im Experiment das Diamant-Messverfahren verwendet.</p>"
+            }
+          },
+          "subContentId": "a004c9f3-8985-4bcd-b887-177aef384d0f",
+          "metadata": {
+            "contentType": "Branching Question",
+            "license": "U",
+            "title": "Untitled Branching Question"
+          }
+        },
+        "showContentTitle": false,
+        "proceedButtonText": "Weiter",
+        "forceContentFinished": "useBehavioural",
+        "feedback": { "title": "", "subtitle": "" },
+        "contentBehaviour": "useBehavioural"
+      },
+      {
+        "type": {
+          "library": "H5P.CoursePresentation 1.25",
+          "params": {
+            "presentation": {
+              "slides": [
+                {
+                  "elements": [
+                    {
+                      "x": 4.042064417033259,
+                      "y": 29.276030383196627,
+                      "width": 44.46270858736585,
+                      "height": 66.53430352323718,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>In unseren Experimenten haben wir die sogenannte ODMR (Optical Detected Magnetic resonance) an NV-Fehlstellen in Diamanten verwendet. Dabei misst man die Intensität des roten Leuchtens, das von den NV-Stellen des Diamant kommt (Siehe NV Magnetometer Quiz). &nbsp;Bei bestimmter Kombination aus Magnetfeld (grün) und eingestrahlter Mikrowellen wird der Diamant hier dunkler (Siehe Diagramm rechts).</p><p>Normal wäre verschiedene Frequenzen durchzutesten bis man die dunkler stellen gefunden hat und dann aus dem grünen Abstand das gesuchte Magnetfeld auszurechnen (ODMR-Spektrum).</p>"
+                        },
+                        "subContentId": "d41c3759-61cb-4877-abe1-bf2a65278a49",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Messmethode"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 49.85212781007686,
+                      "y": 35.131236459835954,
+                      "width": 47.3048188144625,
+                      "height": 52.56067983986688,
+                      "action": {
+                        "library": "H5P.Video 1.6",
+                        "params": {
+                          "visuals": { "fit": true, "controls": true },
+                          "playback": { "autoplay": false, "loop": false },
+                          "l10n": {
+                            "name": "Video",
+                            "loading": "Video player loading...",
+                            "noPlayers": "Found no video players that supports the given video format.",
+                            "noSources": "Video is missing sources.",
+                            "aborted": "Media playback has been aborted.",
+                            "networkFailure": "Network failure.",
+                            "cannotDecode": "Unable to decode media.",
+                            "formatNotSupported": "Video format not supported.",
+                            "mediaEncrypted": "Media encrypted.",
+                            "unknownError": "Unknown error.",
+                            "invalidYtId": "Invalid YouTube ID.",
+                            "unknownYtId": "Unable to find video with the given YouTube ID.",
+                            "restrictedYt": "The owner of this video does not allow it to be embedded."
+                          },
+                          "sources": [
+                            {
+                              "path": "videos/sources-6a6770224cf3c.mp4",
+                              "mime": "video/mp4",
+                              "copyright": { "license": "U" }
+                            }
+                          ]
+                        },
+                        "subContentId": "58e6afca-bd4d-4663-bc7f-5bc386c7c4e7",
+                        "metadata": {
+                          "contentType": "Video",
+                          "license": "U",
+                          "title": "Untitled Video"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": { "fillSlideBackground": "" }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 4.042064417033259,
+                      "y": 29.276030383196627,
+                      "width": 83.5359979520207,
+                      "height": 50.567688843703266,
+                      "action": {
+                        "library": "H5P.SingleChoiceSet 1.11",
+                        "params": {
+                          "choices": [
+                            {
+                              "subContentId": "5082be89-192e-438e-bee9-1a934de1a051",
+                              "question": "<p>Was galt für die Messungen, die wir durchgeführt haben?</p>",
+                              "answers": [
+                                "<p>feste Mikrowellenfrequenz, variable Magnetfeldstärke</p>",
+                                "<p>feste Magnetfeldstärke, variable Mikrowellenfrequenz</p>",
+                                "<p>feste Helligkeit, feste Mikrowellenfrequenz</p>",
+                                "<p>variable Mikrowellenfrequenz, feste Magnetfeldstärke</p>"
+                              ]
+                            }
+                          ],
+                          "overallFeedback": [{ "from": 0, "to": 100 }],
+                          "behaviour": {
+                            "autoContinue": true,
+                            "timeoutCorrect": 2000,
+                            "timeoutWrong": 3000,
+                            "soundEffectsEnabled": true,
+                            "enableRetry": true,
+                            "enableSolutionsButton": true,
+                            "passPercentage": 100
+                          },
+                          "l10n": {
+                            "nextButtonLabel": "Next question",
+                            "showSolutionButtonLabel": "Show solution",
+                            "retryButtonLabel": "Retry",
+                            "solutionViewTitle": "Solution list",
+                            "correctText": "Correct!",
+                            "incorrectText": "Incorrect!",
+                            "shouldSelect": "Should have been selected",
+                            "shouldNotSelect": "Should not have been selected",
+                            "muteButtonLabel": "Mute feedback sound",
+                            "closeButtonLabel": "Close",
+                            "slideOfTotal": "Slide :num of :total",
+                            "scoreBarLabel": "You got :num out of :total points",
+                            "solutionListQuestionNumber": "Question :num",
+                            "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                            "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+                          }
+                        },
+                        "subContentId": "263da1be-367a-4b41-a95d-cfa49593c566",
+                        "metadata": {
+                          "contentType": "Single Choice Set",
+                          "license": "U",
+                          "title": "Messmethode"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": { "fillSlideBackground": "" }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 4.042064417033259,
+                      "y": 29.276030383196627,
+                      "width": 30.989160530588318,
+                      "height": 69.19788999664657,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Wir haben uns also eine feste Mikrowellenfrequenz eingestellt (z.B. 2881 MHz) und damit veränderliche Magnetfelder gemessen (z.B. wiederkehrendes Feuern von Neuronen). Schau dir im Video an wie sich der Bereich mit dunklem Diamant durch unsere Messfrequenz hindurch bewegt und so unseren detektierten Helligkeitseinbruch verursacht.</p>"
+                        },
+                        "subContentId": "ba14611c-0852-4aa0-9ba7-04dfb4232c78",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Messmethode fest f"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 36.378579753299334,
+                      "y": 18.630201152943307,
+                      "width": 62.125721676917784,
+                      "height": 69.02827764098383,
+                      "action": {
+                        "library": "H5P.Video 1.6",
+                        "params": {
+                          "visuals": { "fit": true, "controls": true },
+                          "playback": { "autoplay": false, "loop": false },
+                          "l10n": {
+                            "name": "Video",
+                            "loading": "Video player loading...",
+                            "noPlayers": "Found no video players that supports the given video format.",
+                            "noSources": "Video is missing sources.",
+                            "aborted": "Media playback has been aborted.",
+                            "networkFailure": "Network failure.",
+                            "cannotDecode": "Unable to decode media.",
+                            "formatNotSupported": "Video format not supported.",
+                            "mediaEncrypted": "Media encrypted.",
+                            "unknownError": "Unknown error.",
+                            "invalidYtId": "Invalid YouTube ID.",
+                            "unknownYtId": "Unable to find video with the given YouTube ID.",
+                            "restrictedYt": "The owner of this video does not allow it to be embedded."
+                          },
+                          "sources": [
+                            {
+                              "path": "videos/sources-6a67703eb1f57.mp4",
+                              "mime": "video/mp4",
+                              "copyright": { "license": "U" }
+                            }
+                          ]
+                        },
+                        "subContentId": "05585ebe-bf53-489f-9963-c5ceea251cf9",
+                        "metadata": {
+                          "contentType": "Video",
+                          "license": "U",
+                          "title": "fest f video"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": { "fillSlideBackground": "" }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 68.71509508956541,
+                      "y": 55.89060345882992,
+                      "width": 29.789206340651713,
+                      "height": 33.098973347637745,
+                      "action": {
+                        "library": "H5P.Video 1.6",
+                        "params": {
+                          "visuals": { "fit": true, "controls": true },
+                          "playback": { "autoplay": false, "loop": false },
+                          "l10n": {
+                            "name": "Video",
+                            "loading": "Video player loading...",
+                            "noPlayers": "Found no video players that supports the given video format.",
+                            "noSources": "Video is missing sources.",
+                            "aborted": "Media playback has been aborted.",
+                            "networkFailure": "Network failure.",
+                            "cannotDecode": "Unable to decode media.",
+                            "formatNotSupported": "Video format not supported.",
+                            "mediaEncrypted": "Media encrypted.",
+                            "unknownError": "Unknown error.",
+                            "invalidYtId": "Invalid YouTube ID.",
+                            "unknownYtId": "Unable to find video with the given YouTube ID.",
+                            "restrictedYt": "The owner of this video does not allow it to be embedded."
+                          },
+                          "sources": [
+                            {
+                              "path": "videos/sources-6a6770537afa9.mp4",
+                              "mime": "video/mp4",
+                              "copyright": { "license": "U" }
+                            }
+                          ]
+                        },
+                        "metadata": {
+                          "contentType": "Video",
+                          "license": "U",
+                          "title": "fest f video"
+                        },
+                        "subContentId": "1b5917cb-77e5-4c8f-be3d-fb0a6e4b0ee2"
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 4.042064417033259,
+                      "y": 29.276030383196627,
+                      "width": 63.32567586685439,
+                      "height": 66.53430352323718,
+                      "action": {
+                        "library": "H5P.SingleChoiceSet 1.11",
+                        "params": {
+                          "choices": [
+                            {
+                              "subContentId": "3b35617a-2365-466b-80a5-c60e68355289",
+                              "question": "<p>Wenn man eine feste Mikrowellenfrequenz einstellt dann</p>",
+                              "answers": [
+                                "<p>kann man schneller messen verglichen damit viele einzustellen und so Helligkeitseinbrüche zu suchen.</p>",
+                                "<p>kann man genauer messen, weil die Intensitäten weniger schwanken.</p>",
+                                "<p>wird der Diamant zu warm oder fängt an zu kochen.</p>"
+                              ]
+                            },
+                            {
+                              "subContentId": "7dc102d5-1781-4207-88be-e685e83a46cd",
+                              "question": "<p>Wenn man mit NV-Zentren Magnetfelder messen will, die sich langsam verändern nimmt man</p>",
+                              "answers": [
+                                "<p>ein ODMR-Spektrum auf.</p>",
+                                "<p>ein UFNT-Spektrum auf.</p>",
+                                "<p>eine feste Helligkeit am Diamanten auf</p>",
+                                "<p>eine feste Mikrowellenfrequenz bei 2881 MHz</p>"
+                              ]
+                            },
+                            {
+                              "subContentId": "563e8785-4cda-4136-8ace-0334b0642153",
+                              "question": "<p>Wenn man bei fest eingestellter Mikrowellenfrequenz bei 2881 MHz das Magnetfeld anfängt zu erhöhen, bewegt sich die dunkle Stelle auf die Mikrowellenfrequenz zu. Was stimmt?</p>",
+                              "answers": [
+                                "<p>Die gemessene Intensität nimmt ab, was Rückschlüsse auf sich erhöhende Magnetfeld zulässt.</p>",
+                                "<p>Die gemessene Intensität nimmt zu, was Rückschlüsse auf sich erhöhende Magnetfeld zulässt.</p>"
+                              ]
+                            },
+                            {
+                              "subContentId": "3e9e7178-4bda-476b-a2fb-cf7220a7da15",
+                              "question": "<p>Wenn man bei fest eingestellter Mikrowellenfrequenz bei 2881 MHz das Magnetfeld weiterhin erhöht...</p>",
+                              "answers": [
+                                "<p>... nimmt die Intensität wieder zu, obwohl sich das Magnetfeld erhöht</p>",
+                                "<p>... nimmt die Intensität immer weiter ab, genauso wie das Magnetfeld</p>"
+                              ]
+                            }
+                          ],
+                          "overallFeedback": [{ "from": 0, "to": 100 }],
+                          "behaviour": {
+                            "autoContinue": true,
+                            "timeoutCorrect": 2000,
+                            "timeoutWrong": 3000,
+                            "soundEffectsEnabled": true,
+                            "enableRetry": true,
+                            "enableSolutionsButton": true,
+                            "passPercentage": 100
+                          },
+                          "l10n": {
+                            "nextButtonLabel": "Next question",
+                            "showSolutionButtonLabel": "Show solution",
+                            "retryButtonLabel": "Retry",
+                            "solutionViewTitle": "Solution list",
+                            "correctText": "Correct!",
+                            "incorrectText": "Incorrect!",
+                            "shouldSelect": "Should have been selected",
+                            "shouldNotSelect": "Should not have been selected",
+                            "muteButtonLabel": "Mute feedback sound",
+                            "closeButtonLabel": "Close",
+                            "slideOfTotal": "Slide :num of :total",
+                            "scoreBarLabel": "You got :num out of :total points",
+                            "solutionListQuestionNumber": "Question :num",
+                            "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                            "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+                          }
+                        },
+                        "subContentId": "fca1a58a-2a99-4061-be11-4118083595b5",
+                        "metadata": {
+                          "contentType": "Single Choice Set",
+                          "license": "U",
+                          "title": "Vorteile Nachteile Messung"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": { "fillSlideBackground": "" }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 4.042064417033259,
+                      "y": 29.276030383196627,
+                      "width": 75.45186911795417,
+                      "height": 69.19788999664657,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Vorteile unserer Messmethode mit fester Frequenz sind:</p><ul><li>schnelle Messung (nicht begrenzt durch das Umschalten des Mikrowellengenerator)</li><li>Einfache Interpretation&nbsp;</li></ul><p>Nachteile gegenüber der ODMR Messung mit Spektrum</p><ul><li>Nur für Magnetfelder die sich wenig ändern ( bzw. kleine Bewegungen der dunklen Stelle)</li><li>Helligkeits bzw. Intensitätsabhängig</li><li>Nichtproportionalität des Messsignal (es gilt <strong>nicht </strong>5 Prozent Einbruch der Intensität gleich 5 Prozent mehr Magnetfeld)</li></ul>"
+                        },
+                        "subContentId": "df5e75cb-9de6-405c-815e-9e8057ee9bcf",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Vorteile und Nachteile"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": { "fillSlideBackground": "" }
+                }
+              ],
+              "keywordListEnabled": true,
+              "keywordListAlwaysShow": false,
+              "keywordListAutoHide": false,
+              "keywordListOpacity": 90,
+              "globalBackgroundSelector": {
+                "imageGlobalBackground": {
+                  "path": "images/imageGlobalBackground-6a677066bde50.png",
+                  "mime": "image/png",
+                  "copyright": { "license": "U" },
+                  "width": 1600,
+                  "height": 800
+                },
+                "fillGlobalBackground": ""
+              }
+            },
+            "override": {
+              "activeSurface": false,
+              "hideSummarySlide": false,
+              "summarySlideSolutionButton": true,
+              "summarySlideRetryButton": true,
+              "enablePrintButton": false,
+              "social": {
+                "showFacebookShare": false,
+                "facebookShare": {
+                  "url": "@currentpageurl",
+                  "quote": "I scored @score out of @maxScore on a task at @currentpageurl."
+                },
+                "showTwitterShare": false,
+                "twitterShare": {
+                  "statement": "I scored @score out of @maxScore on a task at @currentpageurl.",
+                  "url": "@currentpageurl",
+                  "hashtags": "h5p, course"
+                },
+                "showGoogleShare": false,
+                "googleShareUrl": "@currentpageurl"
+              }
+            },
+            "l10n": {
+              "slide": "Slide",
+              "score": "Score",
+              "yourScore": "Your Score",
+              "maxScore": "Max Score",
+              "total": "Total",
+              "totalScore": "Total Score",
+              "showSolutions": "Show solutions",
+              "retry": "Retry",
+              "exportAnswers": "Export text",
+              "hideKeywords": "Hide sidebar navigation menu",
+              "showKeywords": "Show sidebar navigation menu",
+              "fullscreen": "Fullscreen",
+              "exitFullscreen": "Exit fullscreen",
+              "prevSlide": "Previous slide",
+              "nextSlide": "Next slide",
+              "currentSlide": "Current slide",
+              "lastSlide": "Last slide",
+              "solutionModeTitle": "Exit solution mode",
+              "solutionModeText": "Solution Mode",
+              "summaryMultipleTaskText": "Multiple tasks",
+              "scoreMessage": "You achieved:",
+              "shareFacebook": "Share on Facebook",
+              "shareTwitter": "Share on Twitter",
+              "shareGoogle": "Share on Google+",
+              "summary": "Summary",
+              "solutionsButtonTitle": "Show comments",
+              "printTitle": "Print",
+              "printIngress": "How would you like to print this presentation?",
+              "printAllSlides": "Print all slides",
+              "printCurrentSlide": "Print current slide",
+              "noTitle": "No title",
+              "accessibilitySlideNavigationExplanation": "Use left and right arrow to change slide in that direction whenever canvas is selected.",
+              "accessibilityCanvasLabel": "Presentation canvas. Use left and right arrow to move between slides.",
+              "accessibilityProgressBarLabel": "Choose slide to display",
+              "containsNotCompleted": "@slideName contains not completed interaction",
+              "containsCompleted": "@slideName contains completed interaction",
+              "slideCount": "Slide @index of @total",
+              "containsOnlyCorrect": "@slideName only has correct answers",
+              "containsIncorrectAnswers": "@slideName has incorrect answers",
+              "shareResult": "Share Result",
+              "accessibilityTotalScore": "You got @score of @maxScore points in total",
+              "accessibilityEnteredFullscreen": "Entered fullscreen",
+              "accessibilityExitedFullscreen": "Exited fullscreen",
+              "confirmDialogHeader": "Submit your answers",
+              "confirmDialogText": "This will submit your results, do you want to continue?",
+              "confirmDialogConfirmText": "Submit and see results",
+              "slideshowNavigationLabel": "Slideshow navigation",
+              "confirmDialogConfirmLabel": "Confirm",
+              "confirmDialogCancelLabel": "Cancel"
+            }
+          },
+          "subContentId": "557f1838-621d-4628-990b-ae50a3d86e8b",
+          "metadata": {
+            "contentType": "Course Presentation",
+            "license": "U",
+            "title": "Neuronales Feuern (Optional)"
+          }
+        },
+        "showContentTitle": false,
+        "proceedButtonText": "Weiter",
+        "forceContentFinished": "enabled",
+        "feedback": { "title": "", "subtitle": "" },
+        "contentBehaviour": "useBehavioural",
+        "nextContentId": 6
+      },
+      {
+        "type": {
+          "library": "H5P.CoursePresentation 1.25",
+          "params": {
+            "presentation": {
+              "slides": [
+                { "slideBackgroundSelector": { "fillSlideBackground": "" } }
+              ],
+              "keywordListEnabled": true,
+              "keywordListAlwaysShow": false,
+              "keywordListAutoHide": false,
+              "keywordListOpacity": 90,
+              "globalBackgroundSelector": {
+                "imageGlobalBackground": {
+                  "path": "images/imageGlobalBackground-6a67708502700.png",
+                  "mime": "image/png",
+                  "copyright": { "license": "U" },
+                  "width": 1600,
+                  "height": 800
+                },
+                "fillGlobalBackground": ""
+              }
+            },
+            "override": {
+              "activeSurface": false,
+              "hideSummarySlide": false,
+              "summarySlideSolutionButton": true,
+              "summarySlideRetryButton": true,
+              "enablePrintButton": false,
+              "social": {
+                "showFacebookShare": false,
+                "facebookShare": {
+                  "url": "@currentpageurl",
+                  "quote": "I scored @score out of @maxScore on a task at @currentpageurl."
+                },
+                "showTwitterShare": false,
+                "twitterShare": {
+                  "statement": "I scored @score out of @maxScore on a task at @currentpageurl.",
+                  "url": "@currentpageurl",
+                  "hashtags": "h5p, course"
+                },
+                "showGoogleShare": false,
+                "googleShareUrl": "@currentpageurl"
+              }
+            },
+            "l10n": {
+              "slide": "Slide",
+              "score": "Score",
+              "yourScore": "Your Score",
+              "maxScore": "Max Score",
+              "total": "Total",
+              "totalScore": "Total Score",
+              "showSolutions": "Show solutions",
+              "retry": "Retry",
+              "exportAnswers": "Export text",
+              "hideKeywords": "Hide sidebar navigation menu",
+              "showKeywords": "Show sidebar navigation menu",
+              "fullscreen": "Fullscreen",
+              "exitFullscreen": "Exit fullscreen",
+              "prevSlide": "Previous slide",
+              "nextSlide": "Next slide",
+              "currentSlide": "Current slide",
+              "lastSlide": "Last slide",
+              "solutionModeTitle": "Exit solution mode",
+              "solutionModeText": "Solution Mode",
+              "summaryMultipleTaskText": "Multiple tasks",
+              "scoreMessage": "You achieved:",
+              "shareFacebook": "Share on Facebook",
+              "shareTwitter": "Share on Twitter",
+              "shareGoogle": "Share on Google+",
+              "summary": "Summary",
+              "solutionsButtonTitle": "Show comments",
+              "printTitle": "Print",
+              "printIngress": "How would you like to print this presentation?",
+              "printAllSlides": "Print all slides",
+              "printCurrentSlide": "Print current slide",
+              "noTitle": "No title",
+              "accessibilitySlideNavigationExplanation": "Use left and right arrow to change slide in that direction whenever canvas is selected.",
+              "accessibilityCanvasLabel": "Presentation canvas. Use left and right arrow to move between slides.",
+              "accessibilityProgressBarLabel": "Choose slide to display",
+              "containsNotCompleted": "@slideName contains not completed interaction",
+              "containsCompleted": "@slideName contains completed interaction",
+              "slideCount": "Slide @index of @total",
+              "containsOnlyCorrect": "@slideName only has correct answers",
+              "containsIncorrectAnswers": "@slideName has incorrect answers",
+              "shareResult": "Share Result",
+              "accessibilityTotalScore": "You got @score of @maxScore points in total",
+              "accessibilityEnteredFullscreen": "Entered fullscreen",
+              "accessibilityExitedFullscreen": "Exited fullscreen",
+              "confirmDialogHeader": "Submit your answers",
+              "confirmDialogText": "This will submit your results, do you want to continue?",
+              "confirmDialogConfirmText": "Submit and see results",
+              "slideshowNavigationLabel": "Slideshow navigation",
+              "confirmDialogConfirmLabel": "Confirm",
+              "confirmDialogCancelLabel": "Cancel"
+            }
+          },
+          "subContentId": "2098cbb1-f3fc-43bb-b114-65bbd7955100",
+          "metadata": {
+            "contentType": "Course Presentation",
+            "license": "U",
+            "title": "Neuronales Feuern Nr.3"
+          }
+        },
+        "showContentTitle": false,
+        "proceedButtonText": "Weiter",
+        "forceContentFinished": "enabled",
+        "feedback": { "title": "", "subtitle": "" },
+        "contentBehaviour": "useBehavioural",
+        "nextContentId": -1
+      }
+    ],
+    "endScreens": [
+      {
+        "endScreenTitle": "<p>NV Magnetometer: Neuronales Feuern</p>",
+        "endScreenSubtitle": "",
+        "contentId": -1,
+        "endScreenScore": 0,
+        "endScreenImage": {
+          "path": "images/image-VSjvYMAw.jpeg",
+          "mime": "image/jpeg",
+          "copyright": { "license": "U" },
+          "width": 1920,
+          "height": 1508
+        }
+      }
+    ],
+    "scoringOptionGroup": {
+      "scoringOption": "no-score",
+      "includeInteractionsScores": true
+    },
+    "startScreen": {
+      "startScreenTitle": "<p>NV Magnetometer: Neuronales Feuern</p>",
+      "startScreenSubtitle": "",
+      "startScreenImage": {
+        "path": "images/image-Jc5P4SBV.jpeg",
+        "mime": "image/jpeg",
+        "copyright": { "license": "U" },
+        "width": 1920,
+        "height": 1508
+      }
+    },
+    "behaviour": {
+      "enableBackwardsNavigation": false,
+      "forceContentFinished": false,
+      "randomizeBranchingQuestions": false
+    },
+    "l10n": {
+      "startScreenButtonText": "Start the course",
+      "endScreenButtonText": "Restart the course",
+      "backButtonText": "Back",
+      "disableProceedButtonText": "Require to complete the current module",
+      "replayButtonText": "Replay the video",
+      "scoreText": "Your score:",
+      "fullscreenAria": "Fullscreen"
+    }
+  }
+}

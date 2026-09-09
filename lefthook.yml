@@ -3,7 +3,13 @@ pre-commit:
   commands:
     formatting:
       glob: "*.{js,jsx,ts,tsx,md,mdx,html,css,scss,json,yml}"
+      exclude:
+        - public/h5p/*
+        - scripts/*
       run: npx prettier {staged_files} --write
     lint:
       glob: "*.{js,ts,tsx}"
+      exclude:
+        - public/h5p/*
+        - scripts/*
       run: npx eslint {staged_files} --fix

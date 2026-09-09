@@ -1,0 +1,2962 @@
+{
+  "branchingScenario": {
+    "content": [
+      {
+        "type": {
+          "library": "H5P.CoursePresentation 1.25",
+          "params": {
+            "presentation": {
+              "slides": [
+                {
+                  "elements": [
+                    {
+                      "x": 10.376134889753567,
+                      "y": 12.81026460882576,
+                      "width": 31.127367055771725,
+                      "height": 6.146928610957388,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p><span style=\"font-size:1.125em;\"><strong>Magnetometer und die Erde</strong></span></p>"
+                        },
+                        "subContentId": "85cb41b8-6601-4bd0-a68c-752bd649627b",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Magnetometer und die Erde"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 3.8910505836575875,
+                      "y": 28.182582139416674,
+                      "width": 59.661738002594035,
+                      "height": 39.99415851933838,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Der berühmteste Magnetfeldsensor ist der Kompass.<br />Im Kompass steckt mehr als man denkt.<br /><br />Aber wir müssen vorne anfangen, nämlich wo das Magnetfeld herkommt, bei der Erde.</p>"
+                        },
+                        "subContentId": "7a5e41ec-5704-49ed-baa6-4c9e89839e21",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Kompass"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 58.36575875486381,
+                      "y": 14.603701654061366,
+                      "width": 40.30077821011673,
+                      "height": 85.29022935497757,
+                      "action": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                          "decorative": false,
+                          "contentName": "Bild",
+                          "expandImage": "Bild vergrößern",
+                          "minimizeImage": "Bild verkleinern",
+                          "file": {
+                            "path": "images/image-iD3Kmku9.png",
+                            "mime": "image/png",
+                            "copyright": { "license": "U" },
+                            "width": 840,
+                            "height": 900
+                          },
+                          "alt": "ein Kompass"
+                        },
+                        "subContentId": "785b33de-2445-4468-a76a-a65d61e5f1ae",
+                        "metadata": {
+                          "contentType": "Image",
+                          "license": "U",
+                          "title": "Kompass"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 5.188067444876784,
+                      "y": 64.05132304412881,
+                      "width": 40,
+                      "height": 40,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>In dieser Einheit lernst du, einen quantenmechanischen Kompass kennen und deutest seine Messergebnisse. Außerdem lernst du eine wichtige Anwendung und damit auch etwas über das Magnetfeld der Erde.</p>"
+                        },
+                        "subContentId": "e099aa30-39c1-467f-8fef-22e7dce20eaa",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Ziele"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": true,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": {
+                    "imageSlideBackground": {
+                      "path": "images/image-0Co59TjZ.png",
+                      "mime": "image/png",
+                      "copyright": { "license": "U" },
+                      "width": 1600,
+                      "height": 800
+                    },
+                    "fillSlideBackground": ""
+                  }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 3.8910505836575875,
+                      "y": 28.182582139416674,
+                      "width": 66.10739299610894,
+                      "height": 56.36311463649593,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Nimm dir die 3D-gedruckte Kugel. Sie soll für uns ab jetzt die Erde symbolisieren. Es gibt einige Besonderheiten:</p><ul><li>Die Erdkugel ist zweigeteilt, sodass ein innenliegende Magnet sichtbar wird. (Gerne kurz selbst nachschauen)</li><li>Die 3D gedruckte Erde ist keine Kugel sondern, basierend auf dem Magnetfeld, mit Absicht deformiert.</li></ul><p>Nutze den 3D gedruckten Globus um die folgenden Fragen zu beantworten.</p>"
+                        },
+                        "subContentId": "8627f5ac-47a5-41cb-b294-c3cb34450a73",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Erdkugel Experiment"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 70.03891050583658,
+                      "y": 28.182582139416674,
+                      "width": 26.860440985732815,
+                      "height": 70.74468630224025,
+                      "action": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                          "decorative": false,
+                          "contentName": "Bild",
+                          "expandImage": "Bild vergrößern",
+                          "minimizeImage": "Bild verkleinern",
+                          "alt": "Erdkugel 3D-Druck Modell mit eingelassenem Magneten",
+                          "file": {
+                            "path": "images/image-FTLR4vI1.png",
+                            "mime": "image/png",
+                            "copyright": { "license": "U" },
+                            "width": 1440,
+                            "height": 1920
+                          }
+                        },
+                        "subContentId": "c03efea6-010a-4317-86a7-d42e55166e08",
+                        "metadata": {
+                          "contentType": "Image",
+                          "license": "U",
+                          "title": "Erdkugel"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": { "fillSlideBackground": "" }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 3.8910505836575875,
+                      "y": 28.182582139416674,
+                      "width": 76.52295719844358,
+                      "height": 64.04722375945398,
+                      "action": {
+                        "library": "H5P.SingleChoiceSet 1.11",
+                        "params": {
+                          "choices": [
+                            {
+                              "subContentId": "0da3e2e2-1062-4bcf-ba6b-ccb03fae7058",
+                              "question": "<p>An Stellen mit großen Magnetfeld ist die Kugel ausgebeult, deshalb ist sie am Äquator eher dünn und an den Polen eher lang. Sie hat ein bisschen die Form eines </p>",
+                              "answers": [
+                                "<p>Hühnereis</p>",
+                                "<p>Feuerlöschers</p>",
+                                "<p>Donut</p>",
+                                "<p>Tennisballs</p>"
+                              ]
+                            },
+                            {
+                              "subContentId": "9816dd84-a429-4b74-9ddd-0bee145faafb",
+                              "question": "<p>Es gibt auf der Erde einen Kontinent mit sehr geringem Magnetfeld. Dort ist es nur ca 1/3 so groß wie üblich. Dieser Bereich ist laut 3D-gedruckter Erdkugel</p>",
+                              "answers": [
+                                "<p>Südamerika</p>",
+                                "<p>Indien</p>",
+                                "<p>Europa</p>",
+                                "<p>Hawaii</p>"
+                              ]
+                            },
+                            {
+                              "subContentId": "5570ea41-1d13-45d0-b70e-650e2f28c874",
+                              "question": "<p>Außerdem dreht die zusammengebaute Erdkugel sich sehr leicht auf glatten Unterlagen (wackle zur Not an der Unterlage, um das Drehen zu begünstigen) Welche der folgenden Aussagen ist richtig?</p>",
+                              "answers": [
+                                "<p>Im Experiment bleibt die Kugel regelmäßig mit der selben Ausrichtung stehen ähnlich wie ein Kompass.</p>",
+                                "<p>Im Experiment verhält sich die Kugel wie ein unendlicher Kreisel der wegen des Magnetfelds nicht aufhört zu drehen.</p>",
+                                "<p>Im Experiment verhält sich die Kugel durch den Magnetismus wie ein rohes Hühnerei, Sie dreht sich weiter nachdem sie mit dem Finger kurz ganz gestoppt wurde.</p>"
+                              ]
+                            },
+                            {
+                              "subContentId": "ba80e0a0-c772-40c5-a27f-ac69c7252efc",
+                              "question": "<p>Wir haben also mit dem Plastikglobus einen kleinen Kompass gebaut. Welche Aussage ist richtig. Zum Bau eines Kompasses ...</p>",
+                              "answers": [
+                                "<p>... reicht ein drehbarer Magnet.</p>",
+                                "<p>... reicht eine Plastikkugel.</p>",
+                                "<p>... braucht man eine horizontale Fläche, weil der Magnet sich immer waagerecht ausrichten will.</p>"
+                              ]
+                            }
+                          ],
+                          "overallFeedback": [{ "from": 0, "to": 100 }],
+                          "behaviour": {
+                            "autoContinue": true,
+                            "timeoutCorrect": 2000,
+                            "timeoutWrong": 3000,
+                            "soundEffectsEnabled": true,
+                            "enableRetry": true,
+                            "enableSolutionsButton": true,
+                            "passPercentage": 100
+                          },
+                          "l10n": {
+                            "nextButtonLabel": "Weiter",
+                            "showSolutionButtonLabel": "Lösung anzeigen",
+                            "retryButtonLabel": "Wiederholen",
+                            "solutionViewTitle": "Lösung",
+                            "correctText": "Richtig!",
+                            "incorrectText": "Falsch!",
+                            "shouldSelect": "Hätte gewählt werden müssen",
+                            "shouldNotSelect": "Hätte nicht gewählt werden sollen",
+                            "muteButtonLabel": "Stumm schalten",
+                            "closeButtonLabel": "Schließen",
+                            "slideOfTotal": "Seite :num von :total",
+                            "scoreBarLabel": "Du hast :num von :total Punkten erreicht.",
+                            "solutionListQuestionNumber": "Frage :num",
+                            "a11yShowSolution": "Die Lösung anzeigen. Die richtigen Lösungen werden in der Aufgabe angezeigt.",
+                            "a11yRetry": "Die Aufgabe wiederholen. Alle Versuche werden zurückgesetzt und die Aufgabe wird erneut gestartet."
+                          }
+                        },
+                        "subContentId": "fc7ef53d-39d6-41db-8f44-3c22d52a9b36",
+                        "metadata": {
+                          "contentType": "Single Choice Set",
+                          "license": "U",
+                          "title": "Erdmagnetfeld und Kompass"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": {
+                    "imageSlideBackground": {
+                      "path": "images/image-skDuNiN5.png",
+                      "mime": "image/png",
+                      "copyright": { "license": "U" },
+                      "width": 1600,
+                      "height": 800
+                    },
+                    "fillSlideBackground": ""
+                  }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 3.8910505836575875,
+                      "y": 28.182582139416674,
+                      "width": 35.01945525291829,
+                      "height": 40.99079710590502,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Kompasse sind sehr alte Magnetfeldsensoren die schon lange bei der Navigation auf der Erdoberfläche helfen. Mit dem Kompass kann man Richtungen bestimmen. Aber man kann noch mehr</p><p>Schau dir das Video an und teile zu wo das Video aufgenommen wurde. </p>"
+                        },
+                        "subContentId": "a4c124bd-c828-438b-93c4-adb9dfba0f08",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Aufgabentext video"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 38.91050583657587,
+                      "y": 25.62052921765152,
+                      "width": 59.0780804150454,
+                      "height": 72.23580110270758,
+                      "action": {
+                        "library": "H5P.InteractiveVideo 1.26",
+                        "params": {
+                          "interactiveVideo": {
+                            "video": {
+                              "startScreenOptions": {
+                                "title": "Kompass Video Frage",
+                                "hideStartTitle": false
+                              },
+                              "textTracks": {
+                                "videoTrack": [
+                                  {
+                                    "label": "Subtitles",
+                                    "kind": "subtitles",
+                                    "srcLang": "en"
+                                  }
+                                ]
+                              },
+                              "files": [
+                                {
+                                  "path": "videos/video-hGAuBhJ5.mp4",
+                                  "mime": "video/mp4",
+                                  "copyright": { "license": "U" }
+                                }
+                              ]
+                            },
+                            "assets": {
+                              "interactions": [
+                                {
+                                  "x": 0,
+                                  "y": 52.83901632965782,
+                                  "width": 33.81014304291287,
+                                  "height": 10.403120936280883,
+                                  "duration": { "from": 6, "to": 6 },
+                                  "libraryTitle": "Drag the Words",
+                                  "action": {
+                                    "library": "H5P.DragText 1.10",
+                                    "params": {
+                                      "media": { "disableImageZooming": false },
+                                      "taskDescription": "<p>Ziehe die richtigen Orte in die Kästen.</p>",
+                                      "overallFeedback": [
+                                        { "from": 0, "to": 100 }
+                                      ],
+                                      "checkAnswer": "Überprüfen",
+                                      "submitAnswer": "Absenden",
+                                      "tryAgain": "Wiederholen",
+                                      "showSolution": "Lösung anzeigen",
+                                      "dropZoneIndex": "Ablagefeld @index.",
+                                      "empty": "Ablagefeld @index ist leer.",
+                                      "contains": "Ablagefeld @index enthält ziehbaren Text @draggable.",
+                                      "ariaDraggableIndex": "@index von @count ziehbaren Texten.",
+                                      "tipLabel": "Tipp anzeigen",
+                                      "correctText": "Richtig!",
+                                      "incorrectText": "Falsch!",
+                                      "resetDropTitle": "Ablagefelder zurücksetzen",
+                                      "resetDropDescription": "Bist du sicher, dass du dieses Ablagefeld zurücksetzen möchtest?",
+                                      "grabbed": "Ziehbarer Text wurde aufgenommen.",
+                                      "cancelledDragging": "Ziehen abgebrochen.",
+                                      "correctAnswer": "Korrekte Antwort:",
+                                      "feedbackHeader": "Rückmeldung",
+                                      "behaviour": {
+                                        "enableRetry": true,
+                                        "enableSolutionsButton": true,
+                                        "enableCheckButton": true,
+                                        "instantFeedback": false
+                                      },
+                                      "scoreBarLabel": "Du hast :num von :total Punkten erreicht.",
+                                      "a11yCheck": "Die Antworten überprüfen. Die Eingaben werden als richtig, falsch oder unbeantwortet markiert.",
+                                      "a11yShowSolution": "Die Lösung anzeigen. Die richtigen Lösungen werden in der Aufgabe angezeigt.",
+                                      "a11yRetry": "Die Aufgabe wiederholen. Alle Eingaben werden zurückgesetzt und die Aufgabe wird erneut gestartet.",
+                                      "textField": "linkes Video *Argentinien* und rechtes Video *Deutschland*"
+                                    },
+                                    "subContentId": "af7cb9b6-2cbf-41c5-b3e7-6b726723b4b3",
+                                    "metadata": {
+                                      "contentType": "Drag the Words",
+                                      "license": "U",
+                                      "title": "Kompass Kontinent Frage"
+                                    }
+                                  },
+                                  "pause": true,
+                                  "displayType": "poster",
+                                  "buttonOnMobile": false,
+                                  "adaptivity": {
+                                    "correct": {
+                                      "allowOptOut": false,
+                                      "message": ""
+                                    },
+                                    "wrong": {
+                                      "allowOptOut": false,
+                                      "message": ""
+                                    },
+                                    "requireCompletion": false
+                                  },
+                                  "label": ""
+                                },
+                                {
+                                  "x": 37.711313394018205,
+                                  "y": 34.677109870954915,
+                                  "width": 10,
+                                  "height": 6.24187256176853,
+                                  "duration": { "from": 0, "to": 1 },
+                                  "libraryTitle": "Text",
+                                  "action": {
+                                    "library": "H5P.Text 1.1",
+                                    "params": {
+                                      "text": "<p>Nutze gerne die Slow-Motion Funktion um das Video abzuspielen</p>"
+                                    },
+                                    "subContentId": "b2400d5d-7d29-40ce-86d8-d0babe74ff2f",
+                                    "metadata": {
+                                      "contentType": "Text",
+                                      "license": "U",
+                                      "title": "Untitled Text"
+                                    }
+                                  },
+                                  "pause": true,
+                                  "displayType": "poster",
+                                  "buttonOnMobile": false,
+                                  "visuals": {
+                                    "backgroundColor": "rgb(255, 255, 255)",
+                                    "boxShadow": true
+                                  },
+                                  "goto": {
+                                    "url": { "protocol": "http://" },
+                                    "visualize": false,
+                                    "type": ""
+                                  },
+                                  "label": ""
+                                }
+                              ]
+                            },
+                            "summary": {
+                              "task": {
+                                "library": "H5P.Summary 1.10",
+                                "params": {
+                                  "intro": "<p>Je stärker das Magnetfeld, desto schneller richtet sich der Kompass aus. In Argentinien Südamerika ist das Erdmagnetfeld schwächer.</p>",
+                                  "overallFeedback": [{ "from": 0, "to": 100 }],
+                                  "solvedLabel": "Fortschritt:",
+                                  "scoreLabel": "Falsche Antworten:",
+                                  "resultLabel": "Dein Ergebnis",
+                                  "labelCorrect": "Richtig.",
+                                  "labelIncorrect": "Falsch! Bitte versuche es noch einmal.",
+                                  "alternativeIncorrectLabel": "Falsch",
+                                  "labelCorrectAnswers": "Richtige Antwort(en).",
+                                  "tipButtonLabel": "Tipp anzeigen",
+                                  "scoreBarLabel": "Du hast :num von :total Punkten erreicht.",
+                                  "progressText": "Fortschritt :num von :total"
+                                },
+                                "subContentId": "ae68c00b-48b0-4fc1-920d-3e8185798498",
+                                "metadata": {
+                                  "contentType": "Summary",
+                                  "license": "U",
+                                  "title": "Zusammenfassung"
+                                }
+                              },
+                              "displayAt": 0
+                            }
+                          },
+                          "override": {
+                            "autoplay": false,
+                            "loop": false,
+                            "showBookmarksmenuOnLoad": false,
+                            "showRewind10": false,
+                            "preventSkippingMode": "none",
+                            "deactivateSound": false
+                          },
+                          "l10n": {
+                            "interaction": "Interaktion",
+                            "play": "Abspielen",
+                            "pause": "Pause",
+                            "mute": "Stummschalten, derzeit nicht laut geschaltet",
+                            "unmute": "Laut schalten, derzeit stumm geschaltet",
+                            "quality": "Videoqualität",
+                            "captions": "Untertitel",
+                            "close": "Schließen",
+                            "fullscreen": "Vollbild",
+                            "exitFullscreen": "Vollbild beenden",
+                            "summary": "Zusammenfassung öffnen",
+                            "bookmarks": "Lesezeichen",
+                            "endscreen": "Einsendebildschirm",
+                            "defaultAdaptivitySeekLabel": "Fortfahren",
+                            "continueWithVideo": "Video fortsetzen",
+                            "more": "Mehr Abspieloptionen",
+                            "playbackRate": "Abspielgeschwindigkeit",
+                            "rewind10": "10 Sekunden zurückspulen",
+                            "navDisabled": "Vor- und Zurückspulen ist deaktiviert",
+                            "navForwardDisabled": "Navigation vorwärts ist deaktiviert",
+                            "sndDisabled": "Ton ist deaktiviert",
+                            "requiresCompletionWarning": "Es müssen alle Fragen richtig beantwortet werden, um weitermachen zu können.",
+                            "back": "Zurück",
+                            "hours": "Stunden",
+                            "minutes": "Minuten",
+                            "seconds": "Sekunden",
+                            "currentTime": "Aktuelle Zeit:",
+                            "totalTime": "Gesamtzeit:",
+                            "singleInteractionAnnouncement": "Interaktion ist erschienen:",
+                            "multipleInteractionsAnnouncement": "Mehrere Interaktionen sind erschienen.",
+                            "videoPausedAnnouncement": "Video ist angehalten",
+                            "content": "Inhalt",
+                            "answered": "@answered beantwortet",
+                            "endcardTitle": "@answered Frage(n) beantwortet",
+                            "endcardInformation": "Du hast @answered Fragen beantwortet.",
+                            "endcardInformationOnSubmitButtonDisabled": "Du hast @answered Fragen beantwortet. Klicke unten, um deine Ergebnisse abzusenden.",
+                            "endcardInformationNoAnswers": "Du hast noch keine Fragen beantwortet.",
+                            "endcardInformationMustHaveAnswer": "Du musst mindestens eine Frage beantworten, um deine Antworten absenden zu können.",
+                            "endcardSubmitButton": "Antworten absenden",
+                            "endcardSubmitMessage": "Deine Antworten wurden abgeschickt!",
+                            "endcardTableRowAnswered": "Beantwortete Fragen",
+                            "endcardTableRowScore": "Punkte",
+                            "endcardAnsweredScore": "beantwortet",
+                            "endCardTableRowSummaryWithScore": "Du hast @score von @total Punkten für die @question erhalten, die bei @minutes Minuten und @seconds Sekunden erschienen ist.",
+                            "endCardTableRowSummaryWithoutScore": "Du hast die @question beantwortet, die bei @minutes Minuten und @seconds Sekunden erschienen ist.",
+                            "videoProgressBar": "Video-Fortschritt",
+                            "howToCreateInteractions": "Spiele das Video ab, um mit dem Erstellen von Interaktionen zu beginnen"
+                          }
+                        },
+                        "subContentId": "d364b8f5-10b2-44ae-a941-03cb009cef51",
+                        "metadata": {
+                          "contentType": "Interactive Video",
+                          "license": "U",
+                          "title": "Kompass Orientierungsgeschwindigkeit"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 95.66219120312047,
+                      "y": 23.953115768069967,
+                      "width": 40,
+                      "height": 40,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Beim Vergleich der Kompassgeschwindigkeiten müsste man zusätzlich berücksichtigen:</p><ul><li>Dass die Kompasse wirklich baugleich sind und die Nadel das selbe magnetische Moment besitzt,</li><li>Dass Die Lagerung der Nadel und das Öl jeweils die selben Eigenschaften besitzt,</li><li>Dass der Breitengrad (südlich bzw. nördlich) der Messpunkte der selbe ist (Horizontalkomponente des Erdmagnetfelds),</li><li>Dass die Ausgangsposition des Kompasses vergleichbar ist,</li><li>Dass Das Störmagnetfeld bei entfernen die Messung nicht beeinflusst,</li></ul><p> </p>"
+                        },
+                        "subContentId": "8a6cf7be-72bc-4ddd-8ee1-e2ef9c4080c7",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Kompassvergleich"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": true,
+                      "buttonSize": "small",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": {
+                    "imageSlideBackground": {
+                      "path": "images/image-9gJmpdHY.png",
+                      "mime": "image/png",
+                      "copyright": { "license": "U" },
+                      "width": 1600,
+                      "height": 800
+                    },
+                    "fillSlideBackground": ""
+                  }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 3.8910505836575875,
+                      "y": 30.744635061181825,
+                      "width": 80.41400778210117,
+                      "height": 53.79721863534813,
+                      "action": {
+                        "library": "H5P.SingleChoiceSet 1.11",
+                        "params": {
+                          "choices": [
+                            {
+                              "subContentId": "50c10f7f-f469-4056-ba40-b9a755f02149",
+                              "question": "<p>Mit dem Kompass kann man also bestimmen wo auf der Erde man ist.<br />Wie bestimmt man normalerweise seine Position auf der Erde, (jedes Smartphone tut das so)?</p>",
+                              "answers": [
+                                "<p>mit dem GPS&nbsp;</p>",
+                                "<p>mit dem LoL</p>",
+                                "<p>mit dem VPN</p>"
+                              ]
+                            }
+                          ],
+                          "overallFeedback": [{ "from": 0, "to": 100 }],
+                          "behaviour": {
+                            "autoContinue": true,
+                            "timeoutCorrect": 2000,
+                            "timeoutWrong": 3000,
+                            "soundEffectsEnabled": true,
+                            "enableRetry": true,
+                            "enableSolutionsButton": true,
+                            "passPercentage": 100
+                          },
+                          "l10n": {
+                            "nextButtonLabel": "Weiter",
+                            "showSolutionButtonLabel": "Lösung anzeigen",
+                            "retryButtonLabel": "Wiederholen",
+                            "solutionViewTitle": "Lösung",
+                            "correctText": "Richtig!",
+                            "incorrectText": "Falsch!",
+                            "shouldSelect": "Hätte gewählt werden müssen",
+                            "shouldNotSelect": "Hätte nicht gewählt werden sollen",
+                            "muteButtonLabel": "Stumm schalten",
+                            "closeButtonLabel": "Schließen",
+                            "slideOfTotal": "Seite :num von :total",
+                            "scoreBarLabel": "Du hast :num von :total Punkten erreicht.",
+                            "solutionListQuestionNumber": "Frage :num",
+                            "a11yShowSolution": "Die Lösung anzeigen. Die richtigen Lösungen werden in der Aufgabe angezeigt.",
+                            "a11yRetry": "Die Aufgabe wiederholen. Alle Versuche werden zurückgesetzt und die Aufgabe wird erneut gestartet."
+                          }
+                        },
+                        "subContentId": "da727081-b518-4731-b113-d9b5f989617c",
+                        "metadata": {
+                          "contentType": "Single Choice Set",
+                          "license": "U",
+                          "title": "Geopositionierung Frage"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": {
+                    "imageSlideBackground": {
+                      "path": "images/image-ade39m5b.png",
+                      "mime": "image/png",
+                      "copyright": { "license": "U" },
+                      "width": 1600,
+                      "height": 800
+                    },
+                    "fillSlideBackground": ""
+                  }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 58.36575875486381,
+                      "y": 17.934370452356063,
+                      "width": 40.20544747081712,
+                      "height": 79.41954129004489,
+                      "action": {
+                        "library": "H5P.Video 1.6",
+                        "params": {
+                          "visuals": { "fit": true, "controls": true },
+                          "playback": { "autoplay": true, "loop": true },
+                          "l10n": {
+                            "name": "Video",
+                            "loading": "Videoplayer lädt...",
+                            "noPlayers": "Keine Videoplayer gefunden, die das vorliegende Videoformat unterstützen.",
+                            "noSources": "Es wurden für das Video keine Quellen angegeben.",
+                            "aborted": "Das Abspielen des Videos wurde abgebrochen.",
+                            "networkFailure": "Netzwerkfehler.",
+                            "cannotDecode": "Dekodierung des Mediums nicht möglich.",
+                            "formatNotSupported": "Videoformat wird nicht unterstützt.",
+                            "mediaEncrypted": "Medium verschlüsselt.",
+                            "unknownError": "Unbekannter Fehler.",
+                            "invalidYtId": "Ungültige YouTube-ID.",
+                            "unknownYtId": "Video mit dieser YouTube-ID konnte nicht gefunden werden.",
+                            "restrictedYt": "Der Besitzer dieses Videos erlaubt kein Einbetten."
+                          },
+                          "sources": [
+                            {
+                              "path": "videos/video-9uCtYp7r.mp4",
+                              "mime": "video/mp4",
+                              "copyright": { "license": "U" }
+                            }
+                          ]
+                        },
+                        "subContentId": "31643f71-18d4-40ef-aca1-9c33447e1b7a",
+                        "metadata": {
+                          "contentType": "Video",
+                          "license": "U",
+                          "title": "GPS Symbolbild"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 3.8910505836575875,
+                      "y": 28.182582139416674,
+                      "width": 51.87769130998703,
+                      "height": 66.61337596589395,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Positionsbestimmung ist sehr wichtig im Alltag: </p><ul><li>Navigationssysteme (Auto, Flugzeug)</li><li>Live-Standort Sharing (Messenger-Dienste)</li><li>Sport (Fitnesstracker, Lawinenrettung, ...)</li></ul><p>Für GPS-Ortung braucht man ganze Satelliten Konstellationen. Mit dem Kompass ist eine Positionsbestimmung prinzipiell einfacher möglich. Schauen wir uns das aber jetzt genauer. Wir brauchen zunächst einen besseren, präziseren schlicht einen geeigneteren Sensor:</p>"
+                        },
+                        "subContentId": "7f4726e0-e078-44b2-be13-86dbadeaf2dd",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "GPS Anwendungsreferenz"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 62.775616083009076,
+                      "y": 16.909549283650005,
+                      "width": 40,
+                      "height": 40,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Mit GPS (siehe Video) kann man die Distanz (grüne Linie) zu (erreichbaren) Satelliten (Punkte schwarz oder grün) bestimmen und sich (oranger Punkt) so auf der Erde lokalisieren. </p>"
+                        },
+                        "subContentId": "c3e964da-6d07-4ad6-9331-e82e0aa2309d",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Infotext GPS Video"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": true,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 58.62516212710765,
+                      "y": 18.446781036709094,
+                      "width": 3.8900389105058366,
+                      "height": 6.146928610957388,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p><span style=\"font-size:1.125em;\">GPS</span></p>"
+                        },
+                        "subContentId": "3d3a8f94-0b6f-4da9-80aa-e3e22a344362",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "GPS"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": {
+                    "imageSlideBackground": {
+                      "path": "images/image-v0eBDip2.png",
+                      "mime": "image/png",
+                      "copyright": { "license": "U" },
+                      "width": 1600,
+                      "height": 800
+                    },
+                    "fillSlideBackground": ""
+                  }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 4.042064417033259,
+                      "y": 29.276030383196627,
+                      "width": 49.283678817561416,
+                      "height": 69.19788999664657,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Es ist wichtig zu wissen, dass ein Diamant mit NV-Zentren bei Lichtanregung anfängt selbst zu leuchtet.  Hingegen bei der richtigen Kombination aus Magnet, Mikrowellenfrequenz leuchtet er leicht schwächer als bei einer minimal anderen Kombination. Dieses Detail des Diamanten machen wir uns zu Nutze, um einen geeigneteren Sensor zu bauen.</p><p>Das NV-Magnetometer ist klein, robust, wartungsarm. Es ist Magnetfeldstärkemessgerät und Kompass in einem. Das ist perfekt, um sich im Erdmagnetfeld damit zu positionieren. <br />Wir testen das jetzt aus. Dafür gibt es den abgebildeten Aufbau.</p><p> </p>"
+                        },
+                        "subContentId": "faad3aac-cc57-41fb-9ec6-b1adb6f9d49e",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "NV Magnetometer Motivation"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 54.474708171206224,
+                      "y": 29.207403308122732,
+                      "width": 42.56238651102464,
+                      "height": 63.05647789460739,
+                      "action": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                          "decorative": false,
+                          "contentName": "Bild",
+                          "expandImage": "Bild vergrößern",
+                          "minimizeImage": "Bild verkleinern",
+                          "file": {
+                            "path": "images/image-3514uhP0.jpeg",
+                            "mime": "image/jpeg",
+                            "copyright": { "license": "U" },
+                            "width": 1920,
+                            "height": 1440
+                          }
+                        },
+                        "subContentId": "07a632d5-444f-43af-9693-bd1f9ed19449",
+                        "metadata": {
+                          "contentType": "Image",
+                          "license": "U",
+                          "title": "Aufbau NV-Magnetometer"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": {
+                    "imageSlideBackground": {
+                      "path": "images/image-JNeULFRt.png",
+                      "mime": "image/png",
+                      "copyright": { "license": "U" },
+                      "width": 1600,
+                      "height": 800
+                    },
+                    "fillSlideBackground": ""
+                  }
+                }
+              ],
+              "keywordListEnabled": true,
+              "keywordListAlwaysShow": false,
+              "keywordListAutoHide": false,
+              "keywordListOpacity": 90,
+              "globalBackgroundSelector": {
+                "imageGlobalBackground": {
+                  "path": "images/image-vKJGdFwF.png",
+                  "mime": "image/png",
+                  "copyright": { "license": "U" },
+                  "width": 1600,
+                  "height": 800
+                },
+                "fillGlobalBackground": ""
+              }
+            },
+            "override": {
+              "activeSurface": false,
+              "hideSummarySlide": true,
+              "summarySlideSolutionButton": true,
+              "summarySlideRetryButton": true,
+              "enablePrintButton": false,
+              "social": {
+                "showFacebookShare": false,
+                "facebookShare": {
+                  "url": "@currentpageurl",
+                  "quote": "I scored @score out of @maxScore on a task at @currentpageurl."
+                },
+                "showTwitterShare": false,
+                "twitterShare": {
+                  "statement": "I scored @score out of @maxScore on a task at @currentpageurl.",
+                  "url": "@currentpageurl",
+                  "hashtags": "h5p, course"
+                },
+                "showGoogleShare": false,
+                "googleShareUrl": "@currentpageurl"
+              }
+            },
+            "l10n": {
+              "slide": "Folie",
+              "score": "Punktzahl",
+              "yourScore": "Deine Punktzahl",
+              "maxScore": "Maximale Punktzahl",
+              "total": "Summe",
+              "totalScore": "Gesamtpunktzahl",
+              "showSolutions": "Lösungen anzeigen",
+              "retry": "Wiederholen",
+              "exportAnswers": "Text exportieren",
+              "hideKeywords": "Stichwortliste verbergen",
+              "showKeywords": "Stichwortliste anzeigen",
+              "fullscreen": "Vollbild",
+              "exitFullscreen": "Vollbild beenden",
+              "prevSlide": "Vorherige Folie",
+              "nextSlide": "Nächste Folie",
+              "currentSlide": "Aktuelle Folie",
+              "lastSlide": "Letzte Folie",
+              "solutionModeTitle": "Lösungsmodus beenden",
+              "solutionModeText": "Lösungsmodus",
+              "summaryMultipleTaskText": "Mehrere Aufgaben",
+              "scoreMessage": "Du hast erreicht:",
+              "shareFacebook": "Auf Facebook teilen",
+              "shareTwitter": "Auf Twitter teilen",
+              "shareGoogle": "Auf Google+ teilen",
+              "summary": "Zusammenfassung",
+              "solutionsButtonTitle": "Kommentare anzeigen",
+              "printTitle": "Drucken",
+              "printIngress": "Wie möchtest du diese Präsentation drucken?",
+              "printAllSlides": "Alle Folien drucken",
+              "printCurrentSlide": "Aktuelle Folie drucken",
+              "noTitle": "Kein Titel",
+              "accessibilitySlideNavigationExplanation": "Verwende die linke oder rechte Cursortaste, um zur Folie in der jeweiligen Richtung zu blättern, wenn der Präsentationsbereich ausgewählt ist.",
+              "accessibilityCanvasLabel": "Präsentationsbereich. Verwende die linke oder rechte Cursortaste, um zwischen den Folien zu navigieren.",
+              "accessibilityProgressBarLabel": "Wähle das zu zeigende Schaubild",
+              "containsNotCompleted": "@slideName enthält eine nicht abgeschlossene Interaktion",
+              "containsCompleted": "@slideName wurde abgeschlossen",
+              "slideCount": "Folie @index von @total",
+              "containsOnlyCorrect": "@slideName enthält nur richtige Antworten",
+              "containsIncorrectAnswers": "@slideName enthält falsche Antworten",
+              "shareResult": "Ergebnis teilen",
+              "accessibilityTotalScore": "Du hast insgesamt @score von @maxScore Punkten erreicht.",
+              "accessibilityEnteredFullscreen": "Vollbild aktiviert",
+              "accessibilityExitedFullscreen": "Vollbild deaktiviert",
+              "confirmDialogHeader": "Antworten übermitteln",
+              "confirmDialogText": "Damit werden deine Ergebnisse übermittelt. Möchtest du fortfahren?",
+              "confirmDialogConfirmText": "Senden und Ergebnisse ansehen",
+              "slideshowNavigationLabel": "Schaubild-Navigation",
+              "confirmDialogConfirmLabel": "Confirm",
+              "confirmDialogCancelLabel": "Cancel"
+            }
+          },
+          "subContentId": "2a48d37d-c8d4-4f63-8c3b-cfe28f93f649",
+          "metadata": {
+            "contentType": "Course Presentation",
+            "license": "U",
+            "title": "Geopositioning Nr.1"
+          }
+        },
+        "showContentTitle": false,
+        "proceedButtonText": "Weiter",
+        "forceContentFinished": "useBehavioural",
+        "feedback": { "title": "", "subtitle": "" },
+        "contentBehaviour": "useBehavioural",
+        "nextContentId": 1
+      },
+      {
+        "type": {
+          "library": "H5P.BranchingQuestion 1.0",
+          "params": {
+            "branchingQuestion": {
+              "alternatives": [
+                {
+                  "nextContentId": 2,
+                  "feedback": { "title": "", "subtitle": "" },
+                  "text": "Ich hab die Materialien nicht und will nur weiter den Kurs durchklicken. (Weiter geht&#039;s.)"
+                },
+                {
+                  "nextContentId": 3,
+                  "feedback": { "title": "", "subtitle": "" },
+                  "text": "Ich hab die Materialien und brauche Hilfe bei der Vorbereitung, bevor es mit dem Kurs weiter geht."
+                },
+                {
+                  "nextContentId": 2,
+                  "feedback": { "title": "", "subtitle": "" },
+                  "text": "Es ist bereits ein QOOOL Kit Magneto vorbereitet und zur Messung bereit."
+                }
+              ],
+              "question": "<p>Wir brauchen jetzt ein Qoool Kit Magneto Messstift. Was trifft auf dich zu?</p>"
+            }
+          },
+          "subContentId": "c40581c9-2720-4454-8e8a-d45cae79355f",
+          "metadata": {
+            "contentType": "Branching Question",
+            "license": "U",
+            "title": "Qoool Kit Magneto Vorbereitung Notwendig"
+          }
+        },
+        "showContentTitle": false,
+        "proceedButtonText": "Weiter",
+        "forceContentFinished": "useBehavioural",
+        "feedback": { "title": "", "subtitle": "" },
+        "contentBehaviour": "useBehavioural"
+      },
+      {
+        "type": {
+          "library": "H5P.CoursePresentation 1.25",
+          "params": {
+            "presentation": {
+              "slides": [
+                {
+                  "elements": [
+                    {
+                      "x": 3.8910505836575875,
+                      "y": 28.182582139416674,
+                      "width": 54.473670557717256,
+                      "height": 69.17542888765911,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Nimm einen Sweep auf den wir diskutieren können.</p><ol><li>Checke ob: Die SenseBox RGB-LED leuchtet in grün (Kläre, das mit einem Betreuer, deinem eigenen Programm-code)</li><li>Gehe bei der Messsteuerung (runterscrollen) auf den Reiter \"Sweep\" (oben links)</li><li>Um die Messung zu starten gehst du auf den blauen \"Start Sweep\" Knopf.</li><li>Checke ob: Die RGB-LED blinkt zusätzlich blau, während die Messung läuft und Daten nach und nach angezeigt werden.</li><li>Wenn der Messbereich nicht passt kannst du diesen zukünftig mit dem Slider auswählen.</li></ol><p> </p>"
+                        },
+                        "subContentId": "3bf22035-7e00-4604-93c8-c1b239ca7287",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Sweep"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 58.79740596627756,
+                      "y": 38.43079382647728,
+                      "width": 39.1,
+                      "height": 57.92852897169444,
+                      "action": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                          "decorative": false,
+                          "contentName": "Bild",
+                          "expandImage": "Bild vergrößern",
+                          "minimizeImage": "Bild verkleinern",
+                          "file": {
+                            "path": "images/image-M8svVMK4.jpeg",
+                            "mime": "image/jpeg",
+                            "copyright": { "license": "U" },
+                            "width": 1920,
+                            "height": 1440
+                          },
+                          "alt": "QOOOL Kit Magneto Sweep Messung ohne Messobjekt"
+                        },
+                        "subContentId": "9c32c93a-d2d0-4c6a-8800-a6b1ab58c6c8",
+                        "metadata": {
+                          "contentType": "Image",
+                          "license": "U",
+                          "title": "Sweep blank"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": { "fillSlideBackground": "" }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 3.8910505836575875,
+                      "y": 28.182582139416674,
+                      "width": 32.423346303501944,
+                      "height": 28.180532497079263,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Falls alles richtig gelaufen ist sieht die Graphik im Kontrollzentrum so aus wie rechts.</p><p>Wir klären kurz was da eigentlich passiert ist.</p>"
+                        },
+                        "subContentId": "d2a3b869-18ec-4230-b24d-548b0a226f78",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Erster Sweep"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": {
+                    "imageSlideBackground": {
+                      "path": "images/image-pW5aCEBi.png",
+                      "mime": "image/png",
+                      "copyright": { "license": "U" },
+                      "width": 1600,
+                      "height": 800
+                    },
+                    "fillSlideBackground": ""
+                  }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 3.8910505836575875,
+                      "y": 28.182582139416674,
+                      "width": 37.612451361867706,
+                      "height": 69.17542888765911,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Sweep: bedeutet es werden nacheinander verschiedene (in diesem Fall) Mikrowellenfrequenzen (x-Achse) eingestellt und Helligkeitswerte (Intensität, y-Achse) gemessen.</p><p>In dem kleinen Video ist das dadurch gegeben, dass die Messwerte schwarz statt nur grau von links nach rechts eingetragen werden.</p><p>Bei einem Sweep wird immer nur eine Sache verändert, deshalb gehen wir hier davon aus, dass das Magnetfeld sich während der Messung nicht ändert.</p><p> </p>"
+                        },
+                        "subContentId": "2b651a7c-8a86-4a92-8871-bcb59443f45b",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Sweep was ist das."
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 42.80155642023346,
+                      "y": 28.182582139416674,
+                      "width": 54.47172503242542,
+                      "height": 66.61337596589395,
+                      "action": {
+                        "library": "H5P.Video 1.6",
+                        "params": {
+                          "visuals": { "fit": true, "controls": true },
+                          "playback": { "autoplay": false, "loop": false },
+                          "l10n": {
+                            "name": "Video",
+                            "loading": "Videoplayer lädt...",
+                            "noPlayers": "Keine Videoplayer gefunden, die das vorliegende Videoformat unterstützen.",
+                            "noSources": "Es wurden für das Video keine Quellen angegeben.",
+                            "aborted": "Das Abspielen des Videos wurde abgebrochen.",
+                            "networkFailure": "Netzwerkfehler.",
+                            "cannotDecode": "Dekodierung des Mediums nicht möglich.",
+                            "formatNotSupported": "Videoformat wird nicht unterstützt.",
+                            "mediaEncrypted": "Medium verschlüsselt.",
+                            "unknownError": "Unbekannter Fehler.",
+                            "invalidYtId": "Ungültige YouTube-ID.",
+                            "unknownYtId": "Video mit dieser YouTube-ID konnte nicht gefunden werden.",
+                            "restrictedYt": "Der Besitzer dieses Videos erlaubt kein Einbetten."
+                          },
+                          "sources": [
+                            {
+                              "path": "videos/video-DFksw9vW.mp4",
+                              "mime": "video/mp4",
+                              "copyright": { "license": "U" }
+                            }
+                          ]
+                        },
+                        "subContentId": "cca94673-0dff-44e1-9a9d-a985f3d4869d",
+                        "metadata": {
+                          "contentType": "Video",
+                          "license": "U",
+                          "title": "var Freq fix B"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": {
+                    "imageSlideBackground": {
+                      "path": "images/image-YsNM805g.png",
+                      "mime": "image/png",
+                      "copyright": { "license": "U" },
+                      "width": 1600,
+                      "height": 800
+                    },
+                    "fillSlideBackground": ""
+                  }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 3.8910505836575875,
+                      "y": 28.182582139416674,
+                      "width": 46.69156939040208,
+                      "height": 64.04543032240875,
+                      "action": {
+                        "library": "H5P.SingleChoiceSet 1.11",
+                        "params": {
+                          "choices": [
+                            {
+                              "subContentId": "a60ce60e-fca4-4614-a705-6c29087c9786",
+                              "question": "<p>Statt nur dem Roll-modus  (feste Mikrowellenfrequenz, variables Magnetfeld) haben wir nun ein neues Messprinzip der Sweep-Modus. Was gilt für den Sweep Modus?</p>",
+                              "answers": [
+                                "<p>Variable Mikrowellenfrequenz und festes Magnetfeld</p>",
+                                "<p>festes Magnetfeld, feste Helligkeit</p>",
+                                "<p>variable Helligkeit, variables Magnetfeld</p>"
+                              ]
+                            }
+                          ],
+                          "overallFeedback": [{ "from": 0, "to": 100 }],
+                          "behaviour": {
+                            "autoContinue": true,
+                            "timeoutCorrect": 2000,
+                            "timeoutWrong": 3000,
+                            "soundEffectsEnabled": true,
+                            "enableRetry": true,
+                            "enableSolutionsButton": true,
+                            "passPercentage": 100
+                          },
+                          "l10n": {
+                            "nextButtonLabel": "Weiter",
+                            "showSolutionButtonLabel": "Lösung anzeigen",
+                            "retryButtonLabel": "Wiederholen",
+                            "solutionViewTitle": "Lösung",
+                            "correctText": "Richtig!",
+                            "incorrectText": "Falsch!",
+                            "shouldSelect": "Hätte gewählt werden müssen",
+                            "shouldNotSelect": "Hätte nicht gewählt werden sollen",
+                            "muteButtonLabel": "Stumm schalten",
+                            "closeButtonLabel": "Schließen",
+                            "slideOfTotal": "Seite :num von :total",
+                            "scoreBarLabel": "Du hast :num von :total Punkten erreicht.",
+                            "solutionListQuestionNumber": "Frage :num",
+                            "a11yShowSolution": "Die Lösung anzeigen. Die richtigen Lösungen werden in der Aufgabe angezeigt.",
+                            "a11yRetry": "Die Aufgabe wiederholen. Alle Versuche werden zurückgesetzt und die Aufgabe wird erneut gestartet."
+                          }
+                        },
+                        "subContentId": "74f67915-2ab9-44a7-b222-5530c3b48405",
+                        "metadata": {
+                          "contentType": "Single Choice Set",
+                          "license": "U",
+                          "title": "Untitled Single Choice Set"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 54.474708171206224,
+                      "y": 38.43079382647728,
+                      "width": 43.87055771725033,
+                      "height": 54.65576256943164,
+                      "action": {
+                        "library": "H5P.Video 1.6",
+                        "params": {
+                          "visuals": { "fit": true, "controls": true },
+                          "playback": { "autoplay": false, "loop": false },
+                          "l10n": {
+                            "name": "Video",
+                            "loading": "Videoplayer lädt...",
+                            "noPlayers": "Keine Videoplayer gefunden, die das vorliegende Videoformat unterstützen.",
+                            "noSources": "Es wurden für das Video keine Quellen angegeben.",
+                            "aborted": "Das Abspielen des Videos wurde abgebrochen.",
+                            "networkFailure": "Netzwerkfehler.",
+                            "cannotDecode": "Dekodierung des Mediums nicht möglich.",
+                            "formatNotSupported": "Videoformat wird nicht unterstützt.",
+                            "mediaEncrypted": "Medium verschlüsselt.",
+                            "unknownError": "Unbekannter Fehler.",
+                            "invalidYtId": "Ungültige YouTube-ID.",
+                            "unknownYtId": "Video mit dieser YouTube-ID konnte nicht gefunden werden.",
+                            "restrictedYt": "Der Besitzer dieses Videos erlaubt kein Einbetten."
+                          },
+                          "sources": [
+                            {
+                              "path": "videos/video-67P4EScP.mp4",
+                              "mime": "video/mp4",
+                              "copyright": { "license": "U" }
+                            }
+                          ]
+                        },
+                        "subContentId": "d885ff43-5eaa-486b-8354-0d7ae81c47e1",
+                        "metadata": {
+                          "contentType": "Video",
+                          "license": "U",
+                          "title": "Video nochmal"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": {
+                    "imageSlideBackground": {
+                      "path": "images/image-scG8FsEk.png",
+                      "mime": "image/png",
+                      "copyright": { "license": "U" },
+                      "width": 1600,
+                      "height": 800
+                    },
+                    "fillSlideBackground": ""
+                  }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 3.8910505836575875,
+                      "y": 28.182582139416674,
+                      "width": 66.10739299610894,
+                      "height": 15.370319129311934,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Der Messwert für das Magnetfeld wird bestimmt über den Abstand der zwei Stellen um das Zentrum (D=2.87 GHz) an denen der Diamant abdunkelt (Dips).</p>"
+                        },
+                        "subContentId": "663052d3-979f-4947-b75b-47f1b6ce3758",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Dips"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 3.8910505836575875,
+                      "y": 83.77913054172048,
+                      "width": 66.10739299610894,
+                      "height": 15.370319129311934,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Messungen der Frequenz bzw. der Zeit sind technisch auf mehr als die 15te Nachkommastelle machbar. Deshalb ist das Zurückführen des Magnetfeldes auf eine Frequenzmessung sehr geschickt.<br /> </p>"
+                        },
+                        "subContentId": "52366b95-051f-4d1e-8cf9-7e74dc0a0520",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Frequenzmessung"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 3.8910505836575875,
+                      "y": 38.43079382647728,
+                      "width": 66.14682230869002,
+                      "height": 43.550800385332764,
+                      "action": {
+                        "library": "H5P.SingleChoiceSet 1.11",
+                        "params": {
+                          "choices": [
+                            {
+                              "subContentId": "e7011f30-0e65-4b21-a110-cae17f785505",
+                              "question": "<p>Was stimmt für die Dips</p>",
+                              "answers": [
+                                "<p>Desto größer der Abstand in der Frequenz desto größer das Magnetfeld.&nbsp;</p>",
+                                "<p>Desto größer der Abstand im Magnetfeld desto größer das Helligkeit.&nbsp;</p>",
+                                "<p>Desto kleiner die Helligkeit desto kleiner die Mikrowellenfrequenz</p>"
+                              ]
+                            }
+                          ],
+                          "overallFeedback": [{ "from": 0, "to": 100 }],
+                          "behaviour": {
+                            "autoContinue": true,
+                            "timeoutCorrect": 2000,
+                            "timeoutWrong": 3000,
+                            "soundEffectsEnabled": true,
+                            "enableRetry": true,
+                            "enableSolutionsButton": true,
+                            "passPercentage": 100
+                          },
+                          "l10n": {
+                            "nextButtonLabel": "Weiter",
+                            "showSolutionButtonLabel": "Lösung anzeigen",
+                            "retryButtonLabel": "Wiederholen",
+                            "solutionViewTitle": "Lösung",
+                            "correctText": "Richtig!",
+                            "incorrectText": "Falsch!",
+                            "shouldSelect": "Hätte gewählt werden müssen",
+                            "shouldNotSelect": "Hätte nicht gewählt werden sollen",
+                            "muteButtonLabel": "Stumm schalten",
+                            "closeButtonLabel": "Schließen",
+                            "slideOfTotal": "Seite :num von :total",
+                            "scoreBarLabel": "Du hast :num von :total Punkten erreicht.",
+                            "solutionListQuestionNumber": "Frage :num",
+                            "a11yShowSolution": "Die Lösung anzeigen. Die richtigen Lösungen werden in der Aufgabe angezeigt.",
+                            "a11yRetry": "Die Aufgabe wiederholen. Alle Versuche werden zurückgesetzt und die Aufgabe wird erneut gestartet."
+                          }
+                        },
+                        "subContentId": "680d03f5-d7a1-4a6b-a1aa-52fce44e1fb4",
+                        "metadata": {
+                          "contentType": "Single Choice Set",
+                          "license": "U",
+                          "title": "Untitled Single Choice Set"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 90.79118028534371,
+                      "y": 51.24105843530304,
+                      "width": 40,
+                      "height": 40,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Noch ist der Abstand der Dips sehr gering, dass ändern wir jetzt.</p>"
+                        },
+                        "subContentId": "5b3f0c20-2726-4e8d-adb1-dfe2c6d208ad",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Überleitung"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": true,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": {
+                    "imageSlideBackground": {
+                      "path": "images/image-AEK072c4.png",
+                      "mime": "image/png",
+                      "copyright": { "license": "U" },
+                      "width": 1600,
+                      "height": 800
+                    },
+                    "fillSlideBackground": ""
+                  }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 3.8910505836575875,
+                      "y": 28.182582139416674,
+                      "width": 31.127367055771725,
+                      "height": 8.70898153272254,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Messe das Magnetfeld am Äquator.</p><p> </p>"
+                        },
+                        "subContentId": "b4e282f6-56ea-433b-b4c5-1b9f3b5dbea3",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Messung Äquator"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 36.31647211413748,
+                      "y": 12.81026460882576,
+                      "width": 40,
+                      "height": 40,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Beachte, dass die Messspitze den Globus wenn dann nur sehr leicht und ohne Wackeln berührt. Das sorgt für die besten Messwerte, denn wie gesagt verändert man beim Sweep nur einen Parameter und hält alle anderen möglichst unverändert/wackelfrei. Tipp: Hände auf dem Tisch ablegen, das macht schon viel aus. </p><p>Außerdem bitte den Laptop beim Messen nicht laden. Das verschlechtert ebenfalls die Datenqualität</p>"
+                        },
+                        "subContentId": "17709ad4-9c14-453c-a321-dbc835a485ec",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Hinweis"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": true,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 37.612451361867706,
+                      "y": 17.211794666830638,
+                      "width": 59.38417639429312,
+                      "height": 76.99173994138023,
+                      "action": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                          "decorative": false,
+                          "contentName": "Bild",
+                          "expandImage": "Bild vergrößern",
+                          "minimizeImage": "Bild verkleinern",
+                          "file": {
+                            "path": "images/image-dMe94cwK.jpeg",
+                            "mime": "image/jpeg",
+                            "copyright": { "license": "U" },
+                            "width": 1920,
+                            "height": 1260
+                          }
+                        },
+                        "subContentId": "64346f9d-7a05-4e92-870e-99776399bb0d",
+                        "metadata": {
+                          "contentType": "Image",
+                          "license": "U",
+                          "title": "Äquator messung"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": { "fillSlideBackground": "" }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 3.8910505836575875,
+                      "y": 28.182582139416674,
+                      "width": 47.98664072632944,
+                      "height": 69.17542888765911,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Das Ergebnis deiner Messung sieht vermutlich ähnlich zu dem Bild rechts aus:</p><ul><li>rechts und links außen gibt es Bereiche mit fast konstanter Lichtintensität.</li><li>Im mittleren Bereich gibt es Dips, also Einbrüche in der Helligkeit des Diamanten.</li><li>Die Dips liegen pärchenweise symmetrisch zum Zentrum (2.870 GHz).</li></ul><p>Eventuell ist es für dich aber verwirrend weil es \"zu viele\" Dips sind. Die Antwort auf die Frage wieso es nicht nur zwei Dips sind muss noch kurz warten. </p>"
+                        },
+                        "subContentId": "e8554118-d812-44ad-92b7-a5eba7cfcde2",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Mehrere Dips"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 50.583657587548636,
+                      "y": 34.07530385947652,
+                      "width": 49.41128404669261,
+                      "height": 60.718604603496686,
+                      "action": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                          "decorative": false,
+                          "contentName": "Bild",
+                          "expandImage": "Bild vergrößern",
+                          "minimizeImage": "Bild verkleinern",
+                          "file": {
+                            "path": "images/image-NUuArBhm.png",
+                            "mime": "image/png",
+                            "copyright": { "license": "U" },
+                            "width": 868,
+                            "height": 540
+                          }
+                        },
+                        "subContentId": "9c876fb4-fee0-47d4-80d1-0fc450928b3f",
+                        "metadata": {
+                          "contentType": "Image",
+                          "license": "U",
+                          "title": "Untitled Image"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 53.17769130998703,
+                      "y": 33.306687982946976,
+                      "width": 40,
+                      "height": 40,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Gerne mehrere Messungen von verschiedenen Richtungen entlang des Äquators machen, um dir einen Überblick zu verschaffen. </p>"
+                        },
+                        "subContentId": "6c15b5f0-987d-4687-82a0-ef70b10eada5",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Tipp"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": true,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": {
+                    "imageSlideBackground": {
+                      "path": "images/image-GtEgNhNh.png",
+                      "mime": "image/png",
+                      "copyright": { "license": "U" },
+                      "width": 1600,
+                      "height": 800
+                    },
+                    "fillSlideBackground": ""
+                  }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 3.8910505836575875,
+                      "y": 30.744635061181825,
+                      "width": 47.987548638132296,
+                      "height": 58.92516755826108,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Merke dir (gerne mit Zahlenwert) wie weit die äußersten Dips im Sweep voneinander entfernt sind. </p><p><br />Nimm dir eine zweite Person, die ohne Einstellungen zu verändern, und ohne es dir zu zeigen einen zweiten Sweep wahlweise von den Polen oder vom Äquator aufnimmt. </p><p>Es ist deine Aufgabe am Spektrum (Sweep Diagramm) abzulesen wo (Pole oder Äquator) auf der Erde gemessen wurde. Du bist sozusagen das Magnetfeld GPS.</p>"
+                        },
+                        "subContentId": "d9e26321-52dc-44f2-9d55-b78fa5b00fc0",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Magnet GPS Anweisung"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 66.147859922179,
+                      "y": 35.868740904712126,
+                      "width": 40,
+                      "height": 40,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Probiert es gerne jeweils mehrfach aus um rauszufinden, ob ihr mit dem Magnetfeld die Position messen könnt.</p>"
+                        },
+                        "subContentId": "830e922e-67cd-4d97-9374-017323716f34",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Hinweis"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": true,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": { "fillSlideBackground": "" }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 3.8910505836575875,
+                      "y": 28.182582139416674,
+                      "width": 44.09753566796368,
+                      "height": 55.614482772756155,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Hoffentlich habt ihr Erfolg gehabt über das Magnetfeld die Position auf der Erde zu bestimmen. GPS, nichts leichter als das ?!?</p><p>Wir hatten noch eine Frage offen: Woher kommen die vielen Dips im Spektrum rechts?</p><p>Zunächst ist wichtig, dass das zu messende Licht aus den NV-Stellen im Diamant kommt! </p>"
+                        },
+                        "subContentId": "bb3a34e4-0bfc-427d-afb5-3db219008a57",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Woher kommen die Dips"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 49.6757457846952,
+                      "y": 26.64535038635758,
+                      "width": 49.41128404669261,
+                      "height": 60.718604603496686,
+                      "action": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                          "decorative": false,
+                          "contentName": "Bild",
+                          "expandImage": "Bild vergrößern",
+                          "minimizeImage": "Bild verkleinern",
+                          "file": {
+                            "path": "images/image-NUuArBhm.png",
+                            "mime": "image/png",
+                            "copyright": { "license": "U" },
+                            "width": 868,
+                            "height": 540
+                          }
+                        },
+                        "metadata": {
+                          "contentType": "Image",
+                          "license": "U",
+                          "title": "Untitled Image"
+                        },
+                        "subContentId": "97c52fa1-0f51-4ea5-8f4b-a4db5442c9b7"
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 37.094682230869005,
+                      "y": 62.257885998893194,
+                      "width": 40,
+                      "height": 40,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Es gibt mindestens ein Quiz dazu den du gerne durchmachen kannst oder schon durchgemacht hast.</p>"
+                        },
+                        "subContentId": "e94cc3ac-e283-4b61-86f6-9b9833b08bce",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Referenz Quiz"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": true,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": {
+                    "imageSlideBackground": {
+                      "path": "images/image-gBTIsvDE.png",
+                      "mime": "image/png",
+                      "copyright": { "license": "U" },
+                      "width": 1600,
+                      "height": 800
+                    },
+                    "fillSlideBackground": ""
+                  }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 3.8910505836575875,
+                      "y": 28.182582139416674,
+                      "width": 32.42438391699092,
+                      "height": 64.04543032240875,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Woher kommen die Dips</p><p>Unsere Diamanten für die Messung sind große Kristalle in denen die Bindungen von vorne links bis hinten rechts parallel liegen. Wie in der Abbildung eines plattgedrückten Kristalls zu sehen gibt es dann nur 4 verschiedene Ausrichtungen der markierten NV-Stellen.</p>"
+                        },
+                        "subContentId": "dfead973-7a93-435e-8d02-94ff226b8e3d",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Einkristall"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 37.612451361867706,
+                      "y": 5.1241058435303035,
+                      "width": 55.541763942931254,
+                      "height": 89.66595954006026,
+                      "action": {
+                        "library": "H5P.DragQuestion 1.14",
+                        "params": {
+                          "scoreShow": "Überprüfen",
+                          "submit": "Übermitteln",
+                          "tryAgain": "Wiederholen",
+                          "scoreExplanation": "Richtige Antworten geben +1 Punkte. Bei falschen Antworten gibt es -1 Punkt. Die kleinstmögliche Punktzahl ist 0.",
+                          "question": {
+                            "settings": {
+                              "size": { "width": 620, "height": 380 },
+                              "background": {
+                                "path": "images/image-ZBJT83Dm.png",
+                                "mime": "image/png",
+                                "copyright": { "license": "U" },
+                                "width": 1920,
+                                "height": 1166
+                              }
+                            },
+                            "task": {
+                              "elements": [
+                                {
+                                  "x": 6.935483870967742,
+                                  "y": 0,
+                                  "width": 1.988795518207283,
+                                  "height": 5,
+                                  "dropZones": ["0"],
+                                  "type": {
+                                    "library": "H5P.Image 1.1",
+                                    "params": {
+                                      "decorative": false,
+                                      "contentName": "Image",
+                                      "expandImage": "Expand Image",
+                                      "minimizeImage": "Minimize Image",
+                                      "file": {
+                                        "path": "images/image-X8BJwjYI.png",
+                                        "mime": "image/png",
+                                        "copyright": { "license": "U" },
+                                        "width": 142,
+                                        "height": 357
+                                      },
+                                      "alt": "vertikale Markierung"
+                                    },
+                                    "subContentId": "e40f157c-8cfd-4832-8a8f-161e93b8890b",
+                                    "metadata": {
+                                      "contentType": "Image",
+                                      "license": "U",
+                                      "title": "vertikale Markierung"
+                                    }
+                                  },
+                                  "backgroundOpacity": 0,
+                                  "multiple": false
+                                },
+                                {
+                                  "x": 21.774193548387096,
+                                  "y": 24.47368421052632,
+                                  "width": 5,
+                                  "height": 2.0170454545454546,
+                                  "dropZones": ["1"],
+                                  "type": {
+                                    "library": "H5P.Image 1.1",
+                                    "params": {
+                                      "decorative": false,
+                                      "contentName": "Image",
+                                      "expandImage": "Expand Image",
+                                      "minimizeImage": "Minimize Image",
+                                      "file": {
+                                        "path": "images/image-txfPLitP.png",
+                                        "mime": "image/png",
+                                        "copyright": { "license": "U" },
+                                        "width": 352,
+                                        "height": 142
+                                      },
+                                      "alt": "horizontale Markierung"
+                                    },
+                                    "subContentId": "85aeda69-a983-4732-a742-cceb5872ea95",
+                                    "metadata": {
+                                      "contentType": "Image",
+                                      "license": "U",
+                                      "title": "Untitled Image"
+                                    }
+                                  },
+                                  "backgroundOpacity": 0,
+                                  "multiple": false
+                                },
+                                {
+                                  "x": 21.93548387096774,
+                                  "y": 61.8421052631579,
+                                  "width": 5,
+                                  "height": 2.0170454545454546,
+                                  "dropZones": ["2"],
+                                  "type": {
+                                    "library": "H5P.Image 1.1",
+                                    "params": {
+                                      "decorative": false,
+                                      "contentName": "Image",
+                                      "expandImage": "Expand Image",
+                                      "minimizeImage": "Minimize Image",
+                                      "file": {
+                                        "path": "images/image-txfPLitP.png",
+                                        "mime": "image/png",
+                                        "copyright": { "license": "U" },
+                                        "width": 352,
+                                        "height": 142
+                                      },
+                                      "alt": "horizontale Markierung"
+                                    },
+                                    "metadata": {
+                                      "contentType": "Image",
+                                      "license": "U",
+                                      "title": "Untitled Image"
+                                    },
+                                    "subContentId": "b54a824a-f921-4557-887e-bec40fb793fa"
+                                  },
+                                  "backgroundOpacity": 0,
+                                  "multiple": false
+                                },
+                                {
+                                  "x": 51.61290322580645,
+                                  "y": 50,
+                                  "width": 5,
+                                  "height": 2.0170454545454546,
+                                  "dropZones": ["1"],
+                                  "type": {
+                                    "library": "H5P.Image 1.1",
+                                    "params": {
+                                      "decorative": false,
+                                      "contentName": "Image",
+                                      "expandImage": "Expand Image",
+                                      "minimizeImage": "Minimize Image",
+                                      "file": {
+                                        "path": "images/image-txfPLitP.png",
+                                        "mime": "image/png",
+                                        "copyright": { "license": "U" },
+                                        "width": 352,
+                                        "height": 142
+                                      },
+                                      "alt": "horizontale Markierung"
+                                    },
+                                    "metadata": {
+                                      "contentType": "Image",
+                                      "license": "U",
+                                      "title": "Untitled Image"
+                                    },
+                                    "subContentId": "678c5c28-76ae-4cda-b79d-1fc81ba2ffbd"
+                                  },
+                                  "backgroundOpacity": 0,
+                                  "multiple": false
+                                },
+                                {
+                                  "x": 22.096774193548388,
+                                  "y": 86.8421052631579,
+                                  "width": 5,
+                                  "height": 2.0170454545454546,
+                                  "dropZones": ["1"],
+                                  "type": {
+                                    "library": "H5P.Image 1.1",
+                                    "params": {
+                                      "decorative": false,
+                                      "contentName": "Image",
+                                      "expandImage": "Expand Image",
+                                      "minimizeImage": "Minimize Image",
+                                      "file": {
+                                        "path": "images/image-txfPLitP.png",
+                                        "mime": "image/png",
+                                        "copyright": { "license": "U" },
+                                        "width": 352,
+                                        "height": 142
+                                      },
+                                      "alt": "horizontale Markierung"
+                                    },
+                                    "metadata": {
+                                      "contentType": "Image",
+                                      "license": "U",
+                                      "title": "Untitled Image"
+                                    },
+                                    "subContentId": "2fe383b3-16bc-4be3-b6f7-1fd9d55d1617"
+                                  },
+                                  "backgroundOpacity": 0,
+                                  "multiple": false
+                                },
+                                {
+                                  "x": 29.35483870967742,
+                                  "y": 0,
+                                  "width": 5,
+                                  "height": 2.0170454545454546,
+                                  "dropZones": ["1"],
+                                  "type": {
+                                    "library": "H5P.Image 1.1",
+                                    "params": {
+                                      "decorative": false,
+                                      "contentName": "Image",
+                                      "expandImage": "Expand Image",
+                                      "minimizeImage": "Minimize Image",
+                                      "file": {
+                                        "path": "images/image-txfPLitP.png",
+                                        "mime": "image/png",
+                                        "copyright": { "license": "U" },
+                                        "width": 352,
+                                        "height": 142
+                                      },
+                                      "alt": "horizontale Markierung"
+                                    },
+                                    "metadata": {
+                                      "contentType": "Image",
+                                      "license": "U",
+                                      "title": "Untitled Image"
+                                    },
+                                    "subContentId": "c49cf4c8-6503-4c76-baac-4f1411c6e83d"
+                                  },
+                                  "backgroundOpacity": 0,
+                                  "multiple": false
+                                },
+                                {
+                                  "x": 7.258064516129032,
+                                  "y": 49.473684210526315,
+                                  "width": 1.988795518207283,
+                                  "height": 5,
+                                  "dropZones": ["3"],
+                                  "type": {
+                                    "library": "H5P.Image 1.1",
+                                    "params": {
+                                      "decorative": false,
+                                      "contentName": "Image",
+                                      "expandImage": "Expand Image",
+                                      "minimizeImage": "Minimize Image",
+                                      "file": {
+                                        "path": "images/image-X8BJwjYI.png",
+                                        "mime": "image/png",
+                                        "copyright": { "license": "U" },
+                                        "width": 142,
+                                        "height": 357
+                                      },
+                                      "alt": "vertikale Markierung"
+                                    },
+                                    "metadata": {
+                                      "contentType": "Image",
+                                      "license": "U",
+                                      "title": "vertikale Markierung"
+                                    },
+                                    "subContentId": "7c401eb3-9e9f-45be-a91c-7fcf831c0b3f"
+                                  },
+                                  "backgroundOpacity": 0,
+                                  "multiple": false
+                                },
+                                {
+                                  "x": 66.93548387096774,
+                                  "y": 74.21052631578948,
+                                  "width": 1.988795518207283,
+                                  "height": 5,
+                                  "dropZones": ["3"],
+                                  "type": {
+                                    "library": "H5P.Image 1.1",
+                                    "params": {
+                                      "decorative": false,
+                                      "contentName": "Image",
+                                      "expandImage": "Expand Image",
+                                      "minimizeImage": "Minimize Image",
+                                      "file": {
+                                        "path": "images/image-X8BJwjYI.png",
+                                        "mime": "image/png",
+                                        "copyright": { "license": "U" },
+                                        "width": 142,
+                                        "height": 357
+                                      },
+                                      "alt": "vertikale Markierung"
+                                    },
+                                    "metadata": {
+                                      "contentType": "Image",
+                                      "license": "U",
+                                      "title": "vertikale Markierung"
+                                    },
+                                    "subContentId": "b686bde8-7c05-4e91-86b3-5a66a44ee5a0"
+                                  },
+                                  "backgroundOpacity": 0,
+                                  "multiple": false
+                                },
+                                {
+                                  "x": 51.935483870967744,
+                                  "y": 74.21052631578948,
+                                  "width": 1.988795518207283,
+                                  "height": 5,
+                                  "dropZones": ["0"],
+                                  "type": {
+                                    "library": "H5P.Image 1.1",
+                                    "params": {
+                                      "decorative": false,
+                                      "contentName": "Image",
+                                      "expandImage": "Expand Image",
+                                      "minimizeImage": "Minimize Image",
+                                      "file": {
+                                        "path": "images/image-X8BJwjYI.png",
+                                        "mime": "image/png",
+                                        "copyright": { "license": "U" },
+                                        "width": 142,
+                                        "height": 357
+                                      },
+                                      "alt": "vertikale Markierung"
+                                    },
+                                    "metadata": {
+                                      "contentType": "Image",
+                                      "license": "U",
+                                      "title": "vertikale Markierung"
+                                    },
+                                    "subContentId": "cc92e145-f131-45e7-81b0-c0d195be0fa0"
+                                  },
+                                  "backgroundOpacity": 0,
+                                  "multiple": false
+                                },
+                                {
+                                  "x": 59.516129032258064,
+                                  "y": 11.842105263157896,
+                                  "width": 1.988795518207283,
+                                  "height": 5,
+                                  "dropZones": ["0"],
+                                  "type": {
+                                    "library": "H5P.Image 1.1",
+                                    "params": {
+                                      "decorative": false,
+                                      "contentName": "Image",
+                                      "expandImage": "Expand Image",
+                                      "minimizeImage": "Minimize Image",
+                                      "file": {
+                                        "path": "images/image-X8BJwjYI.png",
+                                        "mime": "image/png",
+                                        "copyright": { "license": "U" },
+                                        "width": 142,
+                                        "height": 357
+                                      },
+                                      "alt": "vertikale Markierung"
+                                    },
+                                    "metadata": {
+                                      "contentType": "Image",
+                                      "license": "U",
+                                      "title": "vertikale Markierung"
+                                    },
+                                    "subContentId": "be982bbe-fc80-4d7b-8cd5-c6bd27cf9c57"
+                                  },
+                                  "backgroundOpacity": 0,
+                                  "multiple": false
+                                },
+                                {
+                                  "x": 44.516129032258064,
+                                  "y": 24.210526315789476,
+                                  "width": 1.988795518207283,
+                                  "height": 5,
+                                  "dropZones": ["3"],
+                                  "type": {
+                                    "library": "H5P.Image 1.1",
+                                    "params": {
+                                      "decorative": false,
+                                      "contentName": "Image",
+                                      "expandImage": "Expand Image",
+                                      "minimizeImage": "Minimize Image",
+                                      "file": {
+                                        "path": "images/image-X8BJwjYI.png",
+                                        "mime": "image/png",
+                                        "copyright": { "license": "U" },
+                                        "width": 142,
+                                        "height": 357
+                                      },
+                                      "alt": "vertikale Markierung"
+                                    },
+                                    "metadata": {
+                                      "contentType": "Image",
+                                      "license": "U",
+                                      "title": "vertikale Markierung"
+                                    },
+                                    "subContentId": "fb35b223-25f5-4b94-a85b-3e86a2bf7026"
+                                  },
+                                  "backgroundOpacity": 0,
+                                  "multiple": false
+                                }
+                              ],
+                              "dropZones": [
+                                {
+                                  "x": 87.09677419354838,
+                                  "y": 2.6315789473684212,
+                                  "width": 2.5,
+                                  "height": 5,
+                                  "correctElements": [],
+                                  "showLabel": false,
+                                  "backgroundOpacity": 0,
+                                  "tipsAndFeedback": { "tip": "" },
+                                  "single": false,
+                                  "autoAlign": false,
+                                  "label": "<div>Gr.1</div>"
+                                },
+                                {
+                                  "x": 84.83870967741936,
+                                  "y": 34.21052631578947,
+                                  "width": 5,
+                                  "height": 2.5,
+                                  "correctElements": [],
+                                  "showLabel": false,
+                                  "backgroundOpacity": 0,
+                                  "tipsAndFeedback": { "tip": "" },
+                                  "single": false,
+                                  "autoAlign": false,
+                                  "label": "<div>Gr.2</div>"
+                                },
+                                {
+                                  "x": 84.83870967741936,
+                                  "y": 55.26315789473684,
+                                  "width": 5,
+                                  "height": 2.5,
+                                  "correctElements": [],
+                                  "showLabel": false,
+                                  "backgroundOpacity": 0,
+                                  "tipsAndFeedback": { "tip": "" },
+                                  "single": false,
+                                  "autoAlign": false,
+                                  "label": "<div>Gr.3</div>"
+                                },
+                                {
+                                  "x": 87.41935483870968,
+                                  "y": 74.21052631578948,
+                                  "width": 2.5,
+                                  "height": 5,
+                                  "correctElements": [],
+                                  "showLabel": false,
+                                  "backgroundOpacity": 0,
+                                  "tipsAndFeedback": { "tip": "" },
+                                  "single": false,
+                                  "autoAlign": false,
+                                  "label": "<div>Gr.4</div>"
+                                }
+                              ]
+                            }
+                          },
+                          "overallFeedback": [{ "from": 0, "to": 100 }],
+                          "behaviour": {
+                            "enableRetry": true,
+                            "enableCheckButton": true,
+                            "singlePoint": false,
+                            "applyPenalties": true,
+                            "enableScoreExplanation": true,
+                            "dropZoneHighlighting": "dragging",
+                            "autoAlignSpacing": 2,
+                            "enableFullScreen": false,
+                            "showScorePoints": true,
+                            "showTitle": true
+                          },
+                          "grabbablePrefix": "Ziehbares Element {num} von {total}.",
+                          "grabbableSuffix": "Abgelegt in Ablagezone {num}.",
+                          "dropzonePrefix": "Ablagezone {num} von {total}.",
+                          "noDropzone": "Keine Ablagezone.",
+                          "tipLabel": "Hinweis zeigen",
+                          "tipAvailable": "Hinweis verfügbar",
+                          "correctAnswer": "Richtige Antwort",
+                          "wrongAnswer": "Falsche Antwort",
+                          "feedbackHeader": "Rückmeldung",
+                          "scoreBarLabel": "Du hast :num von :total Punkten erreicht.",
+                          "scoreExplanationButtonLabel": "Zeige Erklärung der Punktevergabe",
+                          "a11yCheck": "Die Antworten überprüfen. Die Eingaben werden als richtig, falsch oder unbeantwortet markiert.",
+                          "a11yRetry": "Die Aufgabe wiederholen. Alle Versuche werden zurückgesetzt und die Aufgabe wird erneut gestartet.",
+                          "localize": {
+                            "fullscreen": "Vollbild",
+                            "exitFullscreen": "Vollbild beenden"
+                          }
+                        },
+                        "subContentId": "b71d362e-b349-4944-a9b6-f83f1aa37bfa",
+                        "metadata": {
+                          "contentType": "Drag and Drop",
+                          "license": "U",
+                          "title": "NV Gruppen"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": {
+                    "imageSlideBackground": {
+                      "path": "images/image-ltWbPLIK.png",
+                      "mime": "image/png",
+                      "copyright": { "license": "U" },
+                      "width": 1600,
+                      "height": 800
+                    },
+                    "fillSlideBackground": ""
+                  }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 3.8910505836575875,
+                      "y": 28.182582139416674,
+                      "width": 57.067704280155645,
+                      "height": 69.17542888765911,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Die Helligkeit des Diamant ist also die Summe des abgegebenen Lichts der einzelnen Gruppen. </p><p>Jede Gruppe steht im Allgemeinen mit einem eigenen Winkel zum Magnetfeld.  </p><p> </p><p>Je mehr das Magnetfeld entlang des NV-Zentrums zeigt desto größer ist der Effekt des Magnetfelds auf das NV-Zentrum größer. </p><p>Wo im Spektrum es dunkel ist, wird vom Winkel mitbestimmt.<br /> </p>"
+                        },
+                        "subContentId": "ae9f398d-3927-4827-aa21-d964022d60d8",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Vier Gruppen wieder zusammen"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 64.85084306095979,
+                      "y": 12.81026460882576,
+                      "width": 16.861219195849547,
+                      "height": 81.05105659062494,
+                      "action": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                          "decorative": false,
+                          "contentName": "Bild",
+                          "expandImage": "Bild vergrößern",
+                          "minimizeImage": "Bild verkleinern",
+                          "file": {
+                            "path": "images/image-r2TwPE8a.png",
+                            "mime": "image/png",
+                            "copyright": { "license": "U" },
+                            "width": 609,
+                            "height": 1482
+                          }
+                        },
+                        "subContentId": "57e2387b-83c8-4af5-b548-41b7d12832a1",
+                        "metadata": {
+                          "contentType": "Image",
+                          "license": "U",
+                          "title": "winkel"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 14.267185473411155,
+                      "y": 46.11695259177274,
+                      "width": 40,
+                      "height": 40,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Siehe Abbildung rechts. Es ist der Winkel zwischen den Pfeilen am NV-Zentrum gemeint.</p>"
+                        },
+                        "subContentId": "ff1ee12c-c668-4557-af58-93b8dec53d88",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Untitled Text"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": true,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": {
+                    "imageSlideBackground": {
+                      "path": "images/image-CiDD8d3U.png",
+                      "mime": "image/png",
+                      "copyright": { "license": "U" },
+                      "width": 1600,
+                      "height": 800
+                    },
+                    "fillSlideBackground": ""
+                  }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 7.782101167315175,
+                      "y": 36.146979852015825,
+                      "width": 58.364721141374844,
+                      "height": 63.96113878128266,
+                      "action": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                          "decorative": false,
+                          "contentName": "Bild",
+                          "expandImage": "Bild vergrößern",
+                          "minimizeImage": "Bild verkleinern",
+                          "file": {
+                            "path": "images/image-6gi3Nhem.png",
+                            "mime": "image/png",
+                            "copyright": { "license": "U" },
+                            "width": 1920,
+                            "height": 1065
+                          }
+                        },
+                        "metadata": {
+                          "contentType": "Image",
+                          "license": "U",
+                          "title": "Platzhalter"
+                        },
+                        "subContentId": "760fd767-04a9-4546-aabb-be82278a379d"
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 3.8910505836575875,
+                      "y": 28.182582139416674,
+                      "width": 57.067704280155645,
+                      "height": 12.808266207546783,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Ordne die Gruppen per Drag and Drop den Dips in dem Spektrum (Sweep-Diagramm ) zu.</p>"
+                        },
+                        "subContentId": "bd9cf76d-412c-4cf4-96b6-5a0f4713163b",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Anweisung Dips zu NV gruppe"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    },
+                    {
+                      "x": 70.03891050583658,
+                      "y": 15.372317530590912,
+                      "width": 27.23437094682231,
+                      "height": 76.85953801061716,
+                      "action": {
+                        "library": "H5P.SingleChoiceSet 1.11",
+                        "params": {
+                          "choices": [
+                            {
+                              "subContentId": "d036a17b-883c-4f6f-b6ec-13ef3841db0f",
+                              "question": "<p>Wenn jede Gruppe mit einem individuellen Winkel zu Magnetfeld steht, sind im Diagramm maximal </p>",
+                              "answers": [
+                                "<p>4 Dips zu sehen</p>",
+                                "<p>5 Dips zu sehen</p>",
+                                "<p>8 Dips zu sehen</p>",
+                                "<p>12 Dips zu sehen</p>"
+                              ]
+                            }
+                          ],
+                          "overallFeedback": [{ "from": 0, "to": 100 }],
+                          "behaviour": {
+                            "autoContinue": true,
+                            "timeoutCorrect": 2000,
+                            "timeoutWrong": 3000,
+                            "soundEffectsEnabled": true,
+                            "enableRetry": true,
+                            "enableSolutionsButton": true,
+                            "passPercentage": 100
+                          },
+                          "l10n": {
+                            "nextButtonLabel": "Weiter",
+                            "showSolutionButtonLabel": "Lösung anzeigen",
+                            "retryButtonLabel": "Wiederholen",
+                            "solutionViewTitle": "Lösung",
+                            "correctText": "Richtig!",
+                            "incorrectText": "Falsch!",
+                            "shouldSelect": "Hätte gewählt werden müssen",
+                            "shouldNotSelect": "Hätte nicht gewählt werden sollen",
+                            "muteButtonLabel": "Stumm schalten",
+                            "closeButtonLabel": "Schließen",
+                            "slideOfTotal": "Seite :num von :total",
+                            "scoreBarLabel": "Du hast :num von :total Punkten erreicht.",
+                            "solutionListQuestionNumber": "Frage :num",
+                            "a11yShowSolution": "Die Lösung anzeigen. Die richtigen Lösungen werden in der Aufgabe angezeigt.",
+                            "a11yRetry": "Die Aufgabe wiederholen. Alle Versuche werden zurückgesetzt und die Aufgabe wird erneut gestartet."
+                          }
+                        },
+                        "subContentId": "241fae05-9a79-4581-bab3-e7aa60874b2b",
+                        "metadata": {
+                          "contentType": "Single Choice Set",
+                          "license": "U",
+                          "title": "wie viele Dips gibt es"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": {
+                    "imageSlideBackground": {
+                      "path": "images/image-OKMZ6YFI.png",
+                      "mime": "image/png",
+                      "copyright": { "license": "U" },
+                      "width": 1600,
+                      "height": 800
+                    },
+                    "fillSlideBackground": ""
+                  }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 3.8910505836575875,
+                      "y": 28.182582139416674,
+                      "width": 49.28560311284047,
+                      "height": 51.236959150628216,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Die 4 Dippaare scheinen auf den ersten Blick hinderlich zu sein. Allerdings kann das NV-Magnetometer damit statt nur der Stärke auch die Richtung des Magnetfeldes bestimmen. (sprich eine eingebaute Kompassfunktion)</p>"
+                        },
+                        "subContentId": "da420db5-d606-4d80-afa0-6691ad78e664",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Richtungsmessung"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": {
+                    "imageSlideBackground": {
+                      "path": "images/image-kKUsueAH.png",
+                      "mime": "image/png",
+                      "copyright": { "license": "U" },
+                      "width": 1600,
+                      "height": 800
+                    },
+                    "fillSlideBackground": ""
+                  }
+                },
+                {
+                  "elements": [
+                    {
+                      "x": 9.07911802853437,
+                      "y": 74.29953473118941,
+                      "width": 40,
+                      "height": 40,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                          "text": "<p>Fun Fact: Man kann mit dem Magnetfeld grob messen wo man auf der Erde ist. Man kann aber auch grob messen wann. (Zu Römerzeiten war das Magnetfeld noch grob doppelt so groß.)</p>"
+                        },
+                        "subContentId": "ac477c27-f062-49c3-8784-c522efa196bf",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Untitled Text"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": true,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": {
+                    "imageSlideBackground": {
+                      "path": "images/image-3BRjTdNu.png",
+                      "mime": "image/png",
+                      "copyright": { "license": "U" },
+                      "width": 1600,
+                      "height": 800
+                    },
+                    "fillSlideBackground": ""
+                  }
+                }
+              ],
+              "keywordListEnabled": true,
+              "keywordListAlwaysShow": false,
+              "keywordListAutoHide": false,
+              "keywordListOpacity": 90,
+              "globalBackgroundSelector": {
+                "imageGlobalBackground": {
+                  "path": "images/image-lHlVcOPO.png",
+                  "mime": "image/png",
+                  "copyright": { "license": "U" },
+                  "width": 1600,
+                  "height": 800
+                },
+                "fillGlobalBackground": ""
+              }
+            },
+            "override": {
+              "activeSurface": false,
+              "hideSummarySlide": false,
+              "summarySlideSolutionButton": true,
+              "summarySlideRetryButton": true,
+              "enablePrintButton": false,
+              "social": {
+                "showFacebookShare": false,
+                "facebookShare": {
+                  "url": "@currentpageurl",
+                  "quote": "I scored @score out of @maxScore on a task at @currentpageurl."
+                },
+                "showTwitterShare": false,
+                "twitterShare": {
+                  "statement": "I scored @score out of @maxScore on a task at @currentpageurl.",
+                  "url": "@currentpageurl",
+                  "hashtags": "h5p, course"
+                },
+                "showGoogleShare": false,
+                "googleShareUrl": "@currentpageurl"
+              }
+            },
+            "l10n": {
+              "slide": "Folie",
+              "score": "Punktzahl",
+              "yourScore": "Deine Punktzahl",
+              "maxScore": "Maximale Punktzahl",
+              "total": "Summe",
+              "totalScore": "Gesamtpunktzahl",
+              "showSolutions": "Lösungen anzeigen",
+              "retry": "Wiederholen",
+              "exportAnswers": "Text exportieren",
+              "hideKeywords": "Stichwortliste verbergen",
+              "showKeywords": "Stichwortliste anzeigen",
+              "fullscreen": "Vollbild",
+              "exitFullscreen": "Vollbild beenden",
+              "prevSlide": "Vorherige Folie",
+              "nextSlide": "Nächste Folie",
+              "currentSlide": "Aktuelle Folie",
+              "lastSlide": "Letzte Folie",
+              "solutionModeTitle": "Lösungsmodus beenden",
+              "solutionModeText": "Lösungsmodus",
+              "summaryMultipleTaskText": "Mehrere Aufgaben",
+              "scoreMessage": "Du hast erreicht:",
+              "shareFacebook": "Auf Facebook teilen",
+              "shareTwitter": "Auf Twitter teilen",
+              "shareGoogle": "Auf Google+ teilen",
+              "summary": "Zusammenfassung",
+              "solutionsButtonTitle": "Kommentare anzeigen",
+              "printTitle": "Drucken",
+              "printIngress": "Wie möchtest du diese Präsentation drucken?",
+              "printAllSlides": "Alle Folien drucken",
+              "printCurrentSlide": "Aktuelle Folie drucken",
+              "noTitle": "Kein Titel",
+              "accessibilitySlideNavigationExplanation": "Verwende die linke oder rechte Cursortaste, um zur Folie in der jeweiligen Richtung zu blättern, wenn der Präsentationsbereich ausgewählt ist.",
+              "accessibilityCanvasLabel": "Präsentationsbereich. Verwende die linke oder rechte Cursortaste, um zwischen den Folien zu navigieren.",
+              "accessibilityProgressBarLabel": "Wähle das zu zeigende Schaubild",
+              "containsNotCompleted": "@slideName enthält eine nicht abgeschlossene Interaktion",
+              "containsCompleted": "@slideName wurde abgeschlossen",
+              "slideCount": "Folie @index von @total",
+              "containsOnlyCorrect": "@slideName enthält nur richtige Antworten",
+              "containsIncorrectAnswers": "@slideName enthält falsche Antworten",
+              "shareResult": "Ergebnis teilen",
+              "accessibilityTotalScore": "Du hast insgesamt @score von @maxScore Punkten erreicht.",
+              "accessibilityEnteredFullscreen": "Vollbild aktiviert",
+              "accessibilityExitedFullscreen": "Vollbild deaktiviert",
+              "confirmDialogHeader": "Antworten übermitteln",
+              "confirmDialogText": "Damit werden deine Ergebnisse übermittelt. Möchtest du fortfahren?",
+              "confirmDialogConfirmText": "Senden und Ergebnisse ansehen",
+              "slideshowNavigationLabel": "Schaubild-Navigation",
+              "confirmDialogConfirmLabel": "Confirm",
+              "confirmDialogCancelLabel": "Cancel"
+            }
+          },
+          "subContentId": "7c48d12c-750a-4630-bb11-b34de770ecf0",
+          "metadata": {
+            "contentType": "Course Presentation",
+            "license": "U",
+            "title": "Geopositioning Nr.2"
+          }
+        },
+        "showContentTitle": false,
+        "proceedButtonText": "Weiter",
+        "forceContentFinished": "useBehavioural",
+        "feedback": { "title": "", "subtitle": "" },
+        "contentBehaviour": "useBehavioural",
+        "nextContentId": -1
+      },
+      {
+        "type": {
+          "library": "H5P.CoursePresentation 1.25",
+          "params": {
+            "presentation": {
+              "slides": [
+                {
+                  "elements": [
+                    {
+                      "x": 30.00012970168612,
+                      "y": 29.999974379470785,
+                      "width": 40,
+                      "height": 40,
+                      "action": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": { "text": "<p>some text</p>" },
+                        "subContentId": "66cb1661-75d4-47b0-baf0-01e7a08da569",
+                        "metadata": {
+                          "contentType": "Text",
+                          "license": "U",
+                          "title": "Untitled Text"
+                        }
+                      },
+                      "alwaysDisplayComments": false,
+                      "backgroundOpacity": 0,
+                      "displayAsButton": false,
+                      "buttonSize": "big",
+                      "goToSlideType": "specified",
+                      "invisible": false,
+                      "solution": ""
+                    }
+                  ],
+                  "slideBackgroundSelector": { "fillSlideBackground": "" }
+                }
+              ],
+              "keywordListEnabled": true,
+              "keywordListAlwaysShow": false,
+              "keywordListAutoHide": false,
+              "keywordListOpacity": 90,
+              "globalBackgroundSelector": { "fillGlobalBackground": "" }
+            },
+            "override": {
+              "activeSurface": false,
+              "hideSummarySlide": false,
+              "summarySlideSolutionButton": true,
+              "summarySlideRetryButton": true,
+              "enablePrintButton": false,
+              "social": {
+                "showFacebookShare": false,
+                "facebookShare": {
+                  "url": "@currentpageurl",
+                  "quote": "I scored @score out of @maxScore on a task at @currentpageurl."
+                },
+                "showTwitterShare": false,
+                "twitterShare": {
+                  "statement": "I scored @score out of @maxScore on a task at @currentpageurl.",
+                  "url": "@currentpageurl",
+                  "hashtags": "h5p, course"
+                },
+                "showGoogleShare": false,
+                "googleShareUrl": "@currentpageurl"
+              }
+            },
+            "l10n": {
+              "slide": "Folie",
+              "score": "Punktzahl",
+              "yourScore": "Deine Punktzahl",
+              "maxScore": "Maximale Punktzahl",
+              "total": "Summe",
+              "totalScore": "Gesamtpunktzahl",
+              "showSolutions": "Lösungen anzeigen",
+              "retry": "Wiederholen",
+              "exportAnswers": "Text exportieren",
+              "hideKeywords": "Stichwortliste verbergen",
+              "showKeywords": "Stichwortliste anzeigen",
+              "fullscreen": "Vollbild",
+              "exitFullscreen": "Vollbild beenden",
+              "prevSlide": "Vorherige Folie",
+              "nextSlide": "Nächste Folie",
+              "currentSlide": "Aktuelle Folie",
+              "lastSlide": "Letzte Folie",
+              "solutionModeTitle": "Lösungsmodus beenden",
+              "solutionModeText": "Lösungsmodus",
+              "summaryMultipleTaskText": "Mehrere Aufgaben",
+              "scoreMessage": "Du hast erreicht:",
+              "shareFacebook": "Auf Facebook teilen",
+              "shareTwitter": "Auf Twitter teilen",
+              "shareGoogle": "Auf Google+ teilen",
+              "summary": "Zusammenfassung",
+              "solutionsButtonTitle": "Kommentare anzeigen",
+              "printTitle": "Drucken",
+              "printIngress": "Wie möchtest du diese Präsentation drucken?",
+              "printAllSlides": "Alle Folien drucken",
+              "printCurrentSlide": "Aktuelle Folie drucken",
+              "noTitle": "Kein Titel",
+              "accessibilitySlideNavigationExplanation": "Verwende die linke oder rechte Cursortaste, um zur Folie in der jeweiligen Richtung zu blättern, wenn der Präsentationsbereich ausgewählt ist.",
+              "accessibilityCanvasLabel": "Präsentationsbereich. Verwende die linke oder rechte Cursortaste, um zwischen den Folien zu navigieren.",
+              "accessibilityProgressBarLabel": "Wähle das zu zeigende Schaubild",
+              "containsNotCompleted": "@slideName enthält eine nicht abgeschlossene Interaktion",
+              "containsCompleted": "@slideName wurde abgeschlossen",
+              "slideCount": "Folie @index von @total",
+              "containsOnlyCorrect": "@slideName enthält nur richtige Antworten",
+              "containsIncorrectAnswers": "@slideName enthält falsche Antworten",
+              "shareResult": "Ergebnis teilen",
+              "accessibilityTotalScore": "Du hast insgesamt @score von @maxScore Punkten erreicht.",
+              "accessibilityEnteredFullscreen": "Vollbild aktiviert",
+              "accessibilityExitedFullscreen": "Vollbild deaktiviert",
+              "confirmDialogHeader": "Antworten übermitteln",
+              "confirmDialogText": "Damit werden deine Ergebnisse übermittelt. Möchtest du fortfahren?",
+              "confirmDialogConfirmText": "Senden und Ergebnisse ansehen",
+              "slideshowNavigationLabel": "Schaubild-Navigation",
+              "confirmDialogConfirmLabel": "Confirm",
+              "confirmDialogCancelLabel": "Cancel"
+            }
+          },
+          "subContentId": "1e4ddf5c-0d4a-490b-8595-631a85ba391f",
+          "metadata": {
+            "contentType": "Course Presentation",
+            "license": "U",
+            "title": "QOOOL Kit Magneto Vorbereitung"
+          }
+        },
+        "showContentTitle": false,
+        "proceedButtonText": "Weiter",
+        "forceContentFinished": "useBehavioural",
+        "feedback": { "title": "", "subtitle": "" },
+        "contentBehaviour": "useBehavioural",
+        "nextContentId": 2
+      }
+    ],
+    "endScreens": [
+      {
+        "endScreenTitle": "<p>NV-Magnetometer: Navigation</p>",
+        "endScreenSubtitle": "",
+        "contentId": -1,
+        "endScreenScore": 0,
+        "endScreenImage": {
+          "path": "images/image-0KZjIm38.png",
+          "mime": "image/png",
+          "copyright": { "license": "U" },
+          "width": 1915,
+          "height": 1915
+        }
+      }
+    ],
+    "scoringOptionGroup": {
+      "scoringOption": "no-score",
+      "includeInteractionsScores": true
+    },
+    "startScreen": {
+      "startScreenTitle": "<p>NV-Magnetometer: Navigation</p>",
+      "startScreenSubtitle": "",
+      "startScreenImage": {
+        "path": "images/image-Sy0IK2e0.png",
+        "mime": "image/png",
+        "copyright": { "license": "U" },
+        "width": 1915,
+        "height": 1915
+      }
+    },
+    "behaviour": {
+      "enableBackwardsNavigation": false,
+      "forceContentFinished": true,
+      "randomizeBranchingQuestions": false
+    },
+    "l10n": {
+      "startScreenButtonText": "Kurs starten",
+      "endScreenButtonText": "Kurs neu starten",
+      "backButtonText": "Zurück",
+      "disableProceedButtonText": "Nötig, um das aktuelle Modul abzuschließen",
+      "replayButtonText": "Video wiederholen",
+      "scoreText": "Deine Punktzahl:",
+      "fullscreenAria": "Vollbild"
+    }
+  }
+}

@@ -1,13 +1,19 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { moodleElements } from "@/components/pages/quantum-interactive/moodle-elements"
+import H5PPlayer from "@/components/pages/quantum-interactive/h5p-player"
+import { h5pElements } from "@/components/pages/quantum-interactive/h5p-elements"
 import H4 from "@/components/ui/typography/H4"
 import P from "@/components/ui/typography/P"
 import IframeResizer from "@iframe-resizer/react"
 import { Download } from "lucide-react"
 import Link from "next/link"
-import Script from "next/script"
+
+const h5pLabels = {
+  start: "Kurs starten",
+  loading: "Kurs wird geladen …",
+  error: "Dieser Inhalt konnte nicht geladen werden. Bitte lade die Seite neu.",
+}
 
 export default function LernmaterialienPage() {
   return (
@@ -87,31 +93,22 @@ export default function LernmaterialienPage() {
             </Link>
           </div>
         </div>
-        {moodleElements.map((element) => (
+        {h5pElements.map((element) => (
           <div
-            key={element.src}
+            key={element.h5pJsonPath}
             className="rounded bg-white overflow-hidden text-black"
           >
             <div className="p-4">
               <h4 className="font-semibold">{element.title}</h4>
             </div>
-            <iframe
-              src={element.src}
+            <H5PPlayer
+              h5pJsonPath={element.h5pJsonPath}
               title={element.title}
-              className="w-full border-0"
-              style={{ height: `${element.height}px` }}
-              loading="lazy"
-              allow="fullscreen"
-              allowFullScreen
+              labels={h5pLabels}
             />
           </div>
         ))}
       </div>
-      <Script
-        src="https://moodle.pud-edu.de/mod/hvp/library/js/h5p-resizer.js"
-        charSet="UTF-8"
-        strategy="afterInteractive"
-      />
     </div>
   )
 }
