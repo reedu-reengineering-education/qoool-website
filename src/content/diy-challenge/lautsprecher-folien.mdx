@@ -1,0 +1,306 @@
+export const Antwort = ({ label = "Antwort", children }) => (
+  <details className="my-4 rounded-md border p-4">
+    <summary className="cursor-pointer font-semibold">{label}</summary>
+    <div className="mt-2">{children}</div>
+  </details>
+)
+
+# Magnetfelder bei der Tonerzeugung im Lautsprecher
+
+Konzept für ein Branching Scenario (Folienaufbau) zum Einsatz des NV-Zentren-Magnetfeldsensors.
+
+## Folie 1: Überblick
+
+### Magnetfelder in Lautsprechern
+
+Egal ob kleiner In-Ear-Kopfhörer oder großer Lautsprecher - viele von uns nutzen Lautsprechertechniken regelmäßig zum Musik hören. Aber was passiert eigentlich in solchen Geräten? Wie wird der Ton erzeugt? Und wusstest du, dass Magnetfelder dabei eine wichtige Rolle spielen?
+
+**Lernziel:** In dieser Einheit lernst du, wie ein Lautsprecher aufgebaut ist und wie er funktioniert. Dabei misst du das Magnetfeld, das für die Tonerzeugung benötigt wird. Du wirst mithilfe eines Magnetfeldsensors das elektrische Signal in einem Lautsprecher über das magnetische Signal aufnehmen und elektrisch an einen anderen Lautsprecher übertragen. Die dabei auftretenden physikalischen Effekte werden weiter untersucht.
+
+![Zerlegter Kopfhörer](/diy-challenge/lautsprecher/Lautsprecher_F01_2.jpg)
+
+![Lautsprecher im Holzgehäuse](/diy-challenge/lautsprecher/Lautsprecher_F01_5_ggf.jpg)
+
+## Folie 2: Aufbau Lautsprecher
+
+Ein Lautsprecher besteht aus vielen Bauteilen, die erst im Zusammenspiel seine Funktion ermöglichen.
+
+Als stabiles Gerüst des Lautsprechers dient der Korb. Er hält die verschiedenen Bauteile zusammen und gibt ihnen ihre feste Position. Die Sicke verbindet die Membran mit dem Korb und sorgt dafür, dass sie trotzdem gut schwingen kann. Die Schwingungen der Membran kommen dabei von der Schwingspule, mit der die Membran verbunden ist. Die Schwingspule wird von der Spinne mittig gehalten und bei ihrer Bewegung geführt. Die Abdeckkappe schützt den inneren Bereich des Lautsprechers vor Staub und Schmutz.
+
+Für die eigentliche Bewegung sorgt das Zusammenspiel von Magnet und Schwingspule. Der Magnet erzeugt ein starkes Magnetfeld, in dem sich die Schwingspule befindet. Fließt das elektrische Signal durch die Spule, kommt es zur Lorentzkraft. Durch diese bewegt sich die Spule auf und ab und nimmt die mit ihr verbundene Membran mit.
+
+Die schwingende Membran versetzt die Luft in Bewegung. Dabei entstehen abwechselnd Bereiche mit höherem und niedrigerem Druck, die sich als Schallwellen ausbreiten und von unserem Ohr wahrgenommen werden können.
+
+Abbildung: [Lautsprecher-Schema (Wikimedia Commons)](https://upload.wikimedia.org/wikipedia/commons/3/3c/Lautsprecher_Schema.svg)
+
+## Folie 3: Teste dich
+
+Ordne die Begriffe den Bauteilen im Lautsprecher im Bild zu.
+
+Begriffe:
+
+- Abdeckkappe
+- Korb
+- Magnet
+- Membran
+- Schwingspule
+- Sicke
+- Spinne
+
+Abbildung: [Lautsprecher-Schema (Wikimedia Commons)](https://upload.wikimedia.org/wikipedia/commons/3/3c/Lautsprecher_Schema.svg)
+
+## Folie 4: Funktionsweise Lautsprecher
+
+Wie funktioniert jetzt ein Lautsprecher?
+Betrachte die Spule genauer. Nimm zunächst an, dass die Elektronen in der Spule von oben gesehen im Uhrzeigersinn fließen.
+
+Schiebe die Pfeile und Zeichen an die richtigen Stellen in der Abbildung:
+
+- In welche Richtung fließt der elektrische Strom?
+- In welche Richtung zeigt das aus dem Magneten resultierende B-Feld?
+- In welche Richtung zeigt nun die Lorentzkraft?
+
+Kleiner Tipp: verwende die Drei-Finger-Regel.
+(Betrachtest du den Elektronenfluss nimmst du die linke Hand, betrachtest du die technische Stromrichtung musst du die rechte Hand verwenden.)
+
+In welche Richtung bewegt sich in diesem Fall die Spule?
+
+- unten
+- oben
+
+<Antwort>Die Spule bewegt sich nach **oben**.</Antwort>
+
+## Folie 5: Funktionsweise Lautsprecher
+
+### Alternative Betrachtung: Magnetfeld in einer stromdurchflossenen Spule
+
+In einer (langen) stromdurchflossenen Spule bildet sich ein (homogenes) Magnetfeld aus.
+
+Warum war das nochmal so?
+
+<Antwort>Eine Spule ist nichts anderes als ein aufgewickelter Draht, also ein Leiter. Wird nun eine Spannung angelegt, bildet sich um diesen stromdurchflossenen Leiter nach Oersted ein Magnetfeld. Da in der Spule mehrere Drahtschleifen nah aneinander liegen, überlagern sich die Magnetfelder so, dass in der Mitte der Spule ein homogenes Magnetfeld entsteht.</Antwort>
+
+Wie ist nun das Magnetfeld in der Spule gepolt? Ordne N und S passend zu für den Fall, dass die Elektronen sich (wieder von oben betrachtet) im Uhrzeigersinn bewegen.
+
+Tipp: Die Richtung des Magnetfelds um einen stromdurchflossenen Leiter bekommt man mit der Faustregel, auch hier gilt: linke Hand = Elektronenflussrichtung, rechte Hand = technische Stromrichtung; die Fingerspitzen geben die Ausrichtung einer Kompassnadel an, diese gehen außerhalb des Magneten von Nordpol nach Südpol. Vergleichen wir nun das Innere der Spule mit einem Magneten, können wir Nord- und Südpol zuordnen.
+
+<Antwort>Oberes Ende der Spule N, unteres S.</Antwort>
+
+## Folie 6: Funktionsweise Lautsprecher - Fortsetzung Magnetfeld stromdurchflossene Spule
+
+Im Lautsprecher war der Permanentmagnet so konfiguriert, dass unterhalb der Spule der magnetische Südpol ist. Welche Aussage ist richtig?
+
+- Der magnetische Südpol der Spule trifft auf den Südpol des Permanentmagneten. Die beiden stoßen sich ab, die Spule wird also durch diesen Effekt nach oben bewegt.
+- Der magnetische Südpol der Spule trifft auf den Südpol des Permanentmagneten. Die beiden ziehen sich an, die Spule wird also durch diesen Effekt nach unten bewegt.
+
+<Antwort>Die erste Aussage ist richtig: Die beiden Südpole stoßen sich ab, die Spule wird nach oben bewegt.</Antwort>
+
+## Folie 7: Funktionsweise Lautsprecher
+
+Bis jetzt haben wir immer die Situation betrachtet, dass die Elektronen sich von oben betrachtet im Uhrzeigersinn bewegen. Was passiert, wenn wir den Stromfluss nun umpolen?
+
+<Antwort>In beiden Betrachtungen ändern sich die Orientierungen: Die Lorentzkraft zeigt nun nach unten. Das Magnetfeld in der Spule ist nun ebenfalls umgepolt, d.h. der magnetische Südpol ist nun oben, der magnetische Nordpol ist unten und wird somit vom Südpol des Permanentmagneten angezogen. Die Spule bewegt sich (unabhängig von der Betrachtungsweise) nach unten.</Antwort>
+
+## Folie 8: Vom elektrischen Stromfluss zur Schwingung
+
+Wie können wir mithilfe dieser Beobachtungen einen Ton erzeugen?
+
+Um Schall zu erzeugen muss sich die Membran des Lautsprechers bewegen. Wie kann nun das eben Erarbeitete genutzt werden, um die Spule und damit die Membran zum Schwingen zu bringen?
+
+<Antwort>Die Richtung des Stromflusses muss sich immer wieder ändern und mal in die eine und mal in die andere Richtung zeigen. Dadurch wirkt die Lorentzkraft immer abwechselnd nach oben und nach unten bzw. die Polung des durch die Spule erzeugten Magnetfeldes dreht sich um. Dies wird durch einen Wechselstrom realisiert. Wenn wir einen bestimmten Ton erzeugen wollen, müssen wir das Muster der Änderung darauf abstimmen. Die Membran schwingt immer genau mit der Frequenz mit der sich der Stromfluss umkehrt.</Antwort>
+
+## Folie 9: Experiment: Tonerzeugung am Lautsprecher
+
+Wir wollen nun den Kammerton a' = 440 Hz im Lautsprecher generieren. Welche Frequenz müssen wir also im Frequenzgenerator einstellen?
+
+**Probiere es aus:**
+
+Schließe den Frequenzgenerator an den Lautsprecher an. Dazu brauchst du einen Adapter (BNC auf Banane) und 2 Bananenkabel mit Krokodilklemmen.
+Wenn du keinen Frequenzgenerator zu Verfügung hast, kannst du auch die App phyphox mit der Funktion Tongenerator auf einem der Tablets oder deinem Handy verwenden.
+
+_Anmerkung: Wir finden hier zunächst einen Frequenzgenerator sinnvoll, da er nicht wie die App einen hörbaren Ton ausgibt, sondern man wirklich die eben erarbeitete Physik im Lautsprecher braucht, um den Ton hörbar zu machen._
+
+Stelle jetzt am Frequenzgenerator die gewünschte Frequenz ein. Möchtest du den Kammerton a'=440 Hz abspielen, stell eine Frequenz von 440 Hz ein. Versuche gerne unterschiedliche Frequenzen aus.
+
+Die Lautstärke regelst du über die Amplitude. Die Einheit Vpp steht hierbei für Volt peak-peak, d.h. die Spannungsdifferenz von Peak zu Peak also das Doppelte der Amplitude. Bei 2 Vpp hat die Sinus-Schwingungen einen Amplitude von 1 V. Probiere auch hier verschiedene Werte aus.
+
+(Wenn du nicht weißt wie du einen Frequenzgenerator verwendest, probiere die verschiedenen Tasten aus (keine Angst du kannst dabei nichts kaputt machen) oder frage einen Betreuer.)
+
+## Folie 10: Untersuchen der Magnetfelder - Erweiterung des Aufbaus
+
+Im nächsten Schritt wollen wir versuchen die Magnetfelder im Lautsprecher zu messen. Da die Änderungen relativ klein sind müssen wir das Signal zuerst verstärken. Dabei hilft ein Frequenzverstärker. Außerdem verwenden wir jetzt die App phyphox, um die Frequenz zu generieren, (da das von den Anschlüssen etwas leichter ist.) Falls du bisher mit dem Frequenzgenerator gearbeitet hast, ersetzt du ihn jetzt durch ein Tablet oder dein Handy mit der App phyphox mit der Funktion Tongenerator. Verbinde den Input des Frequenzverstärkers mit dem Tablet und den Output mit dem Lautsprecher.
+
+![Aufbau mit Signalverstärker und der offenen phyphox App](/diy-challenge/lautsprecher/Lautsprecher_F10_1.jpg)
+
+**Tipps:** Verwende eine Unterlage, da sonst der Lautsprecher auch den Tisch zum Vibrieren anregt. Verwende eher eine niedrige Frequenz (z.B. 200 Hz). Das Tablet muss auf die maximale Lautstärke eingestellt sein, dann kannst du vorsichtig den Verstärker aufdrehen, bis du gerade so etwas hörst.
+
+## Folie 11: Messen der Magnetfelder
+
+Wie können nun die NV-Zentren genutzt werden, um die Funktionsweise des Lautsprechers zu untersuchen?
+
+Mithilfe des NV-Zentrums kann man die Stärke des Magnetfelds messen. Da das Magnetfeld sich bei der Änderung des angelegten Stroms ändert, sollten wir das im Output-Signal des NV-Sensors sehen können.
+
+Wie hängen Magnetfeld und angelegte Stromstärke zusammen?
+
+<Antwort>Das Magnetfeld ist proportional zur Stromstärke. In einer langen Spule mit der Windungszahl N und der Länge l gilt B = μ₀ · μᵣ · (N / l) · I.</Antwort>
+
+## Folie 12: Messen der Magnetfelder
+
+Angenommen, wir könnten im Oszilloskop die Magnetfeldstärke sehen.
+Welche Signale erwarten wir für unterschiedliche Töne am Oszilloskop?
+
+**Teste dich:** Ordne idealisierte U-t-Diagramme den folgenden Fällen zu:
+
+- 200 Hz mittlere Lautstärke
+- höherer Ton
+- tieferer Ton
+- lauterer Ton
+- leiserer Ton
+- kein Ton
+
+Die hier verwendeten Bilder sind idealisiert. Die tatsächlichen Signale sehen unter anderem wegen starkem Rauschen anders aus.
+
+## Folie 13: Experiment: Magnetfeldermessen Teil 1
+
+**Probiere es aus!**
+
+Verwende den NV-Zentrum-Magnetfeldsensor und verbinde ihn über das BNC-Kabel mit dem Oszilloskop. Miss nun das Magnetfeld im Inneren der Spule im Lautsprecher.
+
+**Wichtig:** Achte darauf, dass der Sensor den Lautsprecher nicht berührt.
+
+![Vollständiger Aufbau zum Messen des Magnetfeldes im Lautsprecher](/diy-challenge/lautsprecher/Lautsprecher_F13_1.jpg)
+
+![Sensor über dem Lautsprecher, Signal am Oszilloskop](/diy-challenge/lautsprecher/Lautsprecher_F13_2.jpg)
+
+**Hinweise zur Einstellung des Oszilloskops:** Als zeitliche Auflösung sind 10 ms sinnvoll. Die Position des Signals ist ungefähr bei -8V, stelle diesen Wert mithilfe des Position-Drehrades ein. Wenn du das Signal nicht findest, verwende den Auto-Knopf und schau auf welche Position das Oszilloskop eingestellt wird. Achtung, dann muss die zeitliche Achse wieder auf ca. 10 ms eingestellt werden.
+
+Variiere die Lautstärke und die Frequenz und beobachte das Bild am Oszilloskop.
+Was beobachtest du? Passen die Beobachtungen zu deinen Überlegungen von vorhin?
+
+Spiele auch einen Abschnitt aus einem Lied ab. Was siehst du nun?
+
+## Folie 14: Experiment: Fokus auf die Spule
+
+Wir haben vorhin gesehen, dass das Kernelement des Lautsprechers die Spule ist. Deswegen ersetzen wir den Lautsprecher nun durch eine Spule, da diese weniger empfindlich ist und daher besser untersucht werden kann.
+
+Verwendete Spule: 15 mH, 600 Windungen, 6 Ohm
+
+**Hinweise zur Einstellung des Oszilloskops:** Nun musst du die Position auf ca. -10 V anpassen.
+
+## Folie 15: Detaillierter Blick auf das Signal - kein Inputsignal
+
+Schauen wir uns das Signal etwas genauer an:
+
+**Signal ohne Input:**
+
+Schalte den Verstärker aus, und beobachte das Signal. Du siehst immer noch eine Schwingung, oder? Kannst du die Frequenz abschätzen? Trennt den Verstärker vom Stromnetz, ist das Signal noch da?
+
+Woher könnte dieser Effekt kommen?
+
+<Antwort>Die Frequenz sind ca. 50 Hz, das ist die Netzfrequenz in Deutschland. Man sieht also die Schwingungen im Stromnetz.</Antwort>
+
+Schalte nun wieder ein Inputsignal ein, aber verstärke es nur wenig. Kannst du erkennen von welcher Schwingung das Signal eingehüllt wird?
+
+## Folie 16: Detaillierter Blick auf das Signal - Outputsignal
+
+**Frequenz des Outputsignals:**
+
+Versuche am Oszilloskop die Frequenz des Output-Signals abzulesen, am besten nimmst du dafür kein zu großes Inputsignal, z.B. 100 Hz. Du kannst dazu die Cursor im Oszilloskop z.B. im Abstand einer Periodenlänge setzen und aus dem abgelesenen zeitlichen Abstand die Frequenz ausrechnen.
+
+Erinnerst du dich noch: Wie war der Zusammenhang zwischen Periodenlänge und Frequenz?
+
+<Antwort>f = 1 / T</Antwort>
+
+Du hast keine Lust, das am Oszilloskop so genau abzulesen? Dann geh zu den nächsten Folien, dort findest du eine andere Alternative!
+
+## Folie 17: Anwendung: Machen wir es hörbar!
+
+Wäre es nicht cool, wenn wir mit dem Signal unseres B-Feldsensors wieder einen Ton erzeugen könnten?
+
+Schließe dazu den Output des Sensors an einen zweiten Frequenzverstärker an und verbinde seinen Output mit einem weiteren Lautsprecher.
+
+Vor den Frequenzverstärker muss allerdings noch ein weiteres Bauteil. Wie im Oszilloskop gemerkt, haben wir einen Offset von ca. 10-12 V, die der Frequenzverstärker und der Lautsprecher nicht verarbeiten können.
+
+Wie könnten wir diesen Gleichspannungsanteil rausfiltern?
+
+<Antwort>Hinter einem Kondensator ist nur noch der sich ändernde Anteil des Signals sichtbar, der Gleichspannungsanteil wird rausgefiltert. Das ist ein einfacher Hochpass, der die sehr niedrige Frequenz f = 0 Hz herausfiltert. Wir verwenden einen Kondensator mit C = 2,2 µF.</Antwort>
+
+![Hochpass mit 2,2 µF Kondensator](/diy-challenge/lautsprecher/Lautsprecher_F17_1.jpg)
+
+Woher kommt der Gleichspannungsanteil?
+
+<Antwort>Der Offset kommt von der Grundspannung, die der Sensor dauerhaft ausgibt, diese wird aber beispielsweise durch permanente Magnetfelder beeinflusst. Daher musste auch die Position im Oszilloskop beim Wechsel zwischen Lautsprecher und Spule geändert werden.</Antwort>
+
+Versuche jetzt unterschiedliche Frequenzen hörbar zu machen. Variiere gerne auch die Lautstärke.
+Schaffst du es ein Lied anzuhören?
+
+## Folie 18: Wie weit reicht das Signal?
+
+Nehmt nun den Sensor aus der Halterung und bewegt ihn in die Spule rein und raus. Ab wo hört ihr einen Ton, d.h. ab wo nimmt der Sensor die Schwingungen im Magnetfeld wahr? Messt auch um die Spule herum!
+
+## Folie 19: Detaillierter Blick auf das Signal - Outputsignal
+
+Betrachten wir nun nochmal die Frequenz des Output-Signals. Da wir das Signal nun hören können, können wir mithilfe der Funktion Audio Spektrum in phyphox (auf einem anderen Gerät, als das, das den Ton erzeugt) auch die Frequenz messen.
+
+Was fällt dir auf? Überprüfe deine Beobachtung auch mit anderen Eingangsfrequenzen.
+
+## Folie 20: Detaillierter Blick auf das Signal - Frequenzverdopplung
+
+Wir beobachten, dass die Inputfrequenzen verdoppelt werden. Aber woher kommt dieser Effekt?
+
+Das NV-Zentrum misst lediglich die Stärke des Magnetfelds, aber nicht die Orientierung, d.h. wir sehen den Betrag des Signals.
+
+Wie würde damit das Signal für eine sinusförmige Magnetfeldänderung aussehen?
+
+- `cos(x)`
+- `|sin(x)|`
+- `|sin(x)|^2`
+
+<Antwort>`|sin(x)|`</Antwort>
+
+Zudem korreliert das Signal vom NV-Zentrum nicht vollständig proportional mit dem Magnetfeld.
+
+Man kann diesen Effekt auch im Oszilloskop bei niedrigen Frequenzen (z.B. 100 Hz) erkennen. Probiere das gerne aus! Gerne kannst du auch nochmal den Frequenzgenerator an die Spule anschließen und andere Signalformen wie square (Rechtecksignal), ramp (Dreiecksignal) oder Pulse testen. Passen auch hier die Ergebnisse zur Erklärung, dass man nur den Betrag des Signals misst?
+
+Achte auch darauf, welcher Anteil der Output-Amplitude aus dem Frequenzgenerator noch im Oszilloskop zu sehen ist. Im Sensor ist bereits eine Verstärkung eingebaut, du kannst dir also vorstellen, wie schwach das Output-Signal der Fotodiode im Sensor eigentlich ist.
+
+## Folie 21: Umwandlung von physikalischen Größen - Teste dich
+
+Erinnere dich nochmal an den Aufbau, bei dem das gemessene Signal im zweiten Lautsprecher ausgespielt wurde. Um die Änderungen des Magnetfeldes im Lautsprecher zu erzeugen und zu beobachten, finden mehrere Umwandlungen physikalischer Größen statt.
+Ordne den Erzeugern die richtigen erzeugten physikalischen Größen zu und bringe sie in die richtige Reihenfolge.
+
+<Antwort label="Lösung">
+
+1. Aus dem Handy/Tablet: Stromstärke & Frequenz
+2. Aus dem Frequenzverstärker: Stromstärke (verstärkt) & Frequenz
+3. Aus dem Lautsprecher/Spule: B-Feldstärke (& Luftwellen) & Frequenz
+4. Aus dem NV-Zentrum: Intensität des Lichtsignals & Frequenz
+5. Photodiode: Stromstärke & Frequenz
+6. Aus dem Frequenzverstärker: Stromstärke (verstärkt) & Frequenz
+7. Aus dem Lautsprecher: Luftwellen (& B-Feldstärke) & Frequenz
+
+</Antwort>
+
+## Folie 22: Andere Tonerzeugung: Tamburin
+
+Zum Abschluss betrachten wir noch eine andere Art der Tonerzeugung als mit einem Lautsprecher: Ein Tamburin.
+
+Lege den kleinen Magneten auf das Tamburin, schlage nun mit der Hand oder einem Schlägel auf das Tamburin und betrachte das Signal des Magnetfeldsensors im Oszilloskop.
+
+![Aufbau Tamburin](/diy-challenge/lautsprecher/Lautsprecher_F22_1.jpg)
+
+Auch hier siehst du wieder ein Signal. Was ist anders als vorhin? Wann ändert sich das Signal im Oszilloskop nach unten, wann nach oben?
+
+<Antwort>
+
+- Nun ist es kein periodisches Signal mehr. Man sieht eine starke Auslenkung zu Beginn und dann ein Ausschwingen.
+- Es ändert sich nicht die Stärke des Magnetfelds, sondern nur der Abstand des Magneten zum Sensor, der dadurch unterschiedliche Magnetfeldstärken registriert.
+- Die Änderung des Magnetfelds ist nicht mehr Ursache für die Tonerzeugung, sondern nur ein Nebenprodukt, da der Magnet auf der Membran mitschwingt.
+- Wenn der Magnet näher am Sensor ist, d.h. das Magnetfeld am Sensor stärker ist, wird das Signal im Oszilloskop weiter nach unten ausgelenkt, d.h. eine betragsmäßig größere Spannung (negativ) wird gemessen.
+
+</Antwort>
+
+## Folie 23: Zusammenfassung
+
+Du hast nun vielerlei Untersuchungen rund um die Tonerzeugung und die dabei auftretenden Magnetfeldänderungen durchgeführt. Insbesondere hast du aus einem akustischen Signal nach vielen Umwandlungen wieder ein akustisches Signal gemacht. Zudem weißt du jetzt, wie ein Lautsprecher aufgebaut ist und wie er funktioniert.
+Du kannst erklären, warum man mit einem Magnetfeldsensor das Signal des Lautsprechers messen kann und welche Umwandlungen physikalischer Größen dabei stattfinden.

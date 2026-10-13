@@ -1,0 +1,72 @@
+import { Button } from "@/components/ui/button"
+import { Download } from "lucide-react"
+
+# Stromkabel in der Wand suchen
+
+Konzept für ein Branching Scenario (Folienaufbau) zum Einsatz des NV-Zentren-Magnetfeldsensors.
+
+### 3D-Druckdateien
+
+<div className="flex flex-wrap gap-4 my-4">
+  <a href="/diy-challenge/stromkabel/Halterung.3mf" download>
+    <Button size={"sm"}>
+      <Download className="h-4 mr-2" />
+      Halterung.3mf
+    </Button>
+  </a>
+  <a href="/diy-challenge/stromkabel/PuD_Wand_1.3mf" download>
+    <Button size={"sm"}>
+      <Download className="h-4 mr-2" />
+      PuD_Wand_1.3mf
+    </Button>
+  </a>
+  <a href="/diy-challenge/stromkabel/PuD_Wand_2.3mf" download>
+    <Button size={"sm"}>
+      <Download className="h-4 mr-2" />
+      PuD_Wand_2.3mf
+    </Button>
+  </a>
+</div>
+
+## Folie 1: Überblick
+
+Stella will daheim ein Bild aufhängen und setzt schon mit dem Nagel und Hammer an. Da ruft ihre Mama in der letzten Sekunde: "Stella, pass auf die Stromleitungen in der Wand auf". Könnt ihr Stella helfen herauszufinden, wo sie ihr Bild aufhängen darf und wo nicht?
+
+## Folie 2
+
+Bevor es weiter geht, schaltet den Laptop und die senseBox an und macht dann mit den folgenden Folien weiter.
+
+## Folie 3: Hintergrundwissen-Quiz
+
+Was können wir messen, um zu wissen, wo Stromleitungen liegen?
+
+1. Wir könnten die Ströme selbst mit einem Amperemeter messen.
+2. Wir könnten die Magnetfelder der Ströme messen.
+3. Wir können schauen, wo Wasser abgelenkt wird.
+4. Wir könnten ein Röntgengerät nehmen, um die Leitungen zu erkennen.
+
+## Folie 4
+
+Verschiedene Varianten sind in der Theorie möglich, betrachten wir sie alle nacheinander.
+
+1. Theoretisch ist das möglich, aber wer reißt schon die halbe Wand ab, um ein Bild aufzuhängen? Das Verhältnis zwischen Aufwand und Nutzen ist nicht gegeben.
+2. Wenn das Magnetfeld stark genug ist, klappt das.
+3. Wasser ist zwar ein Dipol und wird elektrisch angezogen, aber das Kabel ist nicht positiv oder negativ geladen.
+4. Theoretisch möglich, praktisch haben die meisten kein Röntgengerät daheim und gesundheitlich bedenklich, also lieber nicht.
+
+## Folie 5
+
+Stellas Mama gibt ihr den Hinweis, dass an einer der drei Steckdosen eine Leitung zu dem Sicherungskasten im ersten Stock führt. Überprüfe nun mit dem Magnetfeldmessgerät, über welcher Steckdose Stella das Bild nicht aufhängen kann. Beachte dabei die Hinweise auf der nächsten Folie.
+
+## Folie 6
+
+Die Spitze des Messgeräts sollte möglichst nah an der Wand sein, diese jedoch nicht berühren. Bei der Messung solltet ihr das Messgerät möglichst wenig bewegen (Tipp: Stützt eure Hand dafür an dem Tisch ab). Schaltet an einer Stelle immer die Spannungsquelle aus und wieder an, um zu sehen, ob eure Messung normale Schwankungen ist oder ihr tatsächlich ein Magnetfeld messt.
+
+## Folie 7: Kann ich das daheim genau so verwenden?
+
+Jein, in der Theorie schon, in der Praxis gibt es noch andere Messmethoden, die etwas zuverlässiger sind.
+Folgende Punkte erschweren die Umsetzung in der Praxis:
+
+- Ströme sind nur messbar, wenn eine Last angeschlossen ist (hier die Heizung).
+- Meistens gehen die Leitungen daneben wieder hoch (andere Richtung), wodurch das Magnetfeld ausgelöscht oder zumindest abgeschwächt wird.
+- Für ein starkes Magnetfeld benötigt man viel Strom, welcher vom Verbraucher "ausgehalten" werden muss und nicht zu Kabelbrand führen darf.
