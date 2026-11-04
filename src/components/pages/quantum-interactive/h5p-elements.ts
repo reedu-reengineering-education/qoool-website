@@ -1,7 +1,11 @@
 export const h5pElements = [
   {
-    title: "Neuronales Feuern Kurs",
+    title: "Fehlstellen in Kristallen Kurs",
     // extracted H5P packages live in `public/h5p`
+    h5pJsonPath: "/h5p/fehlstellen-in-kristallen",
+  },
+  {
+    title: "Neuronales Feuern Kurs",
     h5pJsonPath: "/h5p/neuronales-feuern",
   },
   {
@@ -9,7 +13,7 @@ export const h5pElements = [
     h5pJsonPath: "/h5p/geopositioning-kurs",
   },
   {
-    title: "Leiterbahnenanalyse",
+    title: "Leiterbahnenanalyse Kurs",
     h5pJsonPath: "/h5p/leiterbahnenanalyse",
   },
 ]

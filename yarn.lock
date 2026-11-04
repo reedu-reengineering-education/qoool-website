@@ -7,7 +7,7 @@
   resolved "https://registry.yarnpkg.com/@alloc/quick-lru/-/quick-lru-5.2.0.tgz#7bf68b20c0a350f936915fcae06f58e32007ce30"
   integrity sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==
 
-"@babel/runtime@^7.23.2", "@babel/runtime@^7.28.6":
+"@babel/runtime@^7.23.2":
   version "7.29.2"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.29.2.tgz#9a6e2d05f4b6692e1801cd4fb176ad823930ed5e"
   integrity sha512-JiDShH45zKHWyGe4ZNVRrCjBz8Nh9TMmZG1kh4QTK8hCBTWBi8Da+i7s1fJw7/lYpM4ccepSNfqzZ/QvABBi5g==
@@ -396,22 +396,6 @@
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-2.0.3.tgz#4a2868d75d6d6963e423bcf90b7fd1be343409d3"
   integrity sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==
-
-"@iframe-resizer/core@5.5.9":
-  version "5.5.9"
-  resolved "https://registry.yarnpkg.com/@iframe-resizer/core/-/core-5.5.9.tgz#bcc6fca02bd4071b3c36f421c853bf06f20469db"
-  integrity sha512-HacDQx81pgHlmY48tRogcX02TOXfvjllJzI+xfVYmvEXhxoViyi9yEobhNQEt8Mq6NmrH1vHhz6FRfQ9uBTsjQ==
-  dependencies:
-    auto-console-group "1.3.0"
-
-"@iframe-resizer/react@^5.5.7":
-  version "5.5.9"
-  resolved "https://registry.yarnpkg.com/@iframe-resizer/react/-/react-5.5.9.tgz#794c6e5074b84aef63b92395d306bede141fdef7"
-  integrity sha512-PXzQ9m594JsUWjfgk0BIvd9Boow/GSBhViwxlHoHPRsZGsLMqsELvdlcnCEL3acKVl5mDl2KF+hIImA98vPalA==
-  dependencies:
-    "@babel/runtime" "^7.28.6"
-    "@iframe-resizer/core" "5.5.9"
-    auto-console-group "1.3.0"
 
 "@img/colour@^1.0.0":
   version "1.1.0"
@@ -2299,11 +2283,6 @@ async-function@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/async-function/-/async-function-1.0.0.tgz#509c9fca60eaf85034c6829838188e4e4c8ffb2b"
   integrity sha512-hsU18Ae8CDTR6Kgu9DYf0EbCr/a5iGL0rytQDobUcdpYOKokk8LEjVphnXkDkgpi0wYVsqrXuP0bZxJaTqdgoA==
-
-auto-console-group@1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/auto-console-group/-/auto-console-group-1.3.0.tgz#21870bad097192b5950f10a3bdf6054c74971934"
-  integrity sha512-W/G5jy1ZPeVYPyqOVGND7EjbzrsLgRD3s+1QegXfJ7bYlphFxjqG60rviFXWw0d2YCj0Clc7hU5/nTqrBEhBIw==
 
 autoprefixer@^10.0.1:
   version "10.5.0"

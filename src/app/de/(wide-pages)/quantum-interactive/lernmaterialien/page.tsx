@@ -5,7 +5,6 @@ import H5PPlayer from "@/components/pages/quantum-interactive/h5p-player"
 import { h5pElements } from "@/components/pages/quantum-interactive/h5p-elements"
 import H4 from "@/components/ui/typography/H4"
 import P from "@/components/ui/typography/P"
-import IframeResizer from "@iframe-resizer/react"
 import { Download } from "lucide-react"
 import Link from "next/link"
 
@@ -36,13 +35,10 @@ export default function LernmaterialienPage() {
               für Quantensensoren entsteht.
             </p>
           </div>
-          <IframeResizer
-            log="collapsed"
-            src="https://reedu-reengineering-education.github.io/qoool-nv-quiz/NV_To_Go.html"
-            style={{ width: "100%", height: "100vh" }}
-            license={"GPLv3"}
-            allowFullScreen
-            allow="fullscreen; geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor"
+          <H5PPlayer
+            h5pJsonPath="/h5p/nv-zentrum-magnetometer-quiz"
+            title="NV-Zentrum Magnetometer Quiz"
+            labels={{ ...h5pLabels, start: "Quiz starten" }}
           />
         </div>
         <div className="grid gap-2">
