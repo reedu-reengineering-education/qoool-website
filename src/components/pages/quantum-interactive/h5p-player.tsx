@@ -58,7 +58,7 @@ export default function H5PPlayer({
       if (cancelled) return
       await new H5P(element, {
         h5pJsonPath,
-        // all three packages ship the same libraries, deduplicated into one folder
+        // all packages ship the same libraries, deduplicated into one folder
         librariesPath: "/h5p/libraries",
         frameJs: "/h5p-standalone/frame.bundle.js",
         frameCss: "/h5p-standalone/styles/h5p.css",
